@@ -5,7 +5,7 @@ import  img2 from  '../../image/WhatsApp Image 2025-04-14 at 18.10.47_dc82cd7a.j
 import  img3 from  '../../image/Rectangle 23856-Vh6sWHkX.png'
 import  img4 from  '../../image/2.jpg'
 import  img5 from  '../../image/WhatsApp Image 2025-04-14 at 18.29.47_a21af3bf.jpg'
-import  img6 from  '../../image/WhatsApp Image 2025-04-14 at 18.29.47_a21af3bf.jpg'
+import  img6 from  '../../image/Untitled_design[1].png'
 
 
 const teamMembers = [
