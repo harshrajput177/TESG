@@ -7,14 +7,14 @@ import  img4 from  '../../assets/d5ed166d3084cdeeeb0f0a06edca260c.png'
 import  img5 from  '../../assets/997fe30ade1fb6710b63da7f29c9c51b.png'
 import  img6 from  '../../image/4.png';
 import  img7 from  '../../image/5.png';
-import  img8 from  '../../image/6.png';
+import  img8 from  '../../image/13.png';
 import  img9 from  '../../image/7.png';
 import  img10 from  '../../image/8.png';
 import  img11 from  '../../image/9.png';
 import  img12 from  '../../image/10.png';
 import  img13 from  '../../image/11.png';
 import  img14 from  '../../image/12.png';
-import  img15 from  '../../image/13.png';
+import  img15 from  '../../image/6.png';
 
 const logos = [
   img1,

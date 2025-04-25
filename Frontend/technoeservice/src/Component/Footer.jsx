@@ -4,6 +4,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
+import logo from '../image/63761c632c2b88416ffd24413df2f3d7.png'
 
 
 const Footer = () => {
@@ -24,10 +25,12 @@ const Footer = () => {
       </div>
       <div className="footer-content">
         <div className="footer-column brand-info">
-          <h3><span className="logo">🤖</span> ElectroHub</h3>
+          <h3><span className="tesg-logo">
+            <img src={logo} alt="" className="Gwi-tesg-logo-img"/> 
+            </span> GWI Techno-EService</h3>
           <p>Your one-stop destination for the latest electronics, gadgets, and smart devices at unbeatable prices.</p>
           <p>Call us: 364 484 4828</p>
-          <p>Email: electrohub@gmail.net</p>
+          <p>Email: info@technoesgroup.com</p>
         </div>
 
         <div className="footer-column">
@@ -65,7 +68,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>electrohub.net © Copyright 2026</p>
+        <p>GWI Techno-E-Service © Copyright 2026</p>
       </div>
     </footer>
   );
