@@ -1,8 +1,9 @@
 .hero-container {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
   color: #000;
   overflow: hidden;
+  padding-bottom:80px ;
 }
 
 .bg-video {
@@ -15,11 +16,17 @@
   z-index: -1;
 }
 
-.hero-content {
+.highlightsection{
+  color: #00264d !important;
+}
+
+.tesg-landing-1-hero-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  justify-items: center;
   height: 100%;
+  top: 0;
   padding: 0 5%;
   backdrop-filter: blur(2px);
 }
@@ -69,13 +76,13 @@
 .hero-right {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  max-width: 40%;
+  max-width: 50%;
 }
 
 .chart-img {
+  height: 30vw;
   width: 100%;
-  max-width: 18vw;
+  max-width: 48vw;
 }
 
 .trusted-text {
@@ -88,78 +95,79 @@
   font-weight: 500;
 }
 
-/* Mobile responsiveness */
+
 @media (max-width: 768px) {
-  .hero-content {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      /* padding: 0 10%; */
+  .tesg-landing-1-hero-content {
+    flex-direction: column;
+    padding: 40px 6% 20px;
+    text-align: center;
   }
 
   .hero-left {
-      max-width: 100%;
-      text-align: center;
+    max-width: 100%;
+    margin-bottom: 30px;
   }
 
   .hero-left h1 {
-      font-size: 2rem;
-      line-height: 1.6;
-      letter-spacing: 0.1vw;
+    font-size: 2.1rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
   }
 
   .hero-left p {
+    font-size: 1rem;
     line-height: 1.6;
-    letter-spacing: 0.1vw;
-      font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
   }
 
   .talk-btn {
-      width: 100%;
-      justify-items: center;
-      justify-content: center;
-      padding: 12px;
-      font-size: 1.1rem;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 12px 20px;
+    font-size: 1rem;
   }
 
   .hero-right {
-      max-width: 100%;
-      gap: 5px;
-      align-items: center;
+    max-width: 100%;
+    justify-content: center;
   }
 
   .chart-img {
-    margin: 40px 0;
-      max-width: 100%;
-      width: 50%;
+    width: 90%;
+    max-width: 360px;
+    height: auto;
+    margin: 20px auto;
   }
 
   .trusted-text {
-      font-size: 0.85rem;
+    font-size: 0.85rem;
+    margin-top: 20px;
+    padding: 0 10px;
   }
 }
 
 @media (max-width: 480px) {
   .hero-left h1 {
-      font-size: 1.6rem;
+    font-size: 1.7rem;
+    line-height: 1.5;
   }
 
   .hero-left p {
-      font-size: 0.95rem;
+    font-size: 0.95rem;
   }
 
   .talk-btn {
-      font-size: 1rem;
-      padding: 10px 18px;
+    font-size: 1rem;
+    padding: 10px 16px;
   }
 
   .chart-img {
-      max-width: 90%;
+    width: 95%;
   }
 
   .trusted-text {
-      font-size: 0.8rem;
+    font-size: 0.8rem;
+    padding: 10px;
   }
 }
-
-  

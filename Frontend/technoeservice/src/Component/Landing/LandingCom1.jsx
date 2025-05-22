@@ -1,20 +1,15 @@
 import React from 'react';
 import imgtalk from '../../assets/tdesign_chat-bubble-smile-filled.svg';
 import '../../Style/Landing-css/LandingCom1.css';
-import brandHype from '../../assets/Graph 11.png';
-import marchChart from '../../assets/Landingp2.svg';
-import Videobackground from '../../assets/0563da3d8ee3152212af73bce324a0839b90c8bb.mp4';
+import brandHype from '../../assets/WhatsApp_Image_2025-05-21_at_15.15.29_1c9d830d-removebg-preview.png';
+import imgbackground from '../../assets/v915-techi-025-l.jpg';
 
 const HeroSection = () => {
   return (
     <div className="hero-container">
-      <video autoPlay muted loop className="bg-video">
-        <source src={Videobackground} type="video/mp4" />
-        {/* If using gif instead */}
-        {/* <img src="/assets/bg-animation.gif" alt="background" className="bg-video" /> */}
-      </video>
-
-      <div className="hero-content">
+    
+       <img src={imgbackground} alt="" className='bg-video' />
+      <div className="tesg-landing-1-hero-content">
         <div className="hero-left">
           <h1>
             Elevate your business with <br />
@@ -28,7 +23,7 @@ const HeroSection = () => {
         </div>
         <div className="hero-right">
           <img src={brandHype} alt="Brand Hype Chart" className="chart-img" />
-          <img src={marchChart} alt="March 2023 Chart" className="chart-img" />
+ 
         </div>
       </div>
 

@@ -3,6 +3,7 @@ import Comp1 from '../../Component/Landing/LandingCom1';
 import Comp2 from '../../Component/Landing/LandingCom2';
 import Comp3 from '../../Component/Landing/LandingCom3';
 import Comp4 from '../../Component/Landing/LandingCom4';
+import Comp5 from '../../Component/Landing/LandingCom5';
 
 
 
@@ -21,6 +22,7 @@ function HomePage() {
           <Comp2 />
           <Comp3 />
           <Comp4 />
+          <Comp5 />
 
     </div>
   </div>
