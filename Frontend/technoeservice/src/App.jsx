@@ -4,6 +4,7 @@ import Navbar from './Component/Navbar';
 import Footer from './Component/Footer';
 import Home from './Page/LandingPage/LandingPage';
 import './App.css';
+import ContactPage from './Page/ContactPage/ContactPage';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<div>About Page</div>} />
+        <Route path="/ContactUs" element={<ContactPage />}/>
       </Routes>
       <Footer />
     </>

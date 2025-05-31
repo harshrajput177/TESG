@@ -9,32 +9,32 @@ import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 
 const features = [
   {
-    icon: <InsightsIcon style={{ fontSize: 40 }} />,
+    icon: <InsightsIcon style={{ fontSize: 40, color: "black", }} />,
     title: "Lead and Pipeline Management",
     desc: "Effortlessly track, prioritize, and nurture your leads for maximum impact",
   },
   {
-    icon: <BuildIcon style={{ fontSize: 40 }} />,
+    icon: <BuildIcon style={{ fontSize: 40 , color: "black",}} />,
     title: "Customizable Workflows",
     desc: "Tailor workflows to suit specific industries or business needs.",
   },
   {
-    icon: <BarChartIcon style={{ fontSize: 40 }} />,
+    icon: <BarChartIcon style={{ fontSize: 40, color: "black", }} />,
     title: "Real-Time Analytics and Reporting",
     desc: "Get actionable insights on team performance and sales trends.",
   },
   {
-    icon: <PeopleAltIcon style={{ fontSize: 40 }} />,
+    icon: <PeopleAltIcon style={{ fontSize: 40,  color: "black", }} />,
     title: "Customer Database Management",
     desc: "Centralize customer information for easy access and management.",
   },
   {
-    icon: <NotificationsActiveIcon style={{ fontSize: 40 }} />,
+    icon: <NotificationsActiveIcon style={{ fontSize: 40,  color: "black", }} />,
     title: "Smart Automation",
     desc: "Automate follow-ups, reminders, and notifications.",
   },
   {
-    icon: <PhoneIphoneIcon style={{ fontSize: 40 }} />,
+    icon: <PhoneIphoneIcon style={{ fontSize: 40,  color: "black", }} />,
     title: "Mobile Accessibility",
     desc: "Access your CRM on the go with a fully responsive mobile app.",
   },

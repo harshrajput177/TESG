@@ -1,0 +1,151 @@
+/* ProposalForm.css */
+
+.proposal-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #7a944b;
+  color: #fff;
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-section, .info-section {
+  flex: 1 1 400px;
+  background: #fff;
+  color: #333;
+  margin: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3, h4 {
+  color: #4a5b2c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form-row input, .form-row select, textarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+}
+
+.phone-input span {
+  background: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.phone-input input {
+  border-radius: 0 5px 5px 0;
+}
+
+.services p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.checkbox-grid label {
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+.consent {
+  margin: 15px 0;
+}
+
+.submit-btn {
+  background: #f7931e;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #e67c00;
+}
+
+.call-text {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.call-text a {
+  color: #f7931e;
+  text-decoration: none;
+}
+
+.disclaimer {
+  font-size: 11px;
+  margin-top: 20px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+}
+
+.step span {
+  background: #f7931e;
+  color: white;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.contact-details h4 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
