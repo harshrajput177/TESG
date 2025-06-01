@@ -57,7 +57,7 @@ const Navbar = () => {
                 <li><Link to="/services/crm">CRM Development</Link></li>
                 <li><Link to="/services/seo">SEO</Link></li>
                 <li><Link to="/services/social-media">Social Media Marketing</Link></li>
-                <li><Link to="/services/email">Email Marketing</Link></li>
+                {/* <li><Link to="/services/email">Email Marketing</Link></li> */}
                 <li><Link to="/services/lead-gen">Lead Generation</Link></li>
                 <li><Link to="/services/ppc">PPC</Link></li>
               </ul>
@@ -70,11 +70,12 @@ const Navbar = () => {
                 Know Us More <ArrowDropDownIcon />
               </span>
               <ul className="dropdown">
-                <li><Link to="/about">About Us</Link></li>
-                <li><Link to="/team">Our Team</Link></li>
+                <li><Link to="/about">Who we are</Link></li>
+                <li><Link to="/team">Why Choose Us</Link></li>
+                 <li><Link to="/team">Careers</Link></li>
               </ul>
             </li>
-            
+{/*             
             <li className={`dropdown-parent ${openDropdown === 'tools' ? 'open' : ''}`}>
               <span onClick={() => handleDropdownToggle('tools')}  className='nav-tesg-Services'>
                 Tools <ArrowDropDownIcon />
@@ -83,7 +84,7 @@ const Navbar = () => {
                 <li><Link to="/tools/calculator">Calculator</Link></li>
                 <li><Link to="/tools/checker">SEO Checker</Link></li>
               </ul>
-            </li>
+            </li> */}
 
             <li><Link to="/blog">Blog</Link></li>
 

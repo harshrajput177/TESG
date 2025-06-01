@@ -1,0 +1,53 @@
+.smp-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f7f9ff;
+}
+
+.smp-container h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1c1c1c; /* example accent color */
+}
+
+.smp-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.smp-feature {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  align-items: flex-start;
+  border-left: 4px solid #272727;
+  padding-left: 20px;
+}
+
+.smp-icon {
+  font-size: 3rem;
+  color: #1a1a1a;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.smp-feature h3 {
+  margin-bottom: 10px;
+  color: #242424;
+  font-weight: 600;
+}
+
+.smp-feature p {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.smp-feature strong {
+  color: #d93025;
+}

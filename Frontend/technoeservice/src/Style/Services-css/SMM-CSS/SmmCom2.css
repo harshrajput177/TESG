@@ -1,0 +1,96 @@
+/* WordPressDesign.css */
+
+.SMMcom2-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+.SMMcom2-header-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.SMMcom2-header-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.SMMcom2-header-text h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.SMMcom2-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.SMMcom2-intro {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.SMMcom2-header-image {
+  flex: 1;
+  text-align: center;
+}
+
+.SMMcom2-header-image img {
+  max-width: 100%;
+  height: 380px;
+}
+
+.SMMcom2-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.SMMcom2-feature-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  color: #000;
+}
+
+.SMMcom2-feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.SMMcom2-feature-card h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #000;
+}
+
+.SMMcom2-feature-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.SMMcom2-icon {
+  font-size: 36px;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .SMMcom2-header-section {
+    flex-direction: column;
+  }
+
+  .SMMcom2-header-text, .SMMcom2-header-image {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+}
