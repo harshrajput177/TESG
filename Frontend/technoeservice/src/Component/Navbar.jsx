@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../image/63761c632c2b88416ffd24413df2f3d7.png';
 import '../Style/Navbar.css';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
@@ -15,14 +15,17 @@ const Navbar = () => {
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
-  const handleDropdownToggle = (menu) => {
-    if (openDropdown === menu) {
-      setOpenDropdown(null);
-    } else {
-      setOpenDropdown(menu);
-    }
+  const navigate = useNavigate();
+
+  const handleTalkClick = () => {
+    navigate('/ContactUs');
   };
 
+  const handleDropdownToggle = (menu, event) => {
+  event.stopPropagation(); // ye click event ko parent tak propagate hone se rokega
+  setOpenDropdown(prev => (prev === menu ? null : menu));
+};
+ 
   return (
     <header className="navbar">
       <div className="navbar-top">
@@ -45,21 +48,21 @@ const Navbar = () => {
             <li><Link to="/">Home</Link></li>
 
             <li className={`dropdown-parent ${openDropdown === 'services' ? 'open' : ''}`}>
-              <span onClick={() => handleDropdownToggle('services')} className='nav-tesg-Services'>
+              <span onClick={(e) => handleDropdownToggle('services', e)} className='nav-tesg-Services'>
                 Services <ArrowDropDownIcon />
               </span>
               <ul className="dropdown">
-                <li><Link to="/services/website-development">Website Development</Link></li>
-                <li><Link to="/services/website-design">Website Design</Link></li>
-                <li><Link to="/services/android-app">Android App Development</Link></li>
-                <li><Link to="/services/hosting">Website Hosting</Link></li>
-                <li><Link to="/services/ecommerce">Ecommerce Website</Link></li>
-                <li><Link to="/services/crm">CRM Development</Link></li>
-                <li><Link to="/services/seo">SEO</Link></li>
-                <li><Link to="/services/social-media">Social Media Marketing</Link></li>
+                <li><Link to="/services/website-development"  onClick={() => setMenuOpen(false)} >Website Development</Link></li>
+                <li><Link to="/services/website-design"  onClick={() => setMenuOpen(false)} >Website Design</Link></li>
+                <li><Link to="/services/android-app"  onClick={() => setMenuOpen(false)} >Android App Development</Link></li>
+                <li><Link to="/services/hosting"  onClick={() => setMenuOpen(false)} >Website Hosting</Link></li>
+                <li><Link to="/services/ecommerce"  onClick={() => setMenuOpen(false)} >Ecommerce Website</Link></li>
+                <li><Link to="/services/crm"  onClick={() => setMenuOpen(false)} >CRM Development</Link></li>
+                <li><Link to="/services/seo"  onClick={() => setMenuOpen(false)} >SEO</Link></li>
+                <li><Link to="/services/social-media"  onClick={() => setMenuOpen(false)} >Social Media Marketing</Link></li>
                 {/* <li><Link to="/services/email">Email Marketing</Link></li> */}
-                <li><Link to="/services/lead-gen">Lead Generation</Link></li>
-                <li><Link to="/services/ppc">PPC</Link></li>
+                <li><Link to="/services/lead-gen"  onClick={() => setMenuOpen(false)} >Lead Generation</Link></li>
+                <li><Link to="/services/ppc"  onClick={() => setMenuOpen(false)} >PPC</Link></li>
               </ul>
             </li>
 
@@ -97,7 +100,7 @@ const Navbar = () => {
           <select className="lang-select">
             <option value="IN">🌐 IN</option>
           </select>
-          <button className="talk-button">Let’s Talk</button>
+          <button className="talk-button" onClick={handleTalkClick}>Let’s Talk</button>
         </div>
 
         <div className="menu-icon" onClick={toggleMenu}>

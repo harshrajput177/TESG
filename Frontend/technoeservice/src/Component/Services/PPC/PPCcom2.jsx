@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../../Style/Services-css/SMM-CSS/SmmCom2.css';
 import { FaDollarSign, FaChartLine, FaBullhorn, FaSearchDollar } from 'react-icons/fa';
-import img1 from '../../../image/png-clipart-digital-marketing-social-media-marketing-promotion-advertising-marketing-search-engine-optimization-public-relations-thumbnail-removebg-preview.png';
+import img1 from '../../../image/ppcs-1024x763.jpg';
 
 const PPCAdvertising = () => {
   return (

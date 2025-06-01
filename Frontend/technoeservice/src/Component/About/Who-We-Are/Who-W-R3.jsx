@@ -1,13 +1,14 @@
 import React from "react";
 import "../../../Style/About-css/Who-We-are-css/Who-w3.css";
 import { FaLock, FaCheckCircle, FaBolt, FaHandshake } from "react-icons/fa";
+import img1 from '../../../image/business-progress-man-woman-vector-success-challenge-employee-journey-job-target-action-career-illustration-review-finance-162189205.webp'
 
 const ClientSuccess = () => {
   return (
     <div className="client-success-container">
       <div className="client-success-left">
         <img
-          src="/images/illustration.png" // Replace with actual image path
+          src={img1} // Replace with actual image path
           alt="Digital Strategy Illustration"
           className="client-success-image"
         />

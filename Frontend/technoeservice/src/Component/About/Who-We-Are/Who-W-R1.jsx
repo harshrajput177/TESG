@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../Style/About-css/Who-We-are-css/Who-w1.css";
-import contentImage from "../../../image/depositphotos_308095066-stock-illustration-generating-new-leads-concept-vector.jpg"; // Update with actual image path
+import contentImage from "../../../image/e2228381fd86cbc19229a88af1fcd68f-removebg-preview.png"; // Update with actual image path
 
 const WhoCom1 = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../../Style/Services-css/SMM-CSS/SmmCom2.css';
 import { FaCogs, FaLaptopCode, FaDatabase, FaMobileAlt } from 'react-icons/fa';
-import img1 from '../../../image/png-clipart-digital-marketing-social-media-marketing-promotion-advertising-marketing-search-engine-optimization-public-relations-thumbnail-removebg-preview.png';
+import img1 from '../../../image/images.png';
 
 const WebDevelopment = () => {
   return (

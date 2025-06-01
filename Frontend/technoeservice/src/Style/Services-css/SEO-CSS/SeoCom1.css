@@ -1,5 +1,3 @@
-/* App.css */
-
 body {
   margin: 0;
   padding: 0;
@@ -8,10 +6,10 @@ body {
   color: #222;
 }
 
-.SEOCom1-main-container{
-    padding: 60px 5vw;
-     margin: auto;
- max-width: 1200px;
+.SEOCom1-main-container {
+  padding: 60px 5vw;
+  margin: auto;
+  max-width: 1200px;
 }
 
 .SEOCom1-container {
@@ -64,6 +62,72 @@ strong {
   color: #000;
 }
 
-.under-Agency{
-    width: 100%;
+.under-Agency {
+  width: 100%;
+}
+
+/* -------- Responsive for SEOCom1 -------- */
+
+/* Tablet screens (≤992px) */
+@media (max-width: 992px) {
+  .SEOCom1-title {
+    font-size: 2rem;
+  }
+
+  .SEOCom1-main-container {
+  padding: 30px 5vw;
+  }
+
+  .SEOCom1-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .SEOCom1-text-section p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile screens (≤768px) */
+@media (max-width: 768px) {
+  .SEOCom1-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .SEOCom1-text-section,
+  .SEOCom1-image-section {
+    flex: 1 1 100%;
+  }
+
+  .SEOCom1-title {
+    font-size: 1.8rem;
+  }
+
+  .SEOCom1-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .SEOCom1-text-section p {
+    font-size: 0.95rem;
+  }
+
+  .SEOCom1-image-section {
+    margin-top: 20px;
+  }
+}
+
+/* Small mobile screens (≤480px) */
+@media (max-width: 480px) {
+  .SEOCom1-title {
+    font-size: 1.6rem;
+  }
+
+  .SEOCom1-subtitle {
+    font-size: 1rem;
+  }
+
+  .SEOCom1-text-section p {
+    font-size: 0.9rem;
+  }
 }

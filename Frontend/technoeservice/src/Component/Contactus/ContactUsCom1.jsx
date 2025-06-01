@@ -6,7 +6,7 @@ const ProposalForm = () => {
     <div className="proposal-container">
       <div className="form-section">
         <h1>Experience Real Results</h1>
-        <p>Partner with Thrive Internet Marketing Agency and scale your business.</p>
+        <p  className='Partner-p'>Partner with Thrive Internet Marketing Agency and scale your business.</p>
         <form>
           <div className="form-row">
             <input type="text" placeholder="First Name*" />
@@ -20,7 +20,7 @@ const ProposalForm = () => {
             <input type="email" placeholder="Email Address*" />
             <div className="phone-input">
               <span>+91</span>
-              <input type="tel" placeholder="81234 56789" />
+              <input type="tel" placeholder="98604 23362" />
             </div>
           </div>
           <div className="form-row">
@@ -80,11 +80,11 @@ const ProposalForm = () => {
         </div>
         <div className="contact-details">
           <h4>Headquarters:</h4>
-          <p>4604 Park Springs Blvd, Suite 140, Arlington, TX 76017</p>
+          <p>Noida Sector 63 H-96</p>
           <h4>Main Phone:</h4>
-          <p>(866) 908-4748</p>
+          <p>+91 98604 23362</p>
           <h4>Office Hours:</h4>
-          <p>Mon-Fri, 8:30am – 5:30pm CT</p>
+          <p>Mon-Fri, 9:30am – 5:30pm </p>
         </div>
       </div>
     </div>

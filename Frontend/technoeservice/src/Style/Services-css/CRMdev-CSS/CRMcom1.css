@@ -1,5 +1,4 @@
 /* App.css */
-
 body {
   margin: 0;
   padding: 0;
@@ -8,10 +7,10 @@ body {
   color: #222;
 }
 
-.CRMDevCom1-main-container{
-    padding: 60px 5vw;
-     margin: auto;
- max-width: 1200px;
+.CRMDevCom1-main-container {
+  padding: 60px 5vw;
+  margin: auto;
+  max-width: 1200px;
 }
 
 .CRMDevCom1-container {
@@ -64,6 +63,72 @@ strong {
   color: #000;
 }
 
-.under-Agency{
-    width: 100%;
+.under-Agency {
+  width: 100%;
+}
+
+/* ---------------- Responsive breakpoints ---------------- */
+
+/* Tablet screens (≤992px) */
+@media (max-width: 992px) {
+  .CRMDevCom1-title {
+    font-size: 2rem;
+  }
+
+  .CRMDevCom1-main-container {
+  padding: 30px 5vw;
+  }
+
+  .CRMDevCom1-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .CRMDevCom1-text-section p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile screens (≤768px) */
+@media (max-width: 768px) {
+  .CRMDevCom1-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .CRMDevCom1-text-section,
+  .CRMDevCom1-image-section {
+    flex: 1 1 100%;
+  }
+
+  .CRMDevCom1-title {
+    font-size: 1.8rem;
+  }
+
+  .CRMDevCom1-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .CRMDevCom1-text-section p {
+    font-size: 0.95rem;
+  }
+
+  .CRMDevCom1-image-section {
+    margin-top: 20px;
+  }
+}
+
+/* Small mobile screens (≤480px) */
+@media (max-width: 480px) {
+  .CRMDevCom1-title {
+    font-size: 1.6rem;
+  }
+
+  .CRMDevCom1-subtitle {
+    font-size: 1rem;
+  }
+
+  .CRMDevCom1-text-section p {
+    font-size: 0.9rem;
+  }
 }

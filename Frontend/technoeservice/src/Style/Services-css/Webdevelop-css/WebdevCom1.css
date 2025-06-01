@@ -1,4 +1,5 @@
 /* App.css */
+/* Main styles */
 
 body {
   margin: 0;
@@ -8,10 +9,10 @@ body {
   color: #222;
 }
 
-.WebDevCom1-main-container{
-    padding: 60px 5vw;
-     margin: auto;
- max-width: 1200px;
+.WebDevCom1-main-container {
+  padding: 60px 5vw;
+  margin: auto;
+  max-width: 1200px;
 }
 
 .WebDevCom1-container {
@@ -64,6 +65,72 @@ strong {
   color: #000;
 }
 
-.under-Agency{
-    width: 100%;
+.under-Agency {
+  width: 100%;
+}
+
+/* ---------------- Responsive breakpoints ---------------- */
+
+/* Tablet screens (≤992px) */
+@media (max-width: 992px) {
+  .WebDevCom1-title {
+    font-size: 2rem;
+  }
+
+  .WebDevCom1-main-container {
+  padding: 30px 5vw;
+  }
+
+  .WebDevCom1-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .WebDevCom1-text-section p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile screens (≤768px) */
+@media (max-width: 768px) {
+  .WebDevCom1-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .WebDevCom1-text-section,
+  .WebDevCom1-image-section {
+    flex: 1 1 100%;
+  }
+
+  .WebDevCom1-title {
+    font-size: 1.8rem;
+  }
+
+  .WebDevCom1-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .WebDevCom1-text-section p {
+    font-size: 0.95rem;
+  }
+
+  .WebDevCom1-image-section {
+    margin-top: 20px;
+  }
+}
+
+/* Small mobile screens (≤480px) */
+@media (max-width: 480px) {
+  .WebDevCom1-title {
+    font-size: 1.6rem;
+  }
+
+  .WebDevCom1-subtitle {
+    font-size: 1rem;
+  }
+
+  .WebDevCom1-text-section p {
+    font-size: 0.9rem;
+  }
 }

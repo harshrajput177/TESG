@@ -8,10 +8,10 @@ body {
   color: #222;
 }
 
-.LeadGenCom1-main-container{
-    padding: 60px 5vw;
-     margin: auto;
- max-width: 1200px;
+.LeadGenCom1-main-container {
+  padding: 60px 5vw;
+  margin: auto;
+  max-width: 1200px;
 }
 
 .LeadGenCom1-container {
@@ -64,6 +64,72 @@ strong {
   color: #000;
 }
 
-.under-Agency{
-    width: 100%;
+.under-Agency {
+  width: 100%;
+}
+
+/* ---------------- Responsive breakpoints ---------------- */
+
+/* Tablet screens (≤992px) */
+@media (max-width: 992px) {
+  .LeadGenCom1-title {
+    font-size: 2rem;
+  }
+
+  .LeadGenCom1-main-container {
+  padding: 30px 5vw;
+  }
+
+  .LeadGenCom1-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .LeadGenCom1-text-section p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile screens (≤768px) */
+@media (max-width: 768px) {
+  .LeadGenCom1-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .LeadGenCom1-text-section,
+  .LeadGenCom1-image-section {
+    flex: 1 1 100%;
+  }
+
+  .LeadGenCom1-title {
+    font-size: 1.8rem;
+  }
+
+  .LeadGenCom1-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .LeadGenCom1-text-section p {
+    font-size: 0.95rem;
+  }
+
+  .LeadGenCom1-image-section {
+    margin-top: 20px;
+  }
+}
+
+/* Small mobile screens (≤480px) */
+@media (max-width: 480px) {
+  .LeadGenCom1-title {
+    font-size: 1.6rem;
+  }
+
+  .LeadGenCom1-subtitle {
+    font-size: 1rem;
+  }
+
+  .LeadGenCom1-text-section p {
+    font-size: 0.9rem;
+  }
 }

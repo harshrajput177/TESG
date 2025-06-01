@@ -8,10 +8,10 @@ body {
   color: #222;
 }
 
-.WebHostingCom1-main-container{
-    padding: 60px 5vw;
-     margin: auto;
- max-width: 1200px;
+.WebHostingCom1-main-container {
+  padding: 60px 5vw;
+  margin: auto;
+  max-width: 1200px;
 }
 
 .WebHostingCom1-container {
@@ -64,6 +64,72 @@ strong {
   color: #000;
 }
 
-.under-Agency{
-    width: 100%;
+.under-Agency {
+  width: 100%;
+}
+
+/* ---------------- Responsive breakpoints ---------------- */
+
+/* Tablet screens (≤992px) */
+@media (max-width: 992px) {
+  .WebHostingCom1-title {
+    font-size: 2rem;
+  }
+
+  .WebHostingCom1-main-container {
+  padding: 30px 5vw;
+  }
+
+  .WebHostingCom1-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .WebHostingCom1-text-section p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile screens (≤768px) */
+@media (max-width: 768px) {
+  .WebHostingCom1-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .WebHostingCom1-text-section,
+  .WebHostingCom1-image-section {
+    flex: 1 1 100%;
+  }
+
+  .WebHostingCom1-title {
+    font-size: 1.8rem;
+  }
+
+  .WebHostingCom1-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .WebHostingCom1-text-section p {
+    font-size: 0.95rem;
+  }
+
+  .WebHostingCom1-image-section {
+    margin-top: 20px;
+  }
+}
+
+/* Small mobile screens (≤480px) */
+@media (max-width: 480px) {
+  .WebHostingCom1-title {
+    font-size: 1.6rem;
+  }
+
+  .WebHostingCom1-subtitle {
+    font-size: 1rem;
+  }
+
+  .WebHostingCom1-text-section p {
+    font-size: 0.9rem;
+  }
 }
