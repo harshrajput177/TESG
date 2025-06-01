@@ -70,9 +70,9 @@ const Navbar = () => {
                 Know Us More <ArrowDropDownIcon />
               </span>
               <ul className="dropdown">
-                <li><Link to="/about">Who we are</Link></li>
-                <li><Link to="/team">Why Choose Us</Link></li>
-                 <li><Link to="/team">Careers</Link></li>
+                <li><Link to="/about/Who-are">Who we are</Link></li>
+                <li><Link to="/about/Why-choose">Why Choose Us</Link></li>
+                 <li><Link to="/Careers">Careers</Link></li>
               </ul>
             </li>
 {/*             

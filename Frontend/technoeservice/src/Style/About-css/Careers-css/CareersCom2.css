@@ -1,0 +1,74 @@
+/* CandidateExperience.css */
+
+.candidate-experience {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #00264d;
+}
+
+.candidate-experience h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #222;
+}
+
+.candidate-experience h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #557a46;
+  margin-bottom: 20px;
+}
+
+.candidate-experience p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.step-box {
+  display: flex;
+  align-items: flex-start;
+  background: #f7f9fc;
+  border-left: 6px solid #2a9d8f;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.step-circle {
+  flex-shrink: 0;
+  background: #2a9d8f;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.step-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #1d3557;
+}
+
+.step-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}

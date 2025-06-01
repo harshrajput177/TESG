@@ -1,6 +1,6 @@
 // App.jsx
 import React from "react";
-import "../../../Style/Services-css/SMM-CSS/SMMcom1.css";
+import "../../../Style/Services-css/Webhosting-CSS/WebhostCom1.css";
 import contentImage from "../../../image/saas-concept-with-people-scene-in-flat-cartoon-design-man-computing-using-cloud-technology-programming-and-working-with-hosting-software-as-a-service-illustration-visual-stor.jpg"; // Update with actual image path
 
 const WebHostingCom1 = () => {

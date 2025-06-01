@@ -14,6 +14,9 @@ import SEOPage from './Page/ServicesPage/SEOPage/SEOpage';
 import LEADPage from './Page/ServicesPage/Lead-GenPage/Lead-GenPage';
 import CRMPage from './Page/ServicesPage/CRMdevPage/CRMdevpage';
 import EcomPage from './Page/ServicesPage/EcommerceWebPage/EomWebpage';
+import CareerPage from './Page/CareerPage/CareerPage';
+import WhyPage from './Page/AboutPage/Why-Choose/Why-Choose-Page';
+import WhoPage from './Page/AboutPage/Who-we-R-Page/Who-we-R-Page';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -34,6 +37,11 @@ function App() {
                     <Route path="/services/lead-gen" element={<LEADPage />}/>
                       <Route path="/services/crm" element={<CRMPage />}/>
                       <Route path="/services/ecommerce" element={<EcomPage />}/>
+
+
+                          <Route path="/Careers" element={<CareerPage />}/>
+                      <Route path="/about/Why-choose" element={<WhyPage />}/>
+                      <Route path="/about/Who-are" element={<WhoPage />}/>
       </Routes>
       <Footer />
     </>
