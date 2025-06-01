@@ -8,13 +8,13 @@ body {
   color: #222;
 }
 
-.SMMcom1-main-container{
+.CRMDevCom1-main-container{
     padding: 60px 5vw;
      margin: auto;
  max-width: 1200px;
 }
 
-.SMMcom1-container {
+.CRMDevCom1-container {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -23,38 +23,38 @@ body {
   justify-content: space-between;
 }
 
-.SMMcom1-text-section {
+.CRMDevCom1-text-section {
   flex: 1 1 50%;
 }
 
-.SMMcom1-image-section {
+.CRMDevCom1-image-section {
   flex: 1 1 45%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.SMMcom1-image-section img {
+.CRMDevCom1-image-section img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-.SMMcom1-title {
+.CRMDevCom1-title {
   font-size: 2.5rem;
   font-weight: bold;
   color: #1f2d3d;
   margin-bottom: 0.5rem;
 }
 
-.SMMcom1-subtitle {
+.CRMDevCom1-subtitle {
   font-size: 1.25rem;
   color: #4caf50;
   font-weight: 500;
   margin-bottom: 1.5rem;
 }
 
-.SMMcom1-text-section p {
+.CRMDevCom1-text-section p {
   font-size: 1.05rem;
   line-height: 1.7;
   margin-bottom: 1.2rem;

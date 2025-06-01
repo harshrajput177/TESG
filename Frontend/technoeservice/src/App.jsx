@@ -13,6 +13,7 @@ import WEBHOSPage from './Page/ServicesPage/WebhostingPage/WebhosPage';
 import SEOPage from './Page/ServicesPage/SEOPage/SEOpage';
 import LEADPage from './Page/ServicesPage/Lead-GenPage/Lead-GenPage';
 import CRMPage from './Page/ServicesPage/CRMdevPage/CRMdevpage';
+import EcomPage from './Page/ServicesPage/EcommerceWebPage/EomWebpage';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -32,6 +33,7 @@ function App() {
                   <Route path="/services/seo" element={<SEOPage />}/>
                     <Route path="/services/lead-gen" element={<LEADPage />}/>
                       <Route path="/services/crm" element={<CRMPage />}/>
+                      <Route path="/services/ecommerce" element={<EcomPage />}/>
       </Routes>
       <Footer />
     </>

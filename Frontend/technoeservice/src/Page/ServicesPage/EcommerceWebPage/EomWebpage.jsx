@@ -9,7 +9,7 @@ import Comp3 from '../../../Component/Services/EcommerceWebsite/Ecom3';
 
 
 
-function SMMPage() {
+function EcomPage() {
 
 //   const fadeInUp = {
 //     hidden: { opacity: 0, y: 100 },
@@ -32,4 +32,4 @@ function SMMPage() {
   )
 }
 
-export default SMMPage;
+export default EcomPage;
