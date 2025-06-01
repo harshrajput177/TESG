@@ -73,9 +73,9 @@ const Navbar = () => {
                 Know Us More <ArrowDropDownIcon />
               </span>
               <ul className="dropdown">
-                <li><Link to="/about/Who-are">Who we are</Link></li>
-                <li><Link to="/about/Why-choose">Why Choose Us</Link></li>
-                 <li><Link to="/Careers">Careers</Link></li>
+                <li><Link to="/about/Who-are"  onClick={() => setMenuOpen(false)}>Who we are</Link></li>
+                <li><Link to="/about/Why-choose"   onClick={() => setMenuOpen(false)}>Why Choose Us</Link></li>
+                 <li><Link to="/Careers"   onClick={() => setMenuOpen(false)}>Careers</Link></li>
               </ul>
             </li>
 {/*             
