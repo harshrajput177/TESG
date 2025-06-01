@@ -3,7 +3,7 @@
 .proposal-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: #7a944b;
+     background-color: #ebf4fd;
   color: #fff;
   padding: 40px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -20,7 +20,7 @@
 }
 
 h1, h2, h3, h4 {
-  color: #4a5b2c;
+ color: #00264d;
 }
 
 form {
@@ -84,9 +84,9 @@ textarea {
 }
 
 .submit-btn {
-  background: #f7931e;
+     background-color: #00264d;
   color: white;
-  padding: 12px;
+  padding: 12px  14px;
   border: none;
   border-radius: 25px;
   font-size: 16px;
@@ -95,7 +95,7 @@ textarea {
 }
 
 .submit-btn:hover {
-  background: #e67c00;
+   background-color: #193f64;
 }
 
 .call-text {
@@ -105,7 +105,7 @@ textarea {
 }
 
 .call-text a {
-  color: #f7931e;
+ color: #00264d;
   text-decoration: none;
 }
 
@@ -127,10 +127,10 @@ textarea {
 }
 
 .step span {
-  background: #f7931e;
+ background-color: #00264d;
   color: white;
   font-weight: bold;
-  width: 30px;
+  width: 35px;
   height: 30px;
   border-radius: 50%;
   display: flex;
