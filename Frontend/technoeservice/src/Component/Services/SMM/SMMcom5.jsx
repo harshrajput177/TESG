@@ -5,7 +5,7 @@ import { FaChartLine, FaStar, FaUserTie, FaBullseye, FaAward, FaFileAlt } from '
 const ThriveSocialMedia = () => {
   return (
     <div className="thrive-wrapper">
-      <h1 className="heading">Why Choose Thrive for Your Social Media Management</h1>
+      <h1 className="heading">Why Choose GWI for Your Social Media Management</h1>
       <h2 className="subheading">Invest in Flexible Social Packages Customized To Meet Your Growth Goals</h2>
       <p className="description">
         More and more small-business owners are choosing to collaborate with experts, as social media management is no easy feat. It requires meticulous attention and time to master. Here at Thrive, we cater to your specifications, no matter your industry, size of business or budget.
@@ -20,7 +20,7 @@ const ThriveSocialMedia = () => {
           <FaChartLine className="icon" />
           <h3>Deliverable-Based Packages</h3>
           <p>
-            From content and engagement to strategy and analytics, Thrive manages small- and large-scale deliverables for clients each month. Our social media management agency does not skimp on the best tools and tactics to exceed your expectations.
+            From content and engagement to strategy and analytics, GWI manages small- and large-scale deliverables for clients each month. Our social media management agency does not skimp on the best tools and tactics to exceed your expectations.
           </p>
         </div>
 

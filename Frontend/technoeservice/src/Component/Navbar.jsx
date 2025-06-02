@@ -60,12 +60,24 @@ const Navbar = () => {
                 <li><Link to="/services/crm"  onClick={() => setMenuOpen(false)} >CRM Development</Link></li>
                 <li><Link to="/services/seo"  onClick={() => setMenuOpen(false)} >SEO</Link></li>
                 <li><Link to="/services/social-media"  onClick={() => setMenuOpen(false)} >Social Media Marketing</Link></li>
-                {/* <li><Link to="/services/email">Email Marketing</Link></li> */}
                 <li><Link to="/services/lead-gen"  onClick={() => setMenuOpen(false)} >Lead Generation</Link></li>
                 <li><Link to="/services/ppc"  onClick={() => setMenuOpen(false)} >PPC</Link></li>
               </ul>
             </li>
 
+
+
+ <li className={`dropdown-parent ${openDropdown === 'Recruitment' ? 'open' : ''}`}>
+              <span onClick={() => handleDropdownToggle('Recruitment')}  className='nav-tesg-Services'>
+                Recruitment Services <ArrowDropDownIcon />
+              </span>
+              <ul className="dropdown">
+                <li><Link to="/services/Permanent-Staffing"  onClick={() => setMenuOpen(false)}> Permanent Staffing</Link></li>
+                <li><Link to="/services/Temporary-Contract Staffing"   onClick={() => setMenuOpen(false)}>Temporary / Contract Staffing</Link></li>
+                 <li><Link to="/services/Specialized-Niche Hiring"   onClick={() => setMenuOpen(false)}> Specialized / Niche Hiring</Link></li>
+                 <li><Link to="/services/HR-Services"   onClick={() => setMenuOpen(false)}> HR Services </Link></li>
+              </ul>
+            </li>
        
 
             <li className={`dropdown-parent ${openDropdown === 'know' ? 'open' : ''}`}>
@@ -78,7 +90,9 @@ const Navbar = () => {
                  <li><Link to="/Careers"   onClick={() => setMenuOpen(false)}>Careers</Link></li>
               </ul>
             </li>
-{/*             
+
+
+            
             <li className={`dropdown-parent ${openDropdown === 'tools' ? 'open' : ''}`}>
               <span onClick={() => handleDropdownToggle('tools')}  className='nav-tesg-Services'>
                 Tools <ArrowDropDownIcon />
@@ -87,7 +101,7 @@ const Navbar = () => {
                 <li><Link to="/tools/calculator">Calculator</Link></li>
                 <li><Link to="/tools/checker">SEO Checker</Link></li>
               </ul>
-            </li> */}
+            </li>
 
             <li><Link to="/blog">Blog</Link></li>
 
