@@ -38,7 +38,7 @@ const services = [
 const Services = () => {
   return (
     <div className="services-section">
-      <h1 className="main-title">Thrive’s Social Media Management Services</h1>
+      <h1 className="main-title">GWI Social Media Management Services</h1>
       <p className="subtitle">Trends and Tactics You Can Trust to Deliver Qualified Leads</p>
       <div className="cards-container">
         {services.map((service, index) => (

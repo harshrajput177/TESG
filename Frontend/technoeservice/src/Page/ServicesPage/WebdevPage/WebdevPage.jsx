@@ -2,8 +2,7 @@ import React from 'react'
 import Comp1 from '../../../Component/Services/Webdevelopment/webdevCom1';
 import Comp2 from '../../../Component/Services/Webdevelopment/webdevCom2';
 import Comp3 from '../../../Component/Services/Webdevelopment/webdevCom3';
-// import Comp4 from '../../../Component/Services/SMM/SMMcom4';
-// import Comp5 from '../../../Component/Services/SMM/SMMcom5';
+import Comp4 from '../../../Component/Services/Webdevelopment/webdevCom4';
 
 
 
@@ -22,6 +21,7 @@ function WEBDEVPage() {
           <Comp1 />
             <Comp3 />
           <Comp2 />
+          <Comp4 />
         
     
          

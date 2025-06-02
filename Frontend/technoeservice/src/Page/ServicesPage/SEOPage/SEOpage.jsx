@@ -2,8 +2,8 @@ import React from 'react'
 import Comp1 from '../../../Component/Services/SEO/SEOcom1';
 import Comp2 from '../../../Component/Services/SEO/SEOcom2';
 import Comp3 from '../../../Component/Services/SEO/SEOcom3';
-// import Comp4 from '../../../Component/Services/SMM/SMMcom4';
-// import Comp5 from '../../../Component/Services/SMM/SMMcom5';
+import Comp4 from '../../../Component/Services/SEO/SEOcom4';
+
 
 
 
@@ -21,6 +21,7 @@ function SEOPage() {
           <Comp1 />
             <Comp3 />
           <Comp2 />
+          <Comp4 />
          
 
     </div>
