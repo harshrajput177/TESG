@@ -30,7 +30,7 @@ const Navbar = () => {
     <header className="navbar">
       <div className="navbar-top">
         <span className='icons-content'><EmailOutlinedIcon /> info@technoesgroup.com</span>
-        <span className='icons-content'><LocalPhoneOutlinedIcon /> +91 9458006097</span>
+        <span className='icons-content'><LocalPhoneOutlinedIcon /> +91 9319315798</span>
         <span className='icons-content'><LocationOnOutlinedIcon /> SF-3, H-96 Noida, Uttar Pradesh, India</span>
       </div>
 
