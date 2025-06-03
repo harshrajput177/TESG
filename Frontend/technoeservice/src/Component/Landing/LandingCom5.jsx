@@ -45,19 +45,20 @@ const Contact = () => {
           </form>
         </div>
 
-        <div className="Landingform-contact-map">
-          <h3>WE ARE HERE</h3>
-          <p>MON-FRI 10:00AM-7PM / PHONES ARE OPEN 24/7</p>
-          <iframe
-            src="https://www.google.com/maps?q=Manhattan&output=embed"
-            width="100%"
-            height="250"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Map"
-          ></iframe>
-        </div>
+       <div className="Landingform-contact-map">
+  <h3>WE ARE HERE</h3>
+  <p>MON-FRI 10:00AM-7PM / PHONES ARE OPEN 24/7</p>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d14018.789670389097!2d77.3610408!3d28.6273342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x0:0x0!2zMjjCsDM3JzMzLjkiTiA3N8KwMjEnNDAuOCJF!3m2!1d28.6260722!2d77.366896!4m5!1s0x390cef7accb25b3b:0xf66263d160f70e00!2sGWI(Techno%20E%20Services%20LLP.)%20-%20Digital%20Marketing%20Agency%2C%2096%2FG4%2C%20H%20Block%2C%20Sector%2063%2C%20Noida%2C%20Uttar%20Pradesh%20201301!3m2!1d28.6265885!2d77.3778685!5e0!3m2!1sen!2sin!4v1717412345678!5m2!1sen!2sin"
+    width="100%"
+    height="250"
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="GWI Office Location"
+  ></iframe>
+</div>
+
       </div>
     </div>
   );

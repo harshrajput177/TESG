@@ -11,17 +11,17 @@ import  img6 from  '../../image/Untitled_design[1].png'
 const teamMembers = [
   {
     name: "Anit Ankur",
-    title: "Founder & CEO GWM-TESG\nChairman - Mount Litera Zee School Hazaribagh",
+    title: "Founder & CEO GWI-TESG\nChairman - Mount Litera Zee School Hazaribagh",
     image: img1,
   },
   {
     name: "Mukesh Kumar",
-    title: "Co-Founder GWM-TESG\nFounder of MKWISE FINANCIAL LTD.",
+    title: "Co-Founder GWI-TESG\nFounder of MKWISE FINANCIAL LTD.",
     image: img2,
   },
   {
     name: "Navin Kumar",
-    title: "Co-Founder GWM-TESG\nDirector - Mount Litera Zee School Bihta",
+    title: "Co-Founder GWI-TESG\nDirector - Mount Litera Zee School Bihta",
     image:img3,
   },
   {
@@ -31,7 +31,7 @@ const teamMembers = [
   },
   {
     name: "Jayant Kumar Thakur",
-    title: "Digital Marketing Manager\n4+ Years of Experience",
+    title: "Digital Marketing Manager",
     image: img5,
   },
   {

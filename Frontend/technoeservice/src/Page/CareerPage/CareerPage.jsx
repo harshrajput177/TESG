@@ -1,6 +1,7 @@
 import React from 'react'
 import Comp1 from '../../Component/About/Careers/CareersCom1';
 import Comp2 from '../../Component/About/Careers/CareersCom2';
+import Comp3 from '../../Component/About/Careers/CareersCom3';
 
 
 
@@ -17,6 +18,7 @@ function CareerPage() {
     <div className="Careers-content">
           <Comp1 />
           <Comp2 />
+          <Comp3 />
    
     </div>
   </div>

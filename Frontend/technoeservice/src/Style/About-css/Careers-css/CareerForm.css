@@ -1,0 +1,162 @@
+/* JobApplicationForm.css */
+
+.CareerCom3-form-container {
+  background: white;
+  max-width: 1150px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(53, 53, 53, 0.059);
+}
+
+.CareerCom3-logo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.1rem;
+  letter-spacing: 2px;
+  color: #00264d;
+  margin-bottom: 10px;
+}
+
+.job-app-text {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.CareerCom3-application-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+.CareerCom3-form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.CareerCom3-form-group.double,
+.CareerCom3-form-group.triple {
+  flex-direction: row;
+  gap: 15px;
+}
+
+.CareerCom3-form-group input,
+.CareerCom3-form-group select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.CareerCom3-radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.CareerCom3-radio-group div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 45%; /* 2 columns on larger screens */
+  font-size: 15px;
+}
+
+.CareerCom3-radio-group input[type="radio"] {
+  accent-color: #00264d;
+  cursor: pointer;
+}
+
+.lab-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CareerCom3-submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #00264d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.CareerCom3-submit-btn:hover {
+  background-color: #0b3763;
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width: 768px) {
+  .CareerCom3-form-container {
+    padding: 20px 15px;
+    margin: 20px 10px;
+  }
+
+  .CareerCom3-logo {
+    font-size: 1.5rem;
+  }
+
+  .job-app-text {
+    font-size: 1.1rem;
+  }
+
+  .CareerCom3-application-form h2 {
+    font-size: 1.3rem;
+  }
+
+  .CareerCom3-form-group.double,
+  .CareerCom3-form-group.triple {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .CareerCom3-form-group input,
+  .CareerCom3-form-group select {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .CareerCom3-submit-btn {
+    font-size: 15px;
+    padding: 11px;
+  }
+
+
+}
+
+
+@media (max-width: 768px) {
+  .CareerCom3-form-group.double,
+  .CareerCom3-form-group.triple {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .CareerCom3-radio-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .CareerCom3-radio-group div {
+    flex: 1 1 100%; /* Full width on mobile */
+  }
+
+  .CareerCom3-logo {
+    font-size: 1.5rem;
+  }
+
+  .CareerCom3-form-container {
+    padding: 20px 16px;
+  }
+}

@@ -4,45 +4,44 @@ import "../../../Style/About-css/Careers-css/CareersCom2.css";
 const steps = [
   {
     number: 1,
-    title: "Initial Communication by the People Operations Team",
+    title: "Initial Screening by Talent Acquisition",
     description:
-      "You will be introduced to the company by one of our high-powered recruiters at Thrive, who will have several communication exchanges with you to make initial assessments that determine if you’re a fit for the role."
+      "Our hiring journey begins with a personalized interaction from the GWI Talent Team. We'll connect with you to learn more about your background, goals, and alignment with the role. This step helps us ensure mutual compatibility before moving forward."
   },
   {
     number: 2,
-    title: "Invitation To Meet Founder & CEO Matt Bowman",
+    title: "Meet the Leadership",
     description:
-      "This is a key step in the process and is where you will join a Zoom call and be introduced to Thrive Founder and President Matt Bowman as he does a live slide presentation taking you through the history of Thrive. There is also a Q/A at the end of this presentation to ask Matt any questions you have."
+      "Candidates shortlisted from the initial round are invited to a virtual session with our Founder and CEO. You'll gain valuable insight into GWI’s mission, evolution, and core values — and have the opportunity to ask direct questions about our vision."
   },
   {
     number: 3,
-    title: "Invitation to the Group Interview",
+    title: "Collaborative Group Interview",
     description:
-      "You will join a group interview. This is what makes our interview process stand out. You will join other candidates who have been invited to interview for the same position (typically between 4-6 candidates) and meet the Thrive leadership team as they bring you through a series of questions that are done in a round-robin format so that every candidate has the opportunity to answer the same questions. At the end of the two-hour group interview, we will open it up again for you to ask the leadership team any questions you may have."
+      "You’ll participate in an engaging group interview with other top candidates. Our leadership team will lead structured, round-robin-style questions to assess your problem-solving, communication, and cultural alignment. It’s also your chance to interact with fellow talents and gain a broader perspective on the role."
   },
   {
     number: 4,
-    title: "Skills and Culture Fit Assessment",
+    title: "Role-Specific Task & Team Interaction",
     description:
-      "After the group interview, we will narrow it down to the finalists who will move to round No. 2. Depending on the role, this round might include a project or a skills assessment. You will spend a one-on-one Zoom call with the department managers, where you will get to know the team leads and supervisors you will be working with."
+      "Finalists are invited for a deep-dive round, where you may be asked to complete a task or short project related to the role. You'll also meet with team leads and department heads to evaluate both skill fit and synergy with the team."
   }
 ];
 
 const CandidateExperience = () => {
   return (
-    <div className="candidate-experience">
+    <div className="Career-candidate-experience">
       <h1>Our Candidate Experience</h1>
-      <h3>We Hire in a Five-Step Process</h3>
+      <h3>We Follow a Transparent & Thoughtful Hiring Process</h3>
       <p>
-        We believe in hiring the best digital marketing talent in the world. We give our candidates every
-        opportunity to get to know us, just as we want to get to know them. Our five-step interview process includes:
+        At GWI, we aim to bring on passionate digital marketing professionals who share our hunger for innovation and growth. Our four-step hiring process is designed to ensure that every candidate is respected, informed, and inspired throughout their journey.
       </p>
 
-      <div className="steps-container">
+      <div className="Career-steps-container">
         {steps.map((step) => (
-          <div key={step.number} className="step-box">
-            <div className="step-circle">STEP {step.number}</div>
-            <div className="step-content">
+          <div key={step.number} className="Career-step-box">
+            <div className="Career-step-circle">STEP {step.number}</div>
+            <div className="Career-step-content">
               <h4>{step.title}</h4>
               <p>{step.description}</p>
             </div>

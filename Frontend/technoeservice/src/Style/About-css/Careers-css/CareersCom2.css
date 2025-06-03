@@ -1,28 +1,28 @@
 /* CandidateExperience.css */
 
-.candidate-experience {
-  max-width: 1000px;
+.Career-candidate-experience {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #00264d;
 }
 
-.candidate-experience h1 {
+.Career-candidate-experience h1 {
   font-size: 2.5rem;
   text-align: center;
   color: #222;
 }
 
-.candidate-experience h3 {
+.Career-candidate-experience h3 {
   font-size: 1.2rem;
   text-align: center;
   color: #557a46;
   margin-bottom: 20px;
 }
 
-.candidate-experience p {
-  text-align: center;
+.Career-candidate-experience p {
+  text-align: left;
   max-width: 700px;
   margin: 0 auto 40px;
   font-size: 1rem;
@@ -30,13 +30,13 @@
   color: #444;
 }
 
-.steps-container {
+.Career-steps-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.step-box {
+.Career-step-box {
   display: flex;
   align-items: flex-start;
   background: #f7f9fc;
@@ -46,7 +46,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
-.step-circle {
+.Career-step-circle {
   flex-shrink: 0;
   background: #2a9d8f;
   color: #fff;
@@ -61,71 +61,71 @@
   font-size: 14px;
 }
 
-.step-content h4 {
+.Career-step-content h4 {
   font-size: 1.2rem;
   margin-bottom: 10px;
   color: #1d3557;
 }
 
-.step-content p {
+.Career-step-content p {
   font-size: 1rem;
   line-height: 1.5;
   color: #333;
 }
 
 @media (max-width: 768px) {
-  .candidate-experience {
+  .Career-candidate-experience {
     padding: 25px 15px;
   }
 
-  .candidate-experience h1 {
+  .Career-candidate-experience h1 {
     font-size: 1.7rem;
   }
 
-  .candidate-experience h3 {
+  .Career-candidate-experience h3 {
     font-size: 1rem;
   }
 
-  .candidate-experience p {
+  .Career-candidate-experience p {
     font-size: 0.95rem;
   }
 
-  .step-box {
+  .Career-step-box {
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 20px 15px;
   }
 
-  .step-circle {
+  .Career-step-circle {
     margin: 0 0 15px 0;
   }
 
-  .step-content h4 {
+  .Career-step-content h4 {
     font-size: 1.1rem;
   }
 
-  .step-content p {
+  .Career-step-content p {
     font-size: 0.95rem;
   }
 }
 
 @media (max-width: 480px) {
-  .candidate-experience h1 {
+  .Career-candidate-experience h1 {
     font-size: 1.7rem;
   }
 
-  .step-circle {
+  .Career-step-circle {
     width: 50px;
     height: 50px;
     font-size: 12px;
   }
 
-  .step-content h4 {
+  .Career-step-content h4 {
     font-size: 1rem;
   }
 
-  .step-content p {
+  .Career-step-content p {
     font-size: 0.9rem;
   }
 }

@@ -15,6 +15,9 @@ import  img12 from  '../../image/10.png';
 import  img13 from  '../../image/11.png';
 import  img14 from  '../../image/12.png';
 import  img15 from  '../../image/6.png';
+import  img16 from  '../../image/Screenshot 2025-06-03 160648.png';
+import  img17 from  '../../image/Screenshot 2025-06-03 160726.png';
+import  img18 from  '../../image/Screenshot 2025-06-03 163125.png';
 
 const logos = [
   img1,
@@ -41,6 +44,10 @@ const logos = [
     img6,
  
  img14,
+
+ img16,
+ img17,
+ img18
 
 ];
 

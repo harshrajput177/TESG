@@ -49,7 +49,7 @@ const Navbar = () => {
 
             <li className={`dropdown-parent ${openDropdown === 'services' ? 'open' : ''}`}>
               <span onClick={(e) => handleDropdownToggle('services', e)} className='nav-tesg-Services'>
-                Services <ArrowDropDownIcon />
+                IT Services <ArrowDropDownIcon />
               </span>
               <ul className="dropdown">
                 <li><Link to="/services/website-development"  onClick={() => setMenuOpen(false)} >Website Development</Link></li>
