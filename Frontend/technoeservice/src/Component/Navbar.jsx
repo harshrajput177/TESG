@@ -74,7 +74,7 @@ const Navbar = () => {
               <ul className="dropdown">
                 <li><Link to="/services/Permanent-Staffing"  onClick={() => setMenuOpen(false)}> Permanent Staffing</Link></li>
                 <li><Link to="/services/Temporary-Contract Staffing"   onClick={() => setMenuOpen(false)}>Temporary / Contract Staffing</Link></li>
-                 <li><Link to="/services/Specialized-Niche Hiring"   onClick={() => setMenuOpen(false)}> Specialized / Niche Hiring</Link></li>
+                 <li><Link to="/services/Specialized-Niche-Hiring"   onClick={() => setMenuOpen(false)}> Specialized / Niche Hiring</Link></li>
                  <li><Link to="/services/HR-Services"   onClick={() => setMenuOpen(false)}> HR Services </Link></li>
               </ul>
             </li>

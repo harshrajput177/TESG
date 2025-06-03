@@ -1,13 +1,13 @@
 import React from 'react'
-import Comp1 from '../../../Component/Services/CRMdevelopment/CRMcom1';
-import Comp2 from '../../../Component/Services/CRMdevelopment/CRMcom2';
-import Comp3 from '../../../Component/Services/CRMdevelopment/CRMcom3';
-import Comp4 from '../../../Component/Services/CRMdevelopment/CRMcom4';
+import Comp1 from '../../Component/Recuriment Services/Temperory-Staffing/TemperoryStafingCom1';
+import Comp2 from '../../Component/Recuriment Services/Temperory-Staffing/TemperoryStafingCom2';
+import Comp3 from '../../Component/Recuriment Services/Temperory-Staffing/TemperoryStafingCom3';
 
 
 
 
-function CRMPage() {
+
+function TPage() {
 
 //   const fadeInUp = {
 //     hidden: { opacity: 0, y: 100 },
@@ -19,10 +19,9 @@ function CRMPage() {
     <div className="folder-page">
     <div className="Careers-content">
           <Comp1 />
-            <Comp3 />
           <Comp2 />
-          <Comp4 />
-        
+          {/* <Comp4 /> */}
+        <Comp3 />
          
 
     </div>
@@ -30,4 +29,4 @@ function CRMPage() {
   )
 }
 
-export default CRMPage;
+export default TPage;

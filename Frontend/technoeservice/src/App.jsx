@@ -18,6 +18,10 @@ import CareerPage from './Page/CareerPage/CareerPage';
 import WhyPage from './Page/AboutPage/Why-Choose/Why-Choose-Page';
 import WhoPage from './Page/AboutPage/Who-we-R-Page/Who-we-R-Page';
 import APPage from './Page/ServicesPage/AppDevPage/AppDevPage';
+import HRPage from './Page/Recuriment-Services/HRServicePage';
+import PRPage from './Page/Recuriment-Services/PermanentServicePage';
+import TPage from './Page/Recuriment-Services/TemporaryServiesPage';
+import NichePage from './Page/Recuriment-Services/NicheServicePage';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -38,11 +42,17 @@ function App() {
                     <Route path="/services/lead-gen" element={<LEADPage />}/>
                       <Route path="/services/crm" element={<CRMPage />}/>
                       <Route path="/services/ecommerce" element={<EcomPage />}/>
- <Route path="/services/android-app" element={<APPage />}/>
+                      <Route path="/services/android-app" element={<APPage />}/>
 
                           <Route path="/Careers" element={<CareerPage />}/>
                       <Route path="/about/Why-choose" element={<WhyPage />}/>
                       <Route path="/about/Who-are" element={<WhoPage />}/>
+
+
+                       <Route path="/services/HR-Services" element={<HRPage />}/>
+                      <Route path="/services/Permanent-Staffing" element={<PRPage />}/>
+                       <Route path="/services/Temporary-Contract Staffing" element={<TPage />}/>
+                      <Route path="/services/Specialized-Niche-Hiring" element={<NichePage />}/>
       </Routes>
       <Footer />
     </>
