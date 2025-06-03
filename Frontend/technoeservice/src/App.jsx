@@ -22,13 +22,15 @@ import HRPage from './Page/Recuriment-Services/HRServicePage';
 import PRPage from './Page/Recuriment-Services/PermanentServicePage';
 import TPage from './Page/Recuriment-Services/TemporaryServiesPage';
 import NichePage from './Page/Recuriment-Services/NicheServicePage';
+import ScrollToTop from './Scroll-top';
 
 function App() {
-  const [count, setCount] = useState(0);
+
 
   return (
     <>
       <Navbar />
+        <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<div>About Page</div>} />

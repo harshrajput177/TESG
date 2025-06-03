@@ -20,7 +20,7 @@ const ProposalForm = () => {
             <input type="email" placeholder="Email Address*" />
             <div className="phone-input">
               <span>+91</span>
-              <input type="tel" placeholder="98604 23362" />
+              <input type="tel" placeholder="9860....." />
             </div>
           </div>
           <div className="form-row">
@@ -80,11 +80,13 @@ const ProposalForm = () => {
         </div>
         <div className="contact-details">
           <h4>Headquarters:</h4>
-          <p>Noida Sector 63 H-96</p>
+           Suite 5 Margaret Powell House, 401-447, Milton Keynes, Buckinghamshire U.K. MK9 3BN
+            <h4>Branch Office:</h4>
+            H-96, SF-3, Sector-63, Noida, 201301, India
           <h4>Main Phone:</h4>
-          <p>+91 98604 23362</p>
+          <p>+91 9319313968</p>
           <h4>Office Hours:</h4>
-          <p>Mon-Fri, 9:30am – 5:30pm </p>
+          <p>Mon-Fri, 10:00am – 7:00pm </p>
         </div>
       </div>
     </div>

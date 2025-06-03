@@ -16,11 +16,22 @@
   margin-bottom: 0.5rem;
 }
 
-.LandingCom6-services-title {
-  font-size: 3rem;
-  font-weight: 800;
-  margin: 0;
+/* Default Title Style */
+.LandingCom6-service-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00264d; /* Dark Blue */
 }
+
+.LandingCom6-service-card.highlight .LandingCom6-service-title {
+  color: white;
+}
+
+/* On hover — change title color to white */
+.LandingCom6-service-card:hover .LandingCom6-service-title {
+  color: white;
+}
+
 
 .LandingCom6-services-quote {
   margin-top: 1rem;
@@ -38,7 +49,7 @@
 }
 
 .LandingCom6-service-card {
-  background-color:white;
+  background-color: white;
   padding: 2rem;
   border-radius: 1rem;
   flex: 1 1 30%;
@@ -50,10 +61,22 @@
   box-shadow: 0 0 4px rgba(128, 128, 128, 0.516);
 }
 
+.LandingCom6-service-card:hover {
+  background-color: #00264d;
+  color: white;
+}
+
+.LandingCom6-service-card:hover .LandingCom6-service-description {
+  color: white;
+}
+
+
 .LandingCom6-service-card.highlight {
    background-color: #00264d;
   color: white;
 }
+
+
 
 .LandingCom6-service-icon {
   font-size: 2rem;

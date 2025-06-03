@@ -14,22 +14,22 @@ const Contact = () => {
         <div className="Landingform-contact-box">
           <i className="fas fa-map-marker-alt"> <HomeWorkIcon  className="Landingform-social-icon-contactform"/></i>
           <h4>OUR MAIN OFFICE</h4>
-          <p>SoHo 94 Broadway St New<br />York, NY 1001</p>
+          <p>SF-3 , H-96 <br />Noida Sector 63</p>
         </div>
         <div className="Landingform-contact-box">
           <i className="fas fa-phone"><LocalPhoneIcon className="Landingform-social-icon-contactform"/></i>
           <h4>PHONE NUMBER</h4>
-          <p>234-9876-5400<br />888-0123-4567 (Toll Free)</p>
+          <p>+91 9319313968<br />+91 9458006097</p>
         </div>
         <div className="Landingform-contact-box">
           <i className="fas fa-fax"> <FaxIcon className="Landingform-social-icon-contactform"/></i>
           <h4>FAX</h4>
-          <p>1-234-567-8900</p>
+          <p>+91 9319313968</p>
         </div>
         <div className="Landingform-contact-box">
           <i className="fas fa-envelope"> <EmailIcon className="Landingform-social-icon-contactform"/></i>
           <h4>MAIL</h4>
-          <p>hello@theme.com</p>
+          <p> info@technoesgroup.com</p>
         </div>
       </div>
 
@@ -47,7 +47,7 @@ const Contact = () => {
 
         <div className="Landingform-contact-map">
           <h3>WE ARE HERE</h3>
-          <p>MON-FRI 8:30AM-5PM / PHONES ARE OPEN 24/7</p>
+          <p>MON-FRI 10:00AM-7PM / PHONES ARE OPEN 24/7</p>
           <iframe
             src="https://www.google.com/maps?q=Manhattan&output=embed"
             width="100%"

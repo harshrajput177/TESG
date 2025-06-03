@@ -29,7 +29,7 @@ const Footer = () => {
             <img src={logo} alt="" className="Gwi-tesg-logo-img"/> 
             </span> GWI Techno-EService</h3>
           <p>Your one-stop destination for the latest electronics, gadgets, and smart devices at unbeatable prices.</p>
-          <p>Call us: 364 484 4828</p>
+          <p>Call us: +91 9458006097</p>
           <p>Email: info@technoesgroup.com</p>
         </div>
 
