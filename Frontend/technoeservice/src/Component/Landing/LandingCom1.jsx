@@ -27,7 +27,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="trusted-text">Trusted By Leading Brands and Companies</div>
     </div>
   );
 };

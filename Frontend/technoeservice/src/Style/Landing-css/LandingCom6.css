@@ -87,3 +87,87 @@
   justify-content: center;
     box-shadow: 0 0 8px rgba(128, 128, 128, 0.42);
 }
+
+
+@media (max-width: 768px) {
+  .LandingCom6-services-section {
+    padding: 3rem 5vw;
+  }
+
+  .LandingCom6-services-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .LandingCom6-services-title {
+    font-size: 2.2rem;
+  }
+
+  .LandingCom6-services-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .LandingCom6-services-quote {
+    font-size: 0.95rem;
+    margin: 1rem auto 0;
+    text-align: center;
+  }
+
+  .LandingCom6-services-cards {
+    padding: 0;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .LandingCom6-service-card {
+    flex: 1 1 100%;
+    padding: 1.5rem;
+  }
+
+  .LandingCom6-service-title {
+    font-size: 1.3rem;
+  }
+
+  .LandingCom6-service-description {
+    font-size: 0.95rem;
+  }
+
+  .LandingCom6-service-icon {
+    font-size: 1.8rem;
+  }
+
+  .LandingCom6-service-arrow {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .LandingCom6-services-title {
+    font-size: 1.8rem;
+  }
+
+  .LandingCom6-services-quote {
+    font-size: 0.9rem;
+  }
+
+  .LandingCom6-service-title {
+    font-size: 1.1rem;
+  }
+
+  .LandingCom6-service-description {
+    font-size: 0.9rem;
+  }
+
+  .LandingCom6-service-icon {
+    font-size: 1.6rem;
+  }
+
+  .LandingCom6-service-arrow {
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 1rem;
+  }
+}

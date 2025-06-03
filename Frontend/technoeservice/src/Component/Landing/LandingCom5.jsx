@@ -7,34 +7,34 @@ import EmailIcon from '@mui/icons-material/Email';
 
 const Contact = () => {
   return (
-    <div className="contact-container">
-      <h2 className="contact-heading">LET'S CONNECT</h2>
+    <div className="Landingform-contact-container">
+      <h2 className="Landingform-contact-heading">LET'S CONNECT</h2>
 
-      <div className="contact-info-section">
-        <div className="contact-box">
-          <i className="fas fa-map-marker-alt"> <HomeWorkIcon  className="social-icon-contactform"/></i>
+      <div className="Landingform-contact-info-section">
+        <div className="Landingform-contact-box">
+          <i className="fas fa-map-marker-alt"> <HomeWorkIcon  className="Landingform-social-icon-contactform"/></i>
           <h4>OUR MAIN OFFICE</h4>
           <p>SoHo 94 Broadway St New<br />York, NY 1001</p>
         </div>
-        <div className="contact-box">
-          <i className="fas fa-phone"><LocalPhoneIcon className="social-icon-contactform"/></i>
+        <div className="Landingform-contact-box">
+          <i className="fas fa-phone"><LocalPhoneIcon className="Landingform-social-icon-contactform"/></i>
           <h4>PHONE NUMBER</h4>
           <p>234-9876-5400<br />888-0123-4567 (Toll Free)</p>
         </div>
-        <div className="contact-box">
-          <i className="fas fa-fax"> <FaxIcon className="social-icon-contactform"/></i>
+        <div className="Landingform-contact-box">
+          <i className="fas fa-fax"> <FaxIcon className="Landingform-social-icon-contactform"/></i>
           <h4>FAX</h4>
           <p>1-234-567-8900</p>
         </div>
-        <div className="contact-box">
-          <i className="fas fa-envelope"> <EmailIcon className="social-icon-contactform"/></i>
+        <div className="Landingform-contact-box">
+          <i className="fas fa-envelope"> <EmailIcon className="Landingform-social-icon-contactform"/></i>
           <h4>MAIL</h4>
           <p>hello@theme.com</p>
         </div>
       </div>
 
-      <div className="contact-bottom">
-        <div className="contact-form">
+      <div className="Landingform-contact-bottom">
+        <div className="Landingform-contact-form">
           <h3>GET A FREE CASE EVALUATION TODAY!</h3>
           <p>AVAILABLE 24 HOURS A DAY!</p>
           <form>
@@ -45,7 +45,7 @@ const Contact = () => {
           </form>
         </div>
 
-        <div className="contact-map">
+        <div className="Landingform-contact-map">
           <h3>WE ARE HERE</h3>
           <p>MON-FRI 8:30AM-5PM / PHONES ARE OPEN 24/7</p>
           <iframe
