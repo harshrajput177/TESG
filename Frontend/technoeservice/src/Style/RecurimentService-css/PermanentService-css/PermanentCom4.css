@@ -1,0 +1,85 @@
+/* GwiHire.css */
+
+.Gwi-container {
+      max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff; /* Black background */
+  color: #0e0e0e; /* White text */
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.Gwi-left {
+  flex: 1;
+  width: 50%;
+}
+
+.Gwi-left h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.Gwi-left p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #484848;
+}
+
+.Gwi-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+}
+
+.Gwi-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.check-icon {
+  font-size: 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  padding: 5px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.Gwi-detail h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #393939;
+}
+
+.Gwi-detail p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #5b5b5b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Gwi-container {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .Gwi-left h1 {
+    font-size: 28px;
+  }
+
+  .Gwi-detail h2 {
+    font-size: 20px;
+  }
+}

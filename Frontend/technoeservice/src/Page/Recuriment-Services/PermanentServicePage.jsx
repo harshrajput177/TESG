@@ -1,8 +1,10 @@
 import React from 'react'
 import Comp1 from '../../Component/Recuriment Services/Permanent-Staffing/PermanentStafingCom1';
 import Comp2 from '../../Component/Recuriment Services/Permanent-Staffing/PermanentStafingCom2';
-// import Comp3 from '../../../Component/Services/CRMdevelopment/CRMcom3';
-// import Comp4 from '../../../Component/Services/CRMdevelopment/CRMcom4';
+import Comp3 from '../../Component/Recuriment Services/Permanent-Staffing/PermanentStafingCom3';
+import Comp4 from '../../Component/Recuriment Services/Permanent-Staffing/PermanentStafingCom4';
+import Comp5 from '../../Component/Recuriment Services/Permanent-Staffing/PermanentStaffingCom5';
+
 
 
 
@@ -22,7 +24,9 @@ function PRPage() {
             {/* <Comp3 /> */}
           <Comp2 />
           {/* <Comp4 /> */}
-        
+        <Comp3 />
+        <Comp4 />
+        <Comp5 />
          
 
     </div>

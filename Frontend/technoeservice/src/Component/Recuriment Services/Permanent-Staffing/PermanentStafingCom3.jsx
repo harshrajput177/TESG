@@ -1,5 +1,5 @@
 import React from 'react';
-import './ScreeningProcess.css';
+import '../../../Style/RecurimentService-css/PermanentService-css/PermanentCom3.css';
 
 const steps = [
   {

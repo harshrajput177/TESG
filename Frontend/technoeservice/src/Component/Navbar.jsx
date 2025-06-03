@@ -112,7 +112,7 @@ const Navbar = () => {
 
         <div className="nav-right">
           <select className="lang-select">
-            <option value="IN">🌐 IN</option>
+            <option   value="IN">🌐 IN</option>
           </select>
           <button className="talk-button" onClick={handleTalkClick}>Let’s Talk</button>
         </div>

@@ -145,7 +145,11 @@
   display: block;
 }
 
-
+  @media (max-width: 1424px) {
+  .lang-select{
+      display: none !important;
+    }
+  }
 
   
   /* Mobile Menu Styles */
@@ -158,6 +162,7 @@
       gap: 20px;
       align-items: start;
     }
+
   
     .nav-links {
       display: flex;
