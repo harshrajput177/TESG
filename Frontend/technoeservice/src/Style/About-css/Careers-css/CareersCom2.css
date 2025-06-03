@@ -72,3 +72,60 @@
   line-height: 1.5;
   color: #333;
 }
+
+@media (max-width: 768px) {
+  .candidate-experience {
+    padding: 25px 15px;
+  }
+
+  .candidate-experience h1 {
+    font-size: 1.7rem;
+  }
+
+  .candidate-experience h3 {
+    font-size: 1rem;
+  }
+
+  .candidate-experience p {
+    font-size: 0.95rem;
+  }
+
+  .step-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15px;
+  }
+
+  .step-circle {
+    margin: 0 0 15px 0;
+  }
+
+  .step-content h4 {
+    font-size: 1.1rem;
+  }
+
+  .step-content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .candidate-experience h1 {
+    font-size: 1.7rem;
+  }
+
+  .step-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+  }
+
+  .step-content h4 {
+    font-size: 1rem;
+  }
+
+  .step-content p {
+    font-size: 0.9rem;
+  }
+}

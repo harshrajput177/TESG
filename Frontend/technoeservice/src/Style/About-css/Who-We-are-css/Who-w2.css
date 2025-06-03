@@ -1,25 +1,25 @@
 /* ExpertiseSection.css */
 
-.expertise-section {
+.Who-expertise-section {
   padding: 60px 20px;
   background: #f9f9f9;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
+.Who-container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.headline {
+.Who-headline {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 20px;
   color: #333;
 }
 
-.description {
+.Who-description {
   font-size: 1.1rem;
   color: #666;
   margin-bottom: 50px;
@@ -28,13 +28,13 @@
   margin-right: auto;
 }
 
-.card-grid {
+.Who-card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
-.card {
+.Who-card {
   background: #fff;
   padding: 30px 20px;
   border-radius: 12px;
@@ -42,26 +42,88 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+.Who-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 32px rgba(0,0,0,0.15);
 }
 
-.icon {
+.Who-icon {
   font-size: 2.5rem;
   color: #6a994e;
   margin-bottom: 15px;
 }
 
-.card-title {
+.Who-card-title {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 10px;
   color: #333;
 }
 
-.card-text {
+.Who-card-text {
   font-size: 1rem;
   color: #555;
   line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+  .Who-expertise-section {
+    padding: 40px 15px;
+  }
+
+  .Who-headline {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .Who-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  .Who-card-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .Who-card {
+    padding: 25px 15px;
+  }
+
+  .Who-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  .Who-card-title {
+    font-size: 1.1rem;
+  }
+
+  .Who-card-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Who-headline {
+    font-size: 1.7rem;
+  }
+
+  .Who-description {
+    font-size: 0.95rem;
+  }
+
+  .Who-icon {
+    font-size: 1.8rem;
+  }
+
+  .Who-card-title {
+    font-size: 1rem;
+  }
+
+  .Who-card-text {
+    font-size: 0.9rem;
+  }
 }

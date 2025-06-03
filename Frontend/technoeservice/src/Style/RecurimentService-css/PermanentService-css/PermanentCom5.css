@@ -59,3 +59,40 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+/* ===== MOBILE RESPONSIVE STYLES ===== */
+@media (max-width: 768px) {
+  .why-us-section {
+    padding: 30px 16px;
+  }
+
+  .why-us-section h2 {
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-box {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .feature-box h3 {
+    font-size: 16px;
+  }
+
+  .feature-box p {
+    font-size: 13px;
+  }
+
+  .get-in-touch {
+    font-size: 16px;
+    margin-top: 24px;
+  }
+}
+

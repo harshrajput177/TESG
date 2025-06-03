@@ -94,7 +94,7 @@ strong {
   .LeadGenCom1-container {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+     text-align: left;
   }
 
   .LeadGenCom1-text-section,
@@ -103,7 +103,7 @@ strong {
   }
 
   .LeadGenCom1-title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .LeadGenCom1-subtitle {

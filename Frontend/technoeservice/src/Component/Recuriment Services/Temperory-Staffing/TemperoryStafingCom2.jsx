@@ -48,15 +48,15 @@ const steps = [
 
 export default function RecruitmentProcess() {
   return (
-    <div className="recruitment-container">
+    <div className="Temp-recruitment-container">
       <h2>
-        Our <span className="highlight">Recruitment</span> Process
+        Our <span className="Temp-highlight">Recruitment</span> Process
       </h2>
-      <div className="cards-grid">
+      <div className="Temp-cards-grid">
         {steps.map((step) => (
-          <div className="step-card" key={step.number}>
-            <div className="step-number">{step.number}</div>
-            <div className="step-icon">{step.icon}</div>
+          <div className="Temp-step-card" key={step.number}>
+            <div className="Temp-step-number">{step.number}</div>
+            <div className="Temp-step-icon">{step.icon}</div>
             <h3>{step.title}</h3>
             <p>{step.description}</p>
           </div>

@@ -94,7 +94,7 @@ strong {
   .WebHostingCom1-container {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
 
   .WebHostingCom1-text-section,

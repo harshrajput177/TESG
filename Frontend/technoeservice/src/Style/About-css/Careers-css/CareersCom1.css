@@ -67,3 +67,51 @@ strong {
 .under-Agency{
     width: 100%;
 }
+
+@media (max-width: 768px) {
+  .CRMDevCom1-main-container {
+    padding: 40px 20px;
+  }
+
+  .CRMDevCom1-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .CRMDevCom1-text-section,
+  .CRMDevCom1-image-section {
+    flex: 1 1 100%;
+    text-align: left;
+  }
+
+  .CRMDevCom1-title {
+   font-size: 1.7rem;
+  }
+
+  .CRMDevCom1-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .CRMDevCom1-text-section p {
+    font-size: 1rem;
+  }
+
+  .CRMDevCom1-image-section img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .CRMDevCom1-title {
+    font-size: 1.5rem;
+  }
+
+  .CRMDevCom1-subtitle {
+    font-size: 1rem;
+  }
+
+  .CRMDevCom1-text-section p {
+    font-size: 0.95rem;
+  }
+}

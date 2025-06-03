@@ -72,7 +72,7 @@ strong {
 /* Tablet screens (≤992px) */
 @media (max-width: 992px) {
   .CRMDevCom1-title {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .CRMDevCom1-main-container {
@@ -93,7 +93,7 @@ strong {
   .CRMDevCom1-container {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
 
   .CRMDevCom1-text-section,
@@ -121,7 +121,7 @@ strong {
 /* Small mobile screens (≤480px) */
 @media (max-width: 480px) {
   .CRMDevCom1-title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .CRMDevCom1-subtitle {

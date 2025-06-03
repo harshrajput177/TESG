@@ -95,7 +95,7 @@ strong {
   .WebDevCom1-container {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
 
   .WebDevCom1-text-section,

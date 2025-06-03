@@ -36,16 +36,16 @@ const data = [
 
 export default function ExpertiseSection() {
   return (
-    <section className="expertise-section">
-      <div className="container">
-        <h1 className="headline">We Bring Years of Expertise and Industry Experience to Every Project</h1>
-        <p className="description">With more businesses embracing digital transformation, you need a trusted web marketing firm that can help you navigate this changing landscape. We keep a close eye on everything to catapult your business ahead of the competition.</p>
-        <div className="card-grid">
+    <section className="Who-expertise-section">
+      <div className="Who-container">
+        <h1 className="Who-headline">We Bring Years of Expertise and Industry Experience to Every Project</h1>
+        <p className="Who-description">With more businesses embracing digital transformation, you need a trusted web marketing firm that can help you navigate this changing landscape. We keep a close eye on everything to catapult your business ahead of the competition.</p>
+        <div className="Who-card-grid">
           {data.map((item, index) => (
-            <div className="card" key={index}>
-              <div className="icon">{item.icon}</div>
-              <h2 className="card-title">{item.title}</h2>
-              <p className="card-text">{item.text}</p>
+            <div className="Who-card" key={index}>
+              <div className="Who-icon">{item.icon}</div>
+              <h2 className="Who-card-title">{item.title}</h2>
+              <p className="Who-card-text">{item.text}</p>
             </div>
           ))}
         </div>
