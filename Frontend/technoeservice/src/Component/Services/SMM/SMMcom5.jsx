@@ -4,16 +4,16 @@ import { FaChartLine, FaStar, FaUserTie, FaBullseye, FaAward, FaFileAlt } from '
 
 const ThriveSocialMedia = () => {
   return (
-    <div className="thrive-wrapper">
-      <h1 className="heading">Why Choose GWI for Your Social Media Management</h1>
-      <h2 className="subheading">Invest in Flexible Social Packages Customized To Meet Your Growth Goals</h2>
-      <p className="description">
+    <div className="Why-thrive-wrapper">
+      <h1 className="Why-heading">Why Choose GWI for Your Social Media Management</h1>
+      <h2 className="Why-subheading">Invest in Flexible Social Packages Customized To Meet Your Growth Goals</h2>
+      <p className="Why-description">
         More and more small-business owners are choosing to collaborate with experts, as social media management is no easy feat. It requires meticulous attention and time to master. Here at Thrive, we cater to your specifications, no matter your industry, size of business or budget.
       </p>
-      <p className="description">
+      <p className="Why-description">
         We aim to pass on to clients the benefits of knowing the ins and outs of each process through our almost two decades’ worth of social media marketing background. Your search for "social media management near me" is over. Let our data-driven professionals manage and steer your social media accounts toward your desired results.
       </p>
-      <p className="description">Below are some of the benefits you’ll enjoy:</p>
+      <p className="Why-description">Below are some of the benefits you’ll enjoy:</p>
 
       <div className="benefits-grid">
         <div className="benefit-card">

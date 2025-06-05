@@ -53,6 +53,8 @@ body {
 }
 
 .PPCCom1-text-section p {
+   font-family: 'Poppins-Regular';
+    text-align: justify;
   font-size: 1.05rem;
   line-height: 1.7;
   margin-bottom: 1.2rem;
@@ -64,6 +66,9 @@ strong {
 
 .under-Agency {
   width: 100%;
+    letter-spacing: 1px;
+   font-family: 'Poppins-Regular';
+     text-align: justify;
 }
 
 /* ---------------- Responsive breakpoints ---------------- */

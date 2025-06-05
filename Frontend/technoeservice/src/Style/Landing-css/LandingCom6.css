@@ -1,3 +1,5 @@
+@import url('../Font.css');
+
 .LandingCom6-services-section {
   padding: 4rem  6vw;
   margin: auto;
@@ -6,11 +8,13 @@
 }
 
 .LandingCom6-services-header {
+     font-family: 'PoppinsMedium';
   text-align: left;
   margin-bottom: 3rem;
 }
 
 .LandingCom6-services-subtitle {
+   font-family: 'Poppins-Regular';
   color:gray;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
@@ -18,12 +22,14 @@
 
 /* Default Title Style */
 .LandingCom6-service-title {
+   font-family: 'Poppins-Regular';
   font-size: 1.5rem;
   font-weight: 700;
   color: #00264d; /* Dark Blue */
 }
 
 .LandingCom6-service-card.highlight .LandingCom6-service-title {
+   font-family: 'Poppins-Regular';
   color: white;
 }
 
@@ -72,6 +78,7 @@
 
 
 .LandingCom6-service-card.highlight {
+    font-family: 'Poppins-Regular';
    background-color: #00264d;
   color: white;
 }
@@ -83,11 +90,13 @@
 }
 
 .LandingCom6-service-title {
+   font-family: 'Poppins-Regular';
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 .LandingCom6-service-description {
+   font-family: 'Poppins-Regular';
   font-size: 1rem;
   color: #ccc;
 }
@@ -97,6 +106,7 @@
 }
 
 .LandingCom6-service-arrow {
+  font-family: 'Poppins-Regular';
   font-size: 1.5rem;
   align-self: flex-start;
   background-color: rgba(241, 241, 241, 0.441);

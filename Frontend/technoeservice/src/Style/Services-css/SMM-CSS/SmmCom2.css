@@ -20,18 +20,23 @@
 }
 
 .SMMcom2-header-text h1 {
+     font-family: 'PoppinsMedium'; 
   font-size: 32px;
   margin-bottom: 10px;
   color: #000;
 }
 
 .SMMcom2-subtitle {
+     font-family: 'Poppins-Regular';
+     text-align: justify;
   font-size: 18px;
   color: #555;
   margin-bottom: 20px;
 }
 
 .SMMcom2-intro {
+   font-family: 'Poppins-Regular';
+     text-align: justify !important;
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 10px;
@@ -68,6 +73,7 @@
 }
 
 .SMMcom2-feature-card h3 {
+     font-family: 'Poppins-Regular';
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 20px;
@@ -75,6 +81,8 @@
 }
 
 .SMMcom2-feature-card p {
+   font-family: 'Poppins-Regular';
+     text-align: justify;
   font-size: 14px;
   line-height: 1.5;
 }

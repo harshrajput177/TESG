@@ -48,6 +48,7 @@ body {
 }
 
 .WebHostingCom1-subtitle {
+       font-family: 'Poppins-Regular';
   font-size: 1.25rem;
   color: #4caf50;
   font-weight: 500;
@@ -55,6 +56,8 @@ body {
 }
 
 .WebHostingCom1-text-section p {
+     font-family: 'Poppins-Regular';
+    text-align: justify;
   font-size: 1.05rem;
   line-height: 1.7;
   margin-bottom: 1.2rem;
@@ -65,6 +68,10 @@ strong {
 }
 
 .under-Agency {
+  letter-spacing: 1px;
+   font-family: 'Poppins-Regular';
+     text-align: justify;
+   
   width: 100%;
 }
 

@@ -1,3 +1,5 @@
+@import url('../Font.css');
+
 .brand-logos-container {
   display: flex;
   flex-direction: column;
@@ -37,6 +39,7 @@
 }
 
 .brand-logos-container h1 {
+     font-family: 'PoppinsMedium'; 
   letter-spacing: 2px;
   font-size: 1.8rem;
   color: black;

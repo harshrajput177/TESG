@@ -39,7 +39,7 @@ const Footer = () => {
             <img src={logo} alt="" className="Gwi-tesg-logo-img"/> 
             </span> GWI Techno-EService</h3>
           <p>Your one-stop destination for the latest electronics, gadgets, and smart devices at unbeatable prices.</p>
-          <p>Call us: +91 9458006097</p>
+          <p>Call us: +91 9958931555</p>
           <p>Email: info@technoesgroup.com</p>
         </div>
 
@@ -58,8 +58,7 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Useful Links</h4>
           <ul>
-            <li>Home One</li>
-            <li>Home Two</li>
+            <li>Home</li>
             <li>About Us</li>
             <li>Blog</li>
             <li>Contact</li>

@@ -1,3 +1,6 @@
+@import url('../Font.css');
+
+
 .hero-container {
   position: relative;
   /* height: 100vh; */
@@ -17,6 +20,7 @@
 }
 
 .highlightsection{
+     font-family: 'PoppinsMedium';
   color: #00264d !important;
 }
 
@@ -36,6 +40,7 @@
 }
 
 .hero-left h1 {
+  font-family: 'PoppinsMedium';
   font-size: 2.8rem;
   letter-spacing: 0.2vw;
   line-height: 1.3;
@@ -43,12 +48,14 @@
 }
 
 .hero-left h1 span {
+    font-family: 'PoppinsMedium'; 
   font-weight: bold;
   letter-spacing: 2px;
   color: #000;
 }
 
 .hero-left p {
+    font-family: 'Poppins-Regular';
   margin-top: 1rem;
   font-size: 1.1rem;
   color: #444;
@@ -86,6 +93,7 @@
 }
 
 .trusted-text {
+    font-style: 'Poppins-Regular';
   position: absolute;
   bottom: 20px;
   width: 100%;
