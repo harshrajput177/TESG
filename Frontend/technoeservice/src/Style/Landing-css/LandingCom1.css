@@ -99,31 +99,33 @@
 @media (max-width: 768px) {
   .tesg-landing-1-hero-content {
     flex-direction: column;
-    padding: 40px 6% 20px;
-    text-align: center;
+    padding: 30px 6% 20px;
+    text-align: left;
   }
 
   .hero-left {
+    justify-content: start;
+    align-items: start;
     max-width: 100%;
-    margin-bottom: 30px;
   }
 
   .hero-left h1 {
-    font-size: 2.1rem;
-    line-height: 1.5;
+    font-size: 1.6rem !important;
+    line-height: 1;
+    text-align: left;
     letter-spacing: 0.5px;
   }
 
   .hero-left p {
     font-size: 1rem;
     line-height: 1.6;
+    text-align: left;
     color: #555;
-    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   .talk-btn {
     width: fit-content;
-    margin: 0 auto;
     padding: 12px 20px;
     font-size: 1rem;
   }
@@ -137,7 +139,7 @@
     width: 90%;
     max-width: 360px;
     height: auto;
-    margin: 20px auto;
+    margin: 1px auto;
   }
 
   .trusted-text {

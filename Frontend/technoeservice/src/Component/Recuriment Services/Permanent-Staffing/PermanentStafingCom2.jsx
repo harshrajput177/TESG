@@ -3,6 +3,7 @@ import '../../../Style/RecurimentService-css/PermanentService-css/PermanentCom2.
 import { default as Card } from "@mui/material/Card";
 import { default as CardContent } from "@mui/material/CardContent";
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const benefits = [
   {
@@ -62,6 +63,13 @@ const benefits = [
 ];
 
 const RecruitmentBenefits = () => {
+
+   const navigate = useNavigate();
+  
+    const handleclick = ()=>{
+      navigate('/ContactUs')
+    }
+    
   return (
     <div className="benefits-section">
       <motion.h1 
@@ -86,7 +94,7 @@ const RecruitmentBenefits = () => {
                 <div className="benefit-number">{item.id}</div>
                 <h3 className="benefit-title">{item.title}</h3>
                 <p className="benefit-description">{item.description}</p>
-                <button className="benefit-button">Enquire Now</button>
+                <button className="benefit-button" onClick={handleclick}>Enquire Now</button>
               </CardContent>
             </Card>
           </motion.div>

@@ -138,9 +138,11 @@
   color: white !important;
   background-color: #00264d !important;
 }
-.dropdown li a:hover{
- color: white;
+
+.dropdown li:hover a {
+  color: white !important;
 }
+
 .dropdown-parent:hover .dropdown {
   display: block;
 }

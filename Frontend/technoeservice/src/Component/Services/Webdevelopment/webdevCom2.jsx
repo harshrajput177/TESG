@@ -5,6 +5,7 @@ import { default as Card } from "@mui/material/Card";
 import { default as CardContent } from "@mui/material/CardContent";
 import { motion } from 'framer-motion';
 import img1 from '../../../image/images.png';
+import { useNavigate } from 'react-router-dom';
 
 const features = [
   {
@@ -38,6 +39,11 @@ const features = [
 ];
 
 const WebDevelopment = () => {
+  const navigate = useNavigate();
+
+  const handleclick = ()=>{
+    navigate('/ContactUs')
+  }
   return (
     <div className="benefits-section">
       <motion.h1 
@@ -72,7 +78,7 @@ const WebDevelopment = () => {
                 <div className="benefit-number">{item.icon}</div>
                 <h3 className="benefit-title">{item.title}</h3>
                 <p className="benefit-description">{item.description}</p>
-                <button className="benefit-button">Enquire Now</button>
+                <button className="benefit-button" onClick={handleclick}>Enquire Now</button>
               </CardContent>
             </Card>
           </motion.div>

@@ -7,6 +7,7 @@ import XIcon from '@mui/icons-material/X';
 import logo from '../image/63761c632c2b88416ffd24413df2f3d7.png'
 
 
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -17,10 +18,19 @@ const Footer = () => {
           <button>Submit</button>
         </div>
         <div className="social-icons">
-          <FacebookIcon />
-          <InstagramIcon />
-          <LinkedInIcon />
-          <XIcon />
+     <a href="https://www.facebook.com/people/Technoes-Group/61563181743221/" target="_blank" rel="noopener noreferrer">
+  <FacebookIcon />
+</a>
+<a href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer">
+  <InstagramIcon />
+</a>
+<a href="https://www.linkedin.com/company/gwi-techno-e-services-llp/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
+  <LinkedInIcon />
+</a>
+<a href="https://x.com/yourhandle" target="_blank" rel="noopener noreferrer">
+  <XIcon />
+</a>
+
         </div>
       </div>
       <div className="footer-content">

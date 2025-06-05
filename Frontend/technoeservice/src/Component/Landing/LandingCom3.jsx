@@ -6,6 +6,8 @@ import BarChartIcon from "@mui/icons-material/BarChart";
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
+import  {useNavigate} from 'react-router-dom';
+
 
 const features = [
   {
@@ -41,6 +43,12 @@ const features = [
 ];
 
 const FeatureSection = () => {
+
+    const navigate = useNavigate();
+
+    const handleClick = ()=>{
+      navigate('/ContactUs')
+    }
   return (
     <section className="feature-section">
       <h2>
@@ -50,7 +58,7 @@ const FeatureSection = () => {
         Transform the way you work with tools that simplify lead management, enhance team collaboration, and accelerate sales.
         Our CRM equips you with everything you need to stay organized, productive, and ahead of the competition.
       </p>
-      <button className="cta-button">Get Started Free</button>
+      <button className="cta-button" onClick={handleClick}>Get Started Free</button>
 
       <div className="features-grid">
         {features.map((feature, index) => (

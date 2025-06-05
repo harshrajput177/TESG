@@ -19,12 +19,14 @@ const Contact = () => {
         <div className="Landingform-contact-box">
           <i className="fas fa-phone"><LocalPhoneIcon className="Landingform-social-icon-contactform"/></i>
           <h4>PHONE NUMBER</h4>
-          <p>+91 9319313968<br />+91 9458006097</p>
+          <p>+91 9319315798
+<br />+91 9458006097</p>
         </div>
         <div className="Landingform-contact-box">
           <i className="fas fa-fax"> <FaxIcon className="Landingform-social-icon-contactform"/></i>
           <h4>FAX</h4>
-          <p>+91 9319313968</p>
+          <p>+91 9319315798
+</p>
         </div>
         <div className="Landingform-contact-box">
           <i className="fas fa-envelope"> <EmailIcon className="Landingform-social-icon-contactform"/></i>
@@ -37,6 +39,7 @@ const Contact = () => {
         <div className="Landingform-contact-form">
           <h3>GET A FREE CASE EVALUATION TODAY!</h3>
           <p>AVAILABLE 24 HOURS A DAY!</p>
+          <br />
           <form>
             <input type="text" placeholder="Enter your Name" required />
             <input type="email" placeholder="Enter a valid email address" required />
