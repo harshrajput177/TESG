@@ -32,7 +32,7 @@ const WhyUsSection = () => {
   return (
     <section className="why-us-section">
       <h2>
-        Why Use GWI <span className="highlight">Recruitment Agency</span>
+        Why Use <span className="highlight">Recruitment GWI  Agency</span>
         <span className="question">?</span>
       </h2>
       <div className="features-container">

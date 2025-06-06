@@ -1,0 +1,71 @@
+/* HRServices.css */
+
+.hr-services-Com2-section {
+  padding: 60px 20px;
+  background: #f9fbfd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #00264d;
+}
+
+
+.hr-services-Com2-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.hr-services-Com2-subheading {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #007bb6;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.hr-services-Com2-heading {
+  font-size: 38px;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hr-services-Com2-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.hr-services-Com2-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hr-services-Com2-service-card {
+  background: #eef4fa;
+  border-radius: 12px;
+  padding: 50px 20px;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.hr-services-Com2-service-card:hover {
+  transform: translateY(-5px);
+}
+
+.hr-services-Com2-icon {
+  font-size: 36px;
+  color: #007bb6;
+  margin-bottom: 15px;
+}
+
+.hr-services-Com2-service-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-transform: uppercase;
+}

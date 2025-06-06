@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../../Style/Services-css/SMM-CSS/SmmCom3.css';
-import { FaClipboardList, FaComments, FaChartLine } from 'react-icons/fa';
+import { FaClipboardList, FaComments, FaChartLine, FaMobileAlt, FaShieldAlt } from 'react-icons/fa';
 
 const WebDevelopmentProcesses = () => {
   return (
@@ -52,8 +52,35 @@ const WebDevelopmentProcesses = () => {
           </p>
         </div>
       </div>
+
+      <div className="smp-feature">
+        <FaMobileAlt className="smp-icon" />
+        <div>
+          <h3>Responsive Design & Accessibility</h3>
+          <p>
+            Ensuring your website looks great and functions well on all screen sizes and devices while being accessible to everyone.
+          </p>
+          <p>
+            Use responsive layouts, scalable images, and accessibility standards (like ARIA) to improve usability for all users, including those with disabilities.
+          </p>
+        </div>
+      </div>
+
+      <div className="smp-feature">
+        <FaShieldAlt className="smp-icon" />
+        <div>
+          <h3>Security Best Practices</h3>
+          <p>
+            Protecting your website and user data with secure coding practices and regular updates.
+          </p>
+          <p>
+            Implement HTTPS, validate inputs, avoid exposing sensitive data, and keep dependencies up-to-date to reduce vulnerabilities and build trust with users.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default WebDevelopmentProcesses;
+

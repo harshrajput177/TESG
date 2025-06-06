@@ -2,7 +2,7 @@ import React from 'react'
 import Comp1 from '../../../Component/Services/Webhosting/WebhosCom1';
 import Comp2 from '../../../Component/Services/Webhosting/WebhosCom2';
 import Comp3 from '../../../Component/Services/Webhosting/WebhosCom3';
-// import Comp4 from '../../../Component/Services/SMM/SMMcom4';
+import Comp4 from '../../../Component/Services/Webhosting/WebhosCom4';
 // import Comp5 from '../../../Component/Services/SMM/SMMcom5';
 
 
@@ -22,7 +22,7 @@ function WEBHOSPage() {
           <Comp1 />
             <Comp3 />
           <Comp2 />
-        
+        <Comp4 />
     
          
 

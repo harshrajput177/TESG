@@ -2,7 +2,7 @@ import React from 'react'
 import Comp1 from '../../../Component/Services/EcommerceWebsite/Ecom1';
 import Comp2 from '../../../Component/Services/EcommerceWebsite/Ecom2';
 import Comp3 from '../../../Component/Services/EcommerceWebsite/Ecom3';
-// import Comp4 from '../../../Component/Services/SMM/SMMcom4';
+import Comp4 from '../../../Component/Services/EcommerceWebsite/Ecom4';
 // import Comp5 from '../../../Component/Services/SMM/SMMcom5';
 // import Comp5 from '../../Component/Landing/LandingCom5';
 // import Comp6 from '../../Component/Landing/LandingCom6';
@@ -23,7 +23,7 @@ function EcomPage() {
           <Comp1 />
             <Comp3 />
           <Comp2 />
-        
+        <Comp4 />
    
          
 

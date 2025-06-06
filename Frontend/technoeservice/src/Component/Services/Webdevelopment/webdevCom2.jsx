@@ -36,6 +36,22 @@ const features = [
     description:
       'We build fast-loading, SEO-optimized websites to improve user experience and help your business rank higher on search engines.',
   },
+
+    {
+    id: 5,
+    icon: <FaLaptopCode size={40} color="#f57c00" />,
+    title: 'Custom CMS with Admin Panel',
+    description:
+      'We develop tailor-made CMS platforms with secure admin panels that let you manage content, products, users, and more — all backed by real database operations and custom backend APIs.',
+  },
+
+    {
+    id: 6,
+    icon: <FaCogs size={40} color="#f57c00" />,
+    title: 'Web Maintenance & Support',
+    description:
+      'Stay updated and secure with regular site maintenance, performance checks, and on-demand technical support.',
+  },
 ];
 
 const WebDevelopment = () => {

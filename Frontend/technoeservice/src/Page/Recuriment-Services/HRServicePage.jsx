@@ -1,6 +1,6 @@
 import React from 'react'
 import Comp1 from '../../Component/Recuriment Services/HR-Services/HrCom1';
-// import Comp2 from '../../../Component/Services/CRMdevelopment/CRMcom2';
+import Comp2 from '../../Component/Recuriment Services/HR-Services/HrCom2';
 // import Comp3 from '../../../Component/Services/CRMdevelopment/CRMcom3';
 // import Comp4 from '../../../Component/Services/CRMdevelopment/CRMcom4';
 
@@ -22,6 +22,7 @@ function HRPage() {
             {/* <Comp3 />
           <Comp2 />
           <Comp4 /> */}
+          <Comp2 />
         
          
 

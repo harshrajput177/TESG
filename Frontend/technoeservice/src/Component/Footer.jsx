@@ -46,11 +46,9 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Shop by</h4>
           <ul>
-            <li>Services</li>
-            <li>Work</li>
-            <li>Know Us More</li>
-            <li>Blog</li>                       
-            <li>Tools</li>
+           <a href="/services/website-development"> <li>Services</li></a>
+           <a href="/about/Who-are"> <li>Know Us More</li></a>                     
+          <a href="/about/Why-choose">  <li>Why Choose Us</li></a>
        
           </ul>
         </div>
@@ -58,21 +56,18 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Useful Links</h4>
           <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Blog</li>
-            <li>Contact</li>
+           <a href="/"> <li>Home</li></a>
+           <a href="/blog"> <li>Blog</li></a>
+          <a href="/ContactUs">  <li>Contact</li></a>
           </ul>
         </div>
 
         <div className="footer-column">
           <h4>Utility Pages</h4>
           <ul>
-            <li>Style Guide</li>
-            <li>Protected Password</li>
-            <li>404 Not Found</li>
-            <li>License</li>
-            <li>Changelog</li>
+            <a href="/services/Permanent-Staffing"><li>Recruitment Services</li></a>
+          <a href="/services/HR-Services"><li>HR Services</li></a>
+            <a href="/Careers"><li>Career</li></a>
           </ul>
         </div>
       </div>
