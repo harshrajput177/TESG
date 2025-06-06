@@ -84,7 +84,7 @@ const ProposalForm = () => {
             <h4>Branch Office:</h4>
             H-96, SF-3, Sector-63, Noida, 201301, India
           <h4>Main Phone:</h4>
-          <p>+91 9319313968</p>
+          <p>+91 9958931555</p>
           <h4>Office Hours:</h4>
           <p>Mon-Fri, 10:00am – 7:00pm </p>
         </div>
