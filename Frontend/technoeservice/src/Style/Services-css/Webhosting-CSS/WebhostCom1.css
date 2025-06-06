@@ -1,15 +1,14 @@
 /* App.css */
-
+@import url('../../Font.css');
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fff;
   color: #222;
 }
 
 .WebHostingCom1-main-container {
-  padding: 60px 20px;
+      z-index: 2;
   margin: auto;
   max-width: 1200px;
 }
@@ -47,10 +46,40 @@ body {
   margin-bottom: 0.5rem;
 }
 
+
+.WebHostingCom1-main-wrapper {
+  background: linear-gradient(135deg,  #fbfdff33 0%, rgb(249, 254, 255) 50%,  #01004aca 100%);
+  /* Sky blue (#87ceeb), light blue (#b0e0e6), and green (#4caf50) */
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optional: add subtle animated wave shape at the bottom */
+.WebHostingCom1-wave-background {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  height: 246px;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+}
+
+.WebHostingCom1-wave-background svg path {
+  fill: rgba(255, 255, 255, 0.324);
+}
+
+
+
+
+
 .WebHostingCom1-subtitle {
        font-family: 'Poppins-Regular';
   font-size: 1.25rem;
-  color: #4caf50;
+  color: #004d9a;
   font-weight: 500;
   margin-bottom: 1.5rem;
 }

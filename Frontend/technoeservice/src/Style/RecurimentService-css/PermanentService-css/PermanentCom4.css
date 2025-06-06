@@ -1,5 +1,5 @@
 /* GwiHire.css */
-
+@import url('../../Font.css');
 .Gwi-container {
       max-width: 1200px;
   display: flex;
@@ -19,12 +19,15 @@
 }
 
 .Gwi-left h1 {
+     font-family: 'PoppinsMedium'; 
   font-size: 36px;
   margin-bottom: 20px;
   line-height: 1.3;
 }
 
 .Gwi-left p {
+     font-family: 'Poppins-Regular';
+     text-align: justify;
   font-size: 18px;
   line-height: 1.7;
   color: #484848;
@@ -57,12 +60,15 @@
 }
 
 .Gwi-detail h2 {
+    font-family: 'Poppins-Regular';
   margin: 0;
   font-size: 24px;
   color: #393939;
 }
 
 .Gwi-detail p {
+      font-family: 'Poppins-Regular';
+     text-align: justify;
   margin: 5px 0 0;
   font-size: 16px;
   color: #5b5b5b;

@@ -26,21 +26,21 @@ const steps = [
 
 const ScreeningProcess = () => {
   return (
-    <div className="screening-container">
-      <h2 className="screening-title">
-        Candidates <span className="highlight-blue">Screening</span> and <span className="highlight-blue">Selection Process</span>
+    <div className="Per-screening-container">
+      <h2 className="Per-screening-title">
+        Candidates <span className="Per-highlight-blue">Screening</span> and <span className="Per-highlight-blue">Selection Process</span>
       </h2>
-      <div className="screening-steps">
+      <div className="Per-screening-steps">
         {steps.map((step, index) => (
           <div key={index} className="step">
-            <div className="step-circle">{step.number}</div>
-            <div className="step-line" />
-            <p className="step-text">{step.text}</p>
+            <div className="Per-step-circle">{step.number}</div>
+            <div className="Per-step-line" />
+            <p className="Per-step-text">{step.text}</p>
           </div>
         ))}
       </div>
-      <div className="hire-now">
-        <a href="#" className="hire-link">Get Hire Now →</a>
+      <div className="Per-hire-now">
+        <a href="/Careers" className="Per-hire-link">Get Hire Now →</a>
       </div>
     </div>
   );

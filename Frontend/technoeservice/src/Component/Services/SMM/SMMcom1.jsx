@@ -1,10 +1,11 @@
 // App.jsx
 import React from "react";
 import "../../../Style/Services-css/SMM-CSS/SMMcom1.css";
-import contentImage from "../../../image/smm-big-text-tiny-people-work-social-media-managers-digital-marketing-online-advertising-smm_501813-701.jpg"; // Update with actual image path
+import contentImage from "../../../image/smm-big-text-tiny-people-work-social-media-managers-digital-marketing-online-advertising-smm_501813-701-removebg-preview.png" // Update with actual image path
 
 const SmmCom1 = () => {
   return (
+     <div className="WebHostingCom1-main-wrapper">
     <div className="SMMcom1-main-container">
     <div className="SMMcom1-container">
       <div className="SMMcom1-text-section">
@@ -40,6 +41,19 @@ const SmmCom1 = () => {
           deliver consistent visibility and measurable outcomes tailored to your brand’s
           goals.
         </p>
+      </div>
+      </div>
+
+       <div className="WebHostingCom1-wave-background">
+        <svg
+          viewBox="0 0 1440 320"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0,224L48,224C96,224,192,224,288,218.7C384,213,480,203,576,176C672,149,768,107,864,80C960,53,1056,43,1152,53.3C1248,64,1344,96,1392,112L1440,128L1440,320L0,320Z"
+          ></path>
+        </svg>
       </div>
       </div>
   );

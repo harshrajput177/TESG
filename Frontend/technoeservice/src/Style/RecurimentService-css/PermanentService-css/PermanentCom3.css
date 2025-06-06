@@ -1,21 +1,22 @@
-.screening-container {
+.Per-screening-container {
   max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
   text-align: center;
 }
 
-.screening-title {
+.Per-screening-title {
+     font-family: 'PoppinsMedium'; 
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 50px;
 }
 
-.highlight-blue {
+.Per-highlight-blue {
   color: #0099e5;
 }
 
-.screening-steps {
+.Per-screening-steps {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -23,16 +24,16 @@
   position: relative;
 }
 
-.step {
+.Per-step {
   flex: 1 1 18%;
   min-width: 180px;
   margin: 10px  0;
   position: relative;
 }
 
-.step-circle {
-  width: 40px;
-  height: 40px;
+.Per-step-circle {
+  width: 120px;
+  height: 30px;
   background-color: #0099e5;
   color: #fff;
   border-radius: 50%;
@@ -44,7 +45,7 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.step-line {
+.Per-step-line {
   height: 2px;
   width: 100%;
   background-color: #0099e5;
@@ -55,17 +56,20 @@
   z-index: -1;
 }
 
-.step-text {
+.Per-step-text {
+     font-family: 'Poppins-Regular';
   font-size: 0.95rem;
   color: #333;
   margin-top: 10px;
 }
 
-.hire-now {
+.Per-hire-now {
+     font-family: 'Poppins-Regular';
   margin-top: 40px;
 }
 
-.hire-link {
+.Per-hire-link {
+     font-family: 'Poppins-Regular';
   color: #007acc;
   text-decoration: none;
   font-weight: 600;
@@ -73,7 +77,7 @@
   transition: all 0.3s ease;
 }
 
-.hire-link:hover {
+.Per-hire-link:hover {
   text-decoration: underline;
   transform: translateX(5px);
 }
@@ -85,36 +89,36 @@
     padding: 20px 15px;
   }
 
-  .screening-title {
+  .Per-screening-title {
     font-size: 1.6rem;
     margin-bottom: 30px;
   }
 
-  .screening-steps {
+  .Per-screening-steps {
     flex-direction: column;
     align-items: center;
     gap: 30px;
   }
 
-  .step {
+  .Per-step {
     flex: 1 1 100%;
     text-align: center;
     position: relative;
     min-width: 100px;
   }
 
-  .step-line {
+  .Per-step-line {
     display: none; /* hide line between steps on small screens */
   }
 
-  .step-circle {
+  .Per-step-circle {
     margin: 0 auto;
     width: 35px;
     height: 35px;
     font-size: 0.95rem;
   }
 
-  .step-text {
+  .Per-step-text {
     font-size: 0.9rem;
     margin-top: 10px;
     max-width: 200px;
@@ -122,27 +126,27 @@
     margin-right: auto;
   }
 
-  .hire-link {
+  .Per-hire-link {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .screening-title {
+  .Per-screening-title {
     font-size: 1.4rem;
   }
 
-  .step-circle {
+  .Per-step-circle {
     width: 30px;
     height: 30px;
     font-size: 0.85rem;
   }
 
-  .step-text {
+  .Per-step-text {
     font-size: 0.85rem;
   }
 
-  .hire-link {
+  .Per-hire-link {
     font-size: 0.95rem;
   }
 }
