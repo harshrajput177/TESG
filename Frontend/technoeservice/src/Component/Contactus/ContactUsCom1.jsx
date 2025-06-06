@@ -32,7 +32,7 @@ const ProposalForm = () => {
           <div className="services">
             <p>Services*</p>
             <div className="checkbox-grid">
-              {['SEO', 'PPC', 'Social Media Organic', 'Social Media Ads', 'Web Design', 'CRO', 'Reputation / Reviews', 'Local SEO', 'Content Writing', 'Photography / Video', 'Web Hosting', 'Amazon Marketing', 'Email Marketing', 'ADA Compliance', 'Link Building'].map((service) => (
+              {['App Development','Web Development','SEO', 'PPC', 'Social Media Organic', 'Social Media Ads', 'Web Design', 'CRO', 'Reputation / Reviews', 'Local SEO', 'Content Writing', 'Photography / Video', 'Web Hosting', 'Amazon Marketing', 'Email Marketing', 'ADA Compliance', 'Link Building'].map((service) => (
                 <label key={service}>
                   <input type="checkbox" /> {service}
                 </label>
