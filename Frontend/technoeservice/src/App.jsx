@@ -23,6 +23,7 @@ import PRPage from './Page/Recuriment-Services/PermanentServicePage';
 import TPage from './Page/Recuriment-Services/TemporaryServiesPage';
 import NichePage from './Page/Recuriment-Services/NicheServicePage';
 import ScrollToTop from './Scroll-top';
+import WhatsappFloat from './Component/Whatsapp';
 
 function App() {
 
@@ -31,6 +32,8 @@ function App() {
     <>
       <Navbar />
         <ScrollToTop />
+
+        <WhatsappFloat />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<div>About Page</div>} />

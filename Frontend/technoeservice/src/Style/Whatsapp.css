@@ -1,0 +1,23 @@
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 20px; /* 👈 Change to right: 20px if needed */
+  z-index: 1000;
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+
+.whatsapp-float img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
