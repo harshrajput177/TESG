@@ -30,7 +30,7 @@ const Navbar = () => {
     <header className="navbar">
       <div className="navbar-top">
         <span className='icons-content'><EmailOutlinedIcon /> info@technoesgroup.com</span>
-        <span className='icons-content'><LocalPhoneOutlinedIcon /> +91 9319315798</span>
+        <span className='icons-content'><LocalPhoneOutlinedIcon /> +91 9958926555</span>
         <span className='icons-content'><LocationOnOutlinedIcon /> SF-3, H-96 Noida, Uttar Pradesh, India</span>
       </div>
 
@@ -92,18 +92,18 @@ const Navbar = () => {
             </li>
 
 
-{/*             
+            
             <li className={`dropdown-parent ${openDropdown === 'tools' ? 'open' : ''}`}>
               <span onClick={() => handleDropdownToggle('tools')}  className='nav-tesg-Services'>
                 Tools <ArrowDropDownIcon />
               </span>
               <ul className="dropdown">
-                <li><Link to="/tools/calculator">Calculator</Link></li>
+                <li><Link to="/tools/CRM">CRM</Link></li>
                 <li><Link to="/tools/checker">SEO Checker</Link></li>
               </ul>
-            </li> */}
+            </li> 
 
-            <li><Link to="/blog">Blog</Link></li>
+            {/* <li><Link to="/blog">Blog</Link></li> */}
 
           <li><Link to="/ContactUs" className='nav-tesg-Services'>Contact</Link></li>
 

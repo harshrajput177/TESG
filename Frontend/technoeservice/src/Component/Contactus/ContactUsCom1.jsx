@@ -46,7 +46,7 @@ const ProposalForm = () => {
             </label>
           </div>
           <button type="submit" className="submit-btn">SEND MY FREE PROPOSAL</button>
-          <p className="call-text">In a hurry? Give us a call now at <a href="tel:866-908-4748">866-908-4748</a></p>
+          <p className="call-text">In a hurry? Give us a call now at <a href="tel:9319315798">+91 9958926555</a></p>
         </form>
         <p className="disclaimer">
           By checking the box above, you consent to receive informational SMS and SMS-based appointment reminders from Thrive Ideas at the phone number provided. Msg & data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP. Reply HELP for help. <a href="#">Privacy Policy & Terms</a>.
@@ -84,6 +84,7 @@ const ProposalForm = () => {
             <h4>Branch Office:</h4>
             H-96, SF-3, Sector-63, Noida, 201301, India
           <h4>Main Phone:</h4>
+          <p>+91 9958926555</p>
           <p>+91 9958931555</p>
           <h4>Office Hours:</h4>
           <p>Mon-Fri, 10:00am – 7:00pm </p>

@@ -19,13 +19,13 @@ const Contact = () => {
         <div className="Landingform-contact-box">
           <i className="fas fa-phone"><LocalPhoneIcon className="Landingform-social-icon-contactform"/></i>
           <h4>PHONE NUMBER</h4>
-          <p>+91 9319315798
+          <p> +91 9958926555
 <br />+91 9958931555</p>
         </div>
         <div className="Landingform-contact-box">
           <i className="fas fa-fax"> <FaxIcon className="Landingform-social-icon-contactform"/></i>
           <h4>FAX</h4>
-          <p>+91 9319315798
+          <p>+91 9958926555
 </p>
         </div>
         <div className="Landingform-contact-box">
