@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './Component/Navbar';
 import Footer from './Component/Footer';
 import Home from './Page/LandingPage/LandingPage';
@@ -24,41 +24,48 @@ import TPage from './Page/Recuriment-Services/TemporaryServiesPage';
 import NichePage from './Page/Recuriment-Services/NicheServicePage';
 import ScrollToTop from './Scroll-top';
 import WhatsappFloat from './Component/Whatsapp';
+import Navbar_2 from './Component/Navbar_2';
+import UkPage from './Page/LandingMkPage/LandingMkPage';
 
 function App() {
 
+  const location = useLocation();
+
+  const isUKPage = location.pathname.startsWith("/uk");
 
   return (
     <>
-      <Navbar />
-        <ScrollToTop />
-
-        <WhatsappFloat />
+      {isUKPage ? <Navbar_2 /> : <Navbar />}
+      <ScrollToTop />
+      <WhatsappFloat />
+      
       <Routes>
+        {/* ✅ Custom UK page route */}
+        <Route path="/uk" element={<UkPage />} />
+        
+        {/* ✅ All your existing routes */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<div>About Page</div>} />
-        <Route path="/ContactUs" element={<ContactPage />}/>
-        <Route path="/services/social-media" element={<SMMPage />}/>
-          <Route path="/services/ppc" element={<PPCPage />}/>
-            <Route path="/services/website-development" element={<WEBDEVPage />}/>
-              <Route path="/services/website-design" element={<WEBDPage />}/>
-                <Route path="/services/hosting" element={<WEBHOSPage />}/>
-                  <Route path="/services/seo" element={<SEOPage />}/>
-                    <Route path="/services/lead-gen" element={<LEADPage />}/>
-                      <Route path="/services/crm" element={<CRMPage />}/>
-                      <Route path="/services/ecommerce" element={<EcomPage />}/>
-                      <Route path="/services/android-app" element={<APPage />}/>
-
-                          <Route path="/Careers" element={<CareerPage />}/>
-                      <Route path="/about/Why-choose" element={<WhyPage />}/>
-                      <Route path="/about/Who-are" element={<WhoPage />}/>
-
-
-                       <Route path="/services/HR-Services" element={<HRPage />}/>
-                      <Route path="/services/Permanent-Staffing" element={<PRPage />}/>
-                       <Route path="/services/Temporary-Contract Staffing" element={<TPage />}/>
-                      <Route path="/services/Specialized-Niche-Hiring" element={<NichePage />}/>
+        <Route path="/ContactUs" element={<ContactPage />} />
+        <Route path="/services/social-media" element={<SMMPage />} />
+        <Route path="/services/ppc" element={<PPCPage />} />
+        <Route path="/services/website-development" element={<WEBDEVPage />} />
+        <Route path="/services/website-design" element={<WEBDPage />} />
+        <Route path="/services/hosting" element={<WEBHOSPage />} />
+        <Route path="/services/seo" element={<SEOPage />} />
+        <Route path="/services/lead-gen" element={<LEADPage />} />
+        <Route path="/services/crm" element={<CRMPage />} />
+        <Route path="/services/ecommerce" element={<EcomPage />} />
+        <Route path="/services/android-app" element={<APPage />} />
+        <Route path="/Careers" element={<CareerPage />} />
+        <Route path="/about/Why-choose" element={<WhyPage />} />
+        <Route path="/about/Who-are" element={<WhoPage />} />
+        <Route path="/services/HR-Services" element={<HRPage />} />
+        <Route path="/services/Permanent-Staffing" element={<PRPage />} />
+        <Route path="/services/Temporary-Contract Staffing" element={<TPage />} />
+        <Route path="/services/Specialized-Niche-Hiring" element={<NichePage />} />
       </Routes>
+
       <Footer />
     </>
   );

@@ -1,0 +1,74 @@
+.marketing-container-uk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px  100px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefeff;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.marketing-left-uk {
+  flex: 1;
+  max-width: 600px;
+}
+
+.marketing-right-uk {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlight-uk {
+  color: #f44336;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.title-bold-uk {
+  font-weight: 700;
+  color: #1a1a3d;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.desc-uk {
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  letter-spacing: 1.3px;
+  font-size: 15px;
+}
+
+.service-item-uk {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+
+.why-icon-uk {
+  font-size: 30px;
+  color: #ff5722;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.service-item-uk h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #27276b;
+}
+
+.service-item-uk p {
+  letter-spacing: 1.3px;
+  margin: 5px 0 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}

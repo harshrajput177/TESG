@@ -59,9 +59,10 @@
   }
   
   .lang-select {
-    padding: 12px  8px;
+    cursor:  pointer !important;
+    padding: 12px  10px;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid #828282;
   }
   
   .talk-button {

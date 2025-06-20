@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../Style/Services-css/Webdevelop-css/WebdevCom1.css";
-import contentImage from "../../../image/360_F_447036650_BwtW5SmAIxgdJxJunRvkiaysLkjgDAFB-removebg-preview.png";
+import contentImage from "../../../image/hy.webp";
 
 const WebDevCom1 = () => {
   return (

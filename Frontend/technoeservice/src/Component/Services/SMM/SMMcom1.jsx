@@ -1,7 +1,7 @@
 // App.jsx
 import React from "react";
 import "../../../Style/Services-css/SMM-CSS/SMMcom1.css";
-import contentImage from "../../../image/smm-big-text-tiny-people-work-social-media-managers-digital-marketing-online-advertising-smm_501813-701-removebg-preview.png" // Update with actual image path
+import contentImage from "../../../image/ads-dv360-lytics.png" // Update with actual image path
 
 const SmmCom1 = () => {
   return (

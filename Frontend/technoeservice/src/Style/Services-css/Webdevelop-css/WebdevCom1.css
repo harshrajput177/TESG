@@ -1,5 +1,5 @@
 .WebDevCom1-main-wrapper {
-  background: linear-gradient(135deg, #fcfeff, #f3fbff, #010057);
+  background: linear-gradient(135deg, #fcfeff, #f3fbff, #0100579e);
   position: relative;
   overflow: hidden;
 }
@@ -7,7 +7,7 @@
 .WebDevCom1-main-container {
   position: relative;
   z-index: 2;
-  padding: 50px 20px;
+  padding: 50px 10px;
   margin: auto;
   max-width: 1200px;
   backdrop-filter: blur(2px);
@@ -17,7 +17,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  gap: 40px;
+  gap: 60px;
   align-items: flex-start;
   justify-content: space-between;
 }

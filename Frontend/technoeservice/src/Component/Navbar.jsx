@@ -111,9 +111,21 @@ const Navbar = () => {
         </nav>
 
         <div className="nav-right">
-          <select className="lang-select">
-            <option   value="IN">🌐 IN</option>
-          </select>
+       <select
+  className="lang-select"
+  onChange={(e) => {
+    const selected = e.target.value;
+    if (selected === "UK") {
+      navigate("/uk");
+    } else if (selected === "IN") {
+      navigate("/");
+    }
+  }}
+>
+  <option value="IN">🌐 IN</option>
+  <option value="UK">🌐 UK</option>
+</select>
+
           <button className="talk-button" onClick={handleTalkClick}>Let’s Talk</button>
         </div>
 

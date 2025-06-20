@@ -1,12 +1,27 @@
 import React from 'react';
 import '../../Style/ContactUs-css/ContactUsCom1.css';
+import { useState } from 'react';
 
 const ProposalForm = () => {
+   const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    company: '',
+    website: '',
+    email: '',
+    phone: '',
+    companySize: '',
+    heardFrom: '',
+    services: [],
+    businessDetails: '',
+    consent: false
+  });
+
   return (
     <div className="proposal-container">
       <div className="form-section">
         <h1>Experience Real Results</h1>
-        <p  className='Partner-p'>Partner with Thrive Internet Marketing Agency and scale your business.</p>
+        <p  className='Partner-p'>Partner with GWI Internet Marketing Agency and scale your business.</p>
         <form>
           <div className="form-row">
             <input type="text" placeholder="First Name*" />
@@ -27,7 +42,7 @@ const ProposalForm = () => {
             <select>
               <option>Company Size*</option>
             </select>
-            <input type="text" placeholder="How did you hear about Thrive?" />
+            <input type="text" placeholder="How did you hear about GWI?" />
           </div>
           <div className="services">
             <p>Services*</p>
@@ -49,7 +64,7 @@ const ProposalForm = () => {
           <p className="call-text">In a hurry? Give us a call now at <a href="tel:9319315798">+91 9958926555</a></p>
         </form>
         <p className="disclaimer">
-          By checking the box above, you consent to receive informational SMS and SMS-based appointment reminders from Thrive Ideas at the phone number provided. Msg & data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP. Reply HELP for help. <a href="#">Privacy Policy & Terms</a>.
+          By checking the box above, you consent to receive informational SMS and SMS-based appointment reminders from GWI Ideas at the phone number provided. Msg & data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP. Reply HELP for help. <a href="#">Privacy Policy & Terms</a>.
         </p>
       </div>
       <div className="info-section">
