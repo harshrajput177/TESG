@@ -20,7 +20,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:4000/api/contact/query', formData);
+      const res = await axios.post('https://tesg-backend.onrender.com/api/contact/query', formData);
       alert(res.data.message);
       setFormData({ username: '', email: '', message: '' });
     } catch (error) {
