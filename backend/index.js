@@ -12,6 +12,12 @@ app.use(cors());
 app.use(express.json())
 
 
+app.use(cors({
+  origin: 'https://technoesgroup.com/', // replace with your actual domain
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
+
 app.use('/api/contact', QueryRoutes);
 
 mongoose.connect(Mongo_Url)
