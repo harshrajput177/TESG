@@ -129,11 +129,14 @@
   .navbar-main-uk {
     grid-template-columns: auto 1fr auto;
     padding: 10px 20px;
+    position: relative;
     align-items: center;
   }
 
   .nav-left-uk {
-    display: none;
+    position: absolute;
+    right:20px;
+    top: 70px;
   }
 
   .tesg-logo-uk {
@@ -162,8 +165,13 @@
   }
 
   .tesguk-lang-select {
-    padding: 6px 8px;
+    padding: 6px 12px;
     font-size: 13px;
+  }
+
+    .lang-buttons-uk .lang-btn-uk {
+    font-size: 12px;
+    padding: 5px 8px;
   }
 
   .talk-button-uk {
