@@ -36,8 +36,8 @@ const Navbar_2 = () => {
     }
   }}
 >
-    <option value="UK">🌐 UK</option>
-  <option value="IN">🌐 IN</option>
+    <option  className='lang-uk' value="UK">🌐 UK</option>
+  <option className='lang-uk' value="IN">🌐 IN</option>
 </select>
         </div>
 
