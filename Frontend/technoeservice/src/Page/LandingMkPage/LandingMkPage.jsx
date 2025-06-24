@@ -3,6 +3,7 @@ import Comp1 from '../../Component/LandingMk/LandingMk_1';
 import Comp2 from '../../Component/LandingMk/LandingMk_2';
 import Comp3 from '../../Component/LandingMk/LandingMk_3';
 import Comp4 from '../../Component/LandingMk/LandingMk_4';
+import Comp5 from '../../Component/LandingMk/LandingMk_5';
 
 function UkPage() {
 
@@ -12,7 +13,9 @@ function UkPage() {
           <Comp1 />
           <Comp2 />
           <Comp3 />
+          <Comp5 />
           <Comp4 />
+     
 
     </div>
   </div>
