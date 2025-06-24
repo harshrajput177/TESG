@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../image/63761c632c2b88416ffd24413df2f3d7.png';
 import '../Style/Navbar_2.css';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
 
 const Navbar_2 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,8 +25,8 @@ const Navbar_2 = () => {
     <header className={`navbar-uk ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-main-uk">
         <div className="nav-left-uk">
-         <select
-  className="lang-select"
+  <select
+  className="tesguk-lang-select"
   onChange={(e) => {
     const selected = e.target.value;
     if (selected === "UK") {
@@ -53,18 +51,10 @@ const Navbar_2 = () => {
           </button>
         </div>
 
-        <div className="menu-icon-uk" onClick={toggleMenu}>
-          {menuOpen ? '' : <MenuIcon />}
-        </div>
+  
       </div>
 
-      <nav className={`nav-links-uk ${menuOpen ? 'open' : ''}`}>
-        <div className="nav-close-icon" onClick={toggleMenu}>
-          <CloseIcon />
-        </div>
-      </nav>
-
-      {menuOpen && <div className="overlay-uk" onClick={toggleMenu}></div>}
+   
     </header>
   );
 };

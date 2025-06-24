@@ -47,7 +47,7 @@
   gap: 15px;
 }
 
-.lang-select-uk {
+.tesguk-lang-select {
   padding: 8px;
   border-radius: 4px;
   border: 1px solid #ccc;
@@ -124,21 +124,84 @@
   z-index: 500;
 }
 
-/* Responsive for mobile */
+
 @media (max-width: 768px) {
-  .menu-icon-uk {
-    display: block;
+  .navbar-main-uk {
+    grid-template-columns: auto 1fr auto;
+    padding: 10px 20px;
+    align-items: center;
   }
 
-  .nav-links-uk {
+  .nav-left-uk {
     display: none;
   }
 
+  .tesg-logo-uk {
+    justify-self: center;
+  }
+
+  .tesg-logo-img-uk {
+    height: 75px;
+  }
+
+  .menu-icon-uk {
+    display: block;
+    font-size: 24px;
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    z-index: 1001;
+  }
+
+  /* Show language select & talk button on right even in mobile */
+  .nav-right-uk {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-self: end;
+  }
+
+  .tesguk-lang-select {
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+
+  .talk-button-uk {
+    padding: 8px 14px !important;
+    font-size: 14px;
+  }
+
+  /* Hamburger menu overlay (side drawer) */
+  .nav-links-uk {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 250px;
+    background-color: #ffffff;
+    padding-top: 80px;
+    padding-left: 25px;
+    gap: 25px;
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
   .nav-links-uk.open {
+    right: 0;
     display: flex;
   }
 
-  .navbar-main-uk {
-    grid-template-columns: 1fr auto 1fr;
+  .nav-close-icon {
+    display: block;
+    font-size: 24px;
+    top: 20px;
+    right: 20px;
+  }
+
+  .overlay-uk {
+    display: block;
   }
 }

@@ -48,7 +48,7 @@ const MarketingServices = () => {
       </div>
 
       <div className="marketing-right-uk">
-        <img src={img_1} alt="Why Choose GWI" />
+        <img src={img_1} alt="Why Choose GWI"  className="Gwi-land3-img"/>
       </div>
     </div>
   );

@@ -72,3 +72,70 @@
   font-size: 14px;
   line-height: 1.5;
 }
+
+
+@media (max-width: 768px) {
+  .marketing-container-uk {
+    flex-direction: column;
+    padding: 40px 20px;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .marketing-left-uk,
+  .marketing-right-uk {
+    max-width: 100%;
+    flex: none;
+  }
+
+  .title-bold-uk {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .desc-uk {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .service-item-uk h3 {
+    font-size: 16px;
+  }
+
+  .service-item-uk p {
+    font-size: 13px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+  }
+
+  .why-icon-uk {
+    font-size: 24px;
+  }
+
+  .marketing-right-uk {
+    justify-content: flex-start;
+  }
+
+  .Gwi-land3-img{
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-bold-uk {
+    font-size: 22px;
+  }
+
+  .desc-uk {
+    font-size: 13px;
+  }
+
+  .service-item-uk {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .why-icon-uk {
+    margin-top: 0;
+  }
+}
