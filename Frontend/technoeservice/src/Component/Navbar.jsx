@@ -53,18 +53,39 @@ const Navbar = () => {
               <span onClick={(e) => handleDropdownToggle('services', e)} className='nav-tesg-Services'>
                 IT Services <ArrowDropDownIcon />
               </span>
-              <ul className="dropdown">
-                <li><Link to="/services/website-development"  onClick={() => setMenuOpen(false)} >Website Development</Link></li>
-                <li><Link to="/services/website-design"  onClick={() => setMenuOpen(false)} >Website Design</Link></li>
-                <li><Link to="/services/android-app"  onClick={() => setMenuOpen(false)} >Android App Development</Link></li>
-                <li><Link to="/services/hosting"  onClick={() => setMenuOpen(false)} >Website Hosting</Link></li>
-                <li><Link to="/services/ecommerce"  onClick={() => setMenuOpen(false)} >Ecommerce Website</Link></li>
-                <li><Link to="/services/crm"  onClick={() => setMenuOpen(false)} >CRM Development</Link></li>
-                <li><Link to="/services/seo"  onClick={() => setMenuOpen(false)} >SEO</Link></li>
-                <li><Link to="/services/social-media"  onClick={() => setMenuOpen(false)} >Social Media Marketing</Link></li>
-                <li><Link to="/services/lead-gen"  onClick={() => setMenuOpen(false)} >Lead Generation</Link></li>
-                <li><Link to="/services/ppc"  onClick={() => setMenuOpen(false)} >PPC</Link></li>
-              </ul>
+    <ul className="dropdown">
+  <Link to="/services/website-development" onClick={() => setMenuOpen(false)}>
+    <li>Website Development</li>
+  </Link>
+  <Link to="/services/website-design" onClick={() => setMenuOpen(false)}>
+    <li>Website Design</li>
+  </Link>
+  <Link to="/services/android-app" onClick={() => setMenuOpen(false)}>
+    <li>Android App Development</li>
+  </Link>
+  <Link to="/services/hosting" onClick={() => setMenuOpen(false)}>
+    <li>Website Hosting</li>
+  </Link>
+  <Link to="/services/ecommerce" onClick={() => setMenuOpen(false)}>
+    <li>Ecommerce Website</li>
+  </Link>
+  <Link to="/services/crm" onClick={() => setMenuOpen(false)}>
+    <li>CRM Development</li>
+  </Link>
+  <Link to="/services/seo" onClick={() => setMenuOpen(false)}>
+    <li>SEO</li>
+  </Link>
+  <Link to="/services/social-media" onClick={() => setMenuOpen(false)}>
+    <li>Social Media Marketing</li>
+  </Link>
+  <Link to="/services/lead-gen" onClick={() => setMenuOpen(false)}>
+    <li>Lead Generation</li>
+  </Link>
+  <Link to="/services/ppc" onClick={() => setMenuOpen(false)}>
+    <li>PPC</li>
+  </Link>
+</ul>
+
             </li>
 
 
@@ -74,10 +95,10 @@ const Navbar = () => {
                 Recruitment Services <ArrowDropDownIcon />
               </span>
               <ul className="dropdown">
-                <li><Link to="/services/Permanent-Staffing"  onClick={() => setMenuOpen(false)}> Permanent Staffing</Link></li>
-                <li><Link to="/services/Temporary-Contract Staffing"   onClick={() => setMenuOpen(false)}>Temporary / Contract Staffing</Link></li>
-                 <li><Link to="/services/Specialized-Niche-Hiring"   onClick={() => setMenuOpen(false)}> Specialized / Niche Hiring</Link></li>
-                 <li><Link to="/services/HR-Services"   onClick={() => setMenuOpen(false)}> HR Services </Link></li>
+                <Link to="/services/Permanent-Staffing"  onClick={() => setMenuOpen(false)}> <li>Permanent Staffing</li></Link>
+                <Link to="/services/Temporary-Contract Staffing"   onClick={() => setMenuOpen(false)}><li>Temporary / Contract Staffing</li></Link>
+                 <Link to="/services/Specialized-Niche-Hiring"   onClick={() => setMenuOpen(false)}> <li>Specialized / Niche Hiring</li></Link>
+                 <Link to="/services/HR-Services"   onClick={() => setMenuOpen(false)}> <li>HR Services </li></Link>
               </ul>
             </li>
        
@@ -87,9 +108,9 @@ const Navbar = () => {
                 Know Us More <ArrowDropDownIcon />
               </span>
               <ul className="dropdown">
-                <li><Link to="/about/Who-are"  onClick={() => setMenuOpen(false)}>Who we are</Link></li>
-                <li><Link to="/about/Why-choose"   onClick={() => setMenuOpen(false)}>Why Choose Us</Link></li>
-                 <li><Link to="/Careers"   onClick={() => setMenuOpen(false)}>Careers</Link></li>
+               <Link to="/about/Who-are"  onClick={() => setMenuOpen(false)}> <li>Who we are</li></Link>
+               <Link to="/about/Why-choose"   onClick={() => setMenuOpen(false)}> <li>Why Choose Us</li></Link>
+             <Link to="/Careers"   onClick={() => setMenuOpen(false)}>    <li>Careers</li></Link>
               </ul>
             </li>
 
