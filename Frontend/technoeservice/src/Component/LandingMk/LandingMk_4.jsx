@@ -8,7 +8,8 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     username: '',
     email: '',
-    message: ''
+    message: '',
+    phone:''
   });
 
   const handleChange = (e) => {
@@ -20,7 +21,7 @@ const ContactForm = () => {
     try {
       const res = await axios.post('https://tesg-backend.onrender.com/api/contact/query', formData);
       alert(res.data.message);
-      setFormData({ username: '', email: '', message: '' });
+      setFormData({ username: '', email: '', message: '', phone:'' });
     } catch (error) {
       console.error(error);
       alert('Failed to send message. Please try again.');
@@ -61,6 +62,19 @@ const ContactForm = () => {
                 required
               />
             </div>
+
+             <div className="input-group-uk">
+              <FaEnvelope className="formicon-uk" />
+              <input
+                type="number"
+                name="phone"
+                placeholder="Phone Number.. "
+                value={formData.phone}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
             <div className="input-group-uk">
               <textarea
                 name="message"

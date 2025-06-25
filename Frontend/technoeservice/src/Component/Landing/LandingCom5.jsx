@@ -10,6 +10,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     username: '',
     email: '',
+    phone:'',
     message: ''
   });
 
@@ -22,7 +23,7 @@ const Contact = () => {
     try {
       const res = await axios.post('https://tesg-backend.onrender.com/api/contact/query', formData);
       alert(res.data.message);
-      setFormData({ username: '', email: '', message: '' });
+      setFormData({username: '', email: '', message: '', phone:''});
     } catch (error) {
       console.error('Submit Error:', error);
       alert('Something went wrong. Please try again.');
@@ -75,6 +76,14 @@ const Contact = () => {
               name="email"
               placeholder="Enter a valid email address"
               value={formData.email}
+              onChange={handleChange}
+              required
+            />
+             <input
+              type="number"
+              name="phone"
+              placeholder="Enter phone number"
+              value={formData.phone}
               onChange={handleChange}
               required
             />
