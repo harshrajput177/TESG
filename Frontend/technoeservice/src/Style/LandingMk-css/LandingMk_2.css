@@ -118,6 +118,19 @@
   background-color: #6a39c9;
 }
 
+.call-btn-uk-name{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.call-btn-uk{
+background: red;
+border-radius: 32px;
+color: white !important;
+padding: 10px;
+margin-top: 6px;
+}
+
 .phone-contact-uk {
   display: flex;
   align-items: center;

@@ -73,9 +73,13 @@ const ServiceSection = () => {
             <button className="learn-more-btn-uk">LEARN MORE →</button>
             <div className="phone-contact-uk">
               <div className="icon-uk phone-icon"><FaPhoneAlt /></div>
-              <div>
+              <div className="call-btn-uk-name">
                 <p>Call Us Now</p>
-                <strong>+91-93840-12345</strong>
+
+                <a href="tel:+441908881080" className="call-btn-uk">
+  <strong>+44 190-888-1080</strong>
+</a>
+
               </div>
             </div>
           </div>
