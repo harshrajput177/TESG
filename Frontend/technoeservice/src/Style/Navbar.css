@@ -154,6 +154,11 @@
   @media (max-width: 991px) {
     .menu-icon {
       display: block;
+
+    }
+
+    .icon-menu-s{
+           font-size: 28px !important;
     }
 
     .nav-links .nav-Parent-ul{

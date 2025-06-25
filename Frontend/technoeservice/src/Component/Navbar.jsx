@@ -133,7 +133,7 @@ const Navbar = () => {
         </div>
 
         <div className="menu-icon" onClick={toggleMenu}>
-          {menuOpen ? " ": <MenuIcon />}
+          {menuOpen ? " ": <MenuIcon   className='icon-menu-s'/>}
         </div>
       </div>
 
