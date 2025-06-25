@@ -77,7 +77,7 @@ const ServiceSection = () => {
                 <p>Call Us Now</p>
 
                 <a href="tel:+441908881080" className="call-btn-uk">
-  <strong>+44 190-888-1080</strong>
+  <strong  className="btn-color">+44 190-888-1080</strong>
 </a>
 
               </div>

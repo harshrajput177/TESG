@@ -131,6 +131,10 @@ padding: 10px;
 margin-top: 6px;
 }
 
+.btn-color{
+  color: white !important;
+}
+
 .phone-contact-uk {
   display: flex;
   align-items: center;
