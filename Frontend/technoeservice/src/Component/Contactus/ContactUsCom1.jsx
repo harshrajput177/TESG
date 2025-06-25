@@ -33,10 +33,15 @@ const ProposalForm = () => {
           </div>
           <div className="form-row">
             <input type="email" placeholder="Email Address*" />
-            <div className="phone-input">
-              <span>+91</span>
-              <input type="tel" placeholder="9860....." />
-            </div>
+       <div className="phone-input">
+  <select className="country-code">
+    <option value="+91">🇮🇳 +91</option>
+    <option value="+44">🇬🇧 +44</option>
+    {/* Add more countries if needed */}
+  </select>
+  <input type="tel" placeholder="Enter phone number" />
+</div>
+
           </div>
           <div className="form-row">
             <select>
@@ -96,11 +101,11 @@ const ProposalForm = () => {
         <div className="contact-details">
           <h4>Headquarters:</h4>
            Suite 5 Margaret Powell House, 401-447, Milton Keynes, Buckinghamshire U.K. MK9 3BN
+           <h4>Phone Number :</h4> <p>190-888-1080 </p>
             <h4>Branch Office:</h4>
             H-96, SF-3, Sector-63, Noida, 201301, India
           <h4>Main Phone:</h4>
           <p>+91 9958926555</p>
-          <p>+91 9958931555</p>
           <h4>Office Hours:</h4>
           <p>Mon-Fri, 10:00am – 7:00pm </p>
         </div>

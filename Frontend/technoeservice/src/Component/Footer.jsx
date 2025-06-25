@@ -38,8 +38,11 @@ const Footer = () => {
           <h3><span className="tesg-logo">
             <img src={logo} alt="" className="Gwi-tesg-logo-img"/> 
             </span> GWI Techno-EService</h3>
-<p>Your one-stop destination for result-driven digital strategies, innovative marketing solutions, and smart brand growth at unbeatable value.</p>
-          <p>Call us: +91 9958931555</p>
+
+   <p>Headquarters:</p>
+           Suite 5 Margaret Powell House, 401-447, Milton Keynes, Buckinghamshire U.K. MK9 3BN
+           <p>Phone Number : 190-888-1080</p>
+          <p>Call us: +91 9958926555</p>
           <p>Email: info@technoesgroup.com</p>
         </div>
 
