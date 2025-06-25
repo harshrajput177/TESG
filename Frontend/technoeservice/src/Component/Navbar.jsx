@@ -7,6 +7,8 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import 'flag-icons/css/flag-icons.min.css';
+
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const Navbar = () => {
@@ -111,7 +113,7 @@ const Navbar = () => {
         </nav>
 
         <div className="nav-right">
-       <select
+ <select
   className="lang-select"
   onChange={(e) => {
     const selected = e.target.value;
@@ -122,9 +124,10 @@ const Navbar = () => {
     }
   }}
 >
-  <option value="IN">🌐 IN</option>
-  <option value="UK">🌐 UK</option>
+  <option value="IN">IN</option>
+  <option value="UK">UK</option>
 </select>
+
 
           <button className="talk-button" onClick={handleTalkClick}>Let’s Talk</button>
         </div>

@@ -148,11 +148,6 @@
   display: block;
 }
 
-  @media (max-width: 1424px) {
-  .lang-select{
-      display: none !important;
-    }
-  }
 
   
   /* Mobile Menu Styles */
@@ -207,7 +202,7 @@
       position: relative;
     }
   
-    .nav-right {
+    .talk-button{
       display: none;
     }
 
@@ -272,4 +267,14 @@
   .dropdown li a {
     font-size: 14px;
   }
+
+    .lang-select{
+    position: absolute !important;
+    top: 32px !important;
+    right: 65px !important;
+    z-index: 99 !important;
+    display: block;
+    border-radius: 5px;
+    padding: 5px  ;
+    }
 }
