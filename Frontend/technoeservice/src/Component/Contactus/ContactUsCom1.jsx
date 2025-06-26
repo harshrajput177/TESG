@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../Style/ContactUs-css/ContactUsCom1.css';
-import { useState } from 'react';
 
 const ProposalForm = () => {
-   const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     company: '',
     website: '',
     email: '',
+    phoneCode: '+91',
     phone: '',
     companySize: '',
     heardFrom: '',
@@ -17,52 +17,132 @@ const ProposalForm = () => {
     consent: false
   });
 
+  const servicesList = [
+    'App Development','Web Development','SEO', 'PPC', 'Social Media Organic', 'Social Media Ads',
+    'Web Design', 'CRO', 'Reputation / Reviews', 'Local SEO', 'Content Writing', 'Photography / Video',
+    'Web Hosting', 'Amazon Marketing', 'Email Marketing', 'ADA Compliance', 'Link Building'
+  ];
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+
+    if (name === 'services') {
+      if (checked) {
+        setFormData({ ...formData, services: [...formData.services, value] });
+      } else {
+        setFormData({ ...formData, services: formData.services.filter(service => service !== value) });
+      }
+    } else if (type === 'checkbox') {
+      setFormData({ ...formData, [name]: checked });
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('http://localhost:4000/api/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        alert('Form submitted successfully!');
+        // Optionally reset the form
+        setFormData({
+          firstName: '',
+          lastName: '',
+          company: '',
+          website: '',
+          email: '',
+          phoneCode: '+91',
+          phone: '',
+          companySize: '',
+          heardFrom: '',
+          services: [],
+          businessDetails: '',
+          consent: false
+        });
+      } else {
+        alert('Failed to submit form.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Something went wrong.');
+    }
+  };
+
   return (
     <div className="proposal-container">
       <div className="form-section">
         <h1>Experience Real Results</h1>
-        <p  className='Partner-p'>Partner with GWI Internet Marketing Agency and scale your business.</p>
-        <form>
+        <p className='Partner-p'>Partner with GWI Internet Marketing Agency and scale your business.</p>
+        <form onSubmit={handleSubmit}>
           <div className="form-row">
-            <input type="text" placeholder="First Name*" />
-            <input type="text" placeholder="Last Name*" />
+            <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} placeholder="First Name*" required />
+            <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} placeholder="Last Name*" required />
           </div>
           <div className="form-row">
-            <input type="text" placeholder="Company/Organization*" />
-            <input type="text" placeholder="Website" />
+            <input type="text" name="company" value={formData.company} onChange={handleChange} placeholder="Company/Organization*" required />
+            <input type="text" name="website" value={formData.website} onChange={handleChange} placeholder="Website" />
           </div>
           <div className="form-row">
-            <input type="email" placeholder="Email Address*" />
-       <div className="phone-input">
-  <select className="country-code">
-    <option value="+91">🇮🇳 +91</option>
-    <option value="+44">🇬🇧 +44</option>
-    {/* Add more countries if needed */}
-  </select>
-  <input type="tel" placeholder="Enter phone number" />
-</div>
-
+            <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email Address*" required />
+            <div className="phone-input">
+              <select name="phoneCode" value={formData.phoneCode} onChange={handleChange} className="country-code">
+                <option value="+91">🇮🇳 +91</option>
+                <option value="+44">🇬🇧 +44</option>
+              </select>
+              <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="Enter phone number" required />
+            </div>
           </div>
           <div className="form-row">
-            <select>
-              <option>Company Size*</option>
+            <select name="companySize" value={formData.companySize} onChange={handleChange} required>
+              <option value="">Company Size*</option>
+              <option value="1-10">1–10</option>
+              <option value="11-50">11–50</option>
+              <option value="51-200">51–200</option>
+              <option value="201+">201+</option>
             </select>
-            <input type="text" placeholder="How did you hear about GWI?" />
+            <input type="text" name="heardFrom" value={formData.heardFrom} onChange={handleChange} placeholder="How did you hear about GWI?" />
           </div>
           <div className="services">
             <p>Services*</p>
             <div className="checkbox-grid">
-              {['App Development','Web Development','SEO', 'PPC', 'Social Media Organic', 'Social Media Ads', 'Web Design', 'CRO', 'Reputation / Reviews', 'Local SEO', 'Content Writing', 'Photography / Video', 'Web Hosting', 'Amazon Marketing', 'Email Marketing', 'ADA Compliance', 'Link Building'].map((service) => (
+              {servicesList.map((service) => (
                 <label key={service}>
-                  <input type="checkbox" /> {service}
+                  <input
+                    type="checkbox"
+                    name="services"
+                    value={service}
+                    checked={formData.services.includes(service)}
+                    onChange={handleChange}
+                  />
+                  {service}
                 </label>
               ))}
             </div>
           </div>
-          <textarea placeholder="Tell us about your business"></textarea>
+          <textarea
+            name="businessDetails"
+            value={formData.businessDetails}
+            onChange={handleChange}
+            placeholder="Tell us about your business"
+          />
           <div className="consent">
             <label>
-              <input type="checkbox" /> I consent to receive notifications and promotional messages
+              <input
+                type="checkbox"
+                name="consent"
+                checked={formData.consent}
+                onChange={handleChange}
+              />
+              I consent to receive notifications and promotional messages
             </label>
           </div>
           <button type="submit" className="submit-btn">SEND MY FREE PROPOSAL</button>
@@ -72,7 +152,7 @@ const ProposalForm = () => {
           By checking the box above, you consent to receive informational SMS and SMS-based appointment reminders from GWI Ideas at the phone number provided. Msg & data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP. Reply HELP for help. <a href="#">Privacy Policy & Terms</a>.
         </p>
       </div>
-      <div className="info-section">
+  <div className="info-section">
         <h2>Ready to Dominate Your Market?</h2>
         <p>Jumpstart your digital marketing success in 3 easy steps:</p>
         <div className="steps">
@@ -109,9 +189,10 @@ const ProposalForm = () => {
           <h4>Office Hours:</h4>
           <p>Mon-Fri, 10:00am – 7:00pm </p>
         </div>
-      </div>
+        </div>
     </div>
   );
 };
 
 export default ProposalForm;
+
