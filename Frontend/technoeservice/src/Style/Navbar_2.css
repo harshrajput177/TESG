@@ -2,7 +2,7 @@
   position: fixed;
   width: 100%;
   background-color: transparent;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.158);
+  box-shadow: 0 0 2px rgba(174, 174, 174, 0.158);
   z-index: 999;
   top: 0;
   left: 0;

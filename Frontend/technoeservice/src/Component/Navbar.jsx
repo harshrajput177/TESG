@@ -114,7 +114,7 @@ const Navbar = () => {
               </ul>
             </li>
 
-
+{/* 
             
             <li className={`dropdown-parent ${openDropdown === 'tools' ? 'open' : ''}`}>
               <span onClick={() => handleDropdownToggle('tools')}  className='nav-tesg-Services'>
@@ -124,9 +124,9 @@ const Navbar = () => {
                 <li><Link to="/tools/CRM">CRM</Link></li>
                 <li><Link to="/tools/checker">SEO Checker</Link></li>
               </ul>
-            </li> 
+            </li>  */}
 
-            {/* <li><Link to="/blog">Blog</Link></li> */}
+            <li><Link to="/blogs">Blog</Link></li>
 
           <li><Link to="/ContactUs" className='nav-tesg-Services'>Contact</Link></li>
 

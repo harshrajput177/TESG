@@ -26,6 +26,7 @@ import ScrollToTop from './Scroll-top';
 import WhatsappFloat from './Component/Whatsapp';
 import Navbar_2 from './Component/Navbar_2';
 import UkPage from './Page/LandingMkPage/LandingMkPage';
+import EditorsPicks from './Component/Blogs/Blogs';
 
 function App() {
 
@@ -45,7 +46,6 @@ function App() {
         
         {/* ✅ All your existing routes */}
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<div>About Page</div>} />
         <Route path="/ContactUs" element={<ContactPage />} />
         <Route path="/services/social-media" element={<SMMPage />} />
         <Route path="/services/ppc" element={<PPCPage />} />
@@ -64,6 +64,7 @@ function App() {
         <Route path="/services/Permanent-Staffing" element={<PRPage />} />
         <Route path="/services/Temporary-Contract Staffing" element={<TPage />} />
         <Route path="/services/Specialized-Niche-Hiring" element={<NichePage />} />
+         <Route path="/blogs" element={<EditorsPicks />} />
       </Routes>
 
       <Footer />
