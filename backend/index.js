@@ -13,7 +13,8 @@ app.use(express.json())
 
 const allowedOrigins = [
   'https://technoesgroup.com',
-  'http://localhost:5173'
+  'http://localhost:5173',
+  'http://localhost:5174'
 ];
 
 app.use(cors({

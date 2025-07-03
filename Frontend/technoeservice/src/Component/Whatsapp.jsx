@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Style/Whatsapp.css';
+import whatsapp  from  "../image/Untitled design.svg"
 
 const WhatsappFloat = () => {
   return (
@@ -10,7 +11,7 @@ const WhatsappFloat = () => {
       rel="noopener noreferrer"
     >
       <img
-        src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"
+        src={whatsapp}
         alt="WhatsApp"
       />
     </a>
