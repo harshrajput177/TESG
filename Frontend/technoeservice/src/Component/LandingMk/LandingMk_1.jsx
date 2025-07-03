@@ -21,11 +21,6 @@ const HeroSection = () => {
     e.preventDefault();
     setStatus({ loading: true, success: null, error: null });
 
-      console.log("username:", formData.username);
-  console.log("email:", formData.email);
-  console.log("phone:", formData.phone);
-  console.log("message:", formData.message);
-
     const payload = {
       username: formData.username.trim(),
       email: formData.email.trim(),
@@ -33,7 +28,6 @@ const HeroSection = () => {
       message: formData.message.trim(),
     };
 
-    console.log("📦 Payload to send:", payload); // Log payload for verification
 
     try {
       const res = await fetch("https://tesg-backend.onrender.com/api/contact/query", {
