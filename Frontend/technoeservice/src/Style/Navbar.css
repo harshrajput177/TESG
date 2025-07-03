@@ -61,8 +61,8 @@
   .lang-select {
     cursor:  pointer !important;
     padding: 12px  10px;
-    border-radius: 4px;
     border: 1px solid #828282;
+      border-radius: 32px;
   }
   
   .talk-button {

@@ -145,8 +145,8 @@ const Navbar = () => {
     }
   }}
 >
-  <option value="IN">IN</option>
-  <option value="UK">UK</option>
+  <option value="IN">🌐 IN</option>
+  <option value="UK">🌐 UK</option>
 </select>
 
 

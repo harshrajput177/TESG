@@ -54,6 +54,7 @@
   box-shadow: 0 0 4px rgb(131, 131, 131);
   background: #f4f4f4f0;
   cursor: pointer;
+  border-radius: 32px;
 }
 
 .talk-button-uk {
