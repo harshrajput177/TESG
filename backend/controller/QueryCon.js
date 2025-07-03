@@ -4,9 +4,10 @@ const submitContactForm = async (req, res) => {
   try {
     const { username, email, message, phone } = req.body;
 
-    if (!username || !email || !message || phone) {
-      return res.status(400).json({ success: false, message: 'All fields are required' });
-    }
+   if (!username || !email || !message || !phone) {
+  return res.status(400).json({ success: false, message: 'All fields are required' });
+}
+
 
     const contact = new Contact({ username, email, message, phone });
     await contact.save();
