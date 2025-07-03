@@ -48,10 +48,11 @@
 }
 
 .tesguk-lang-select {
-  padding: 8px;
+  padding: 12px;
   border-radius: 4px;
-  border: 1px solid #ccc;
-  background: #fff;
+  border: 1px solid #cccccc23;
+  box-shadow: 0 0 4px rgb(131, 131, 131);
+  background: #f4f4f4f0;
   cursor: pointer;
 }
 
