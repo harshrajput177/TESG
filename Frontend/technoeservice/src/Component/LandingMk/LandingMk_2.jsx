@@ -4,8 +4,16 @@ import teamImage from "../../image/transparent_1750245801_1106.svg";
 import { FaBullseye, FaLightbulb, FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
 import { GiProgression } from "react-icons/gi";
+import { useNavigate } from "react-router-dom";
 
 const ServiceSection = () => {
+
+  const navigate = useNavigate();
+  const handleChange =()=>{
+      navigate("/about/Who-are")
+  }
+
+
   return (
     <div className="service-section-uk">
       <div className="service-header-uk">
@@ -70,7 +78,7 @@ const ServiceSection = () => {
           </div>
 
           <div className="cta-section-uk">
-            <button className="learn-more-btn-uk">LEARN MORE →</button>
+            <button className="learn-more-btn-uk"  onClick={handleChange}>LEARN MORE →</button>
             <div className="phone-contact-uk">
               <div className="icon-uk phone-icon"><FaPhoneAlt /></div>
               <div className="call-btn-uk-name">
@@ -79,7 +87,6 @@ const ServiceSection = () => {
                 <a href="tel:+441908881080" className="call-btn-uk">
   <strong  className="btn-color">+44 190-888-1080</strong>
 </a>
-
               </div>
             </div>
           </div>
