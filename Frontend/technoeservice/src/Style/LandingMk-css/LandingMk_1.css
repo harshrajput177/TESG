@@ -1,4 +1,5 @@
 .hero-container-uk {
+  max-width: 1400px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -7,7 +8,7 @@
   align-items: center;
   padding: 11vw 100px;
   overflow: hidden;
-
+  margin: 0 auto;
   background: 
     /* linear-gradient(to bottom right, rgba(246,249,254,0.92), rgba(255,255,255,0.92)), */
     url("../../../public/WhatsApp\ Image\ 2025-07-04\ at\ 19.09.28_3cc60c11.jpg") center/cover no-repeat;

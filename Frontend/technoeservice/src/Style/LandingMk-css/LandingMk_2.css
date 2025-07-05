@@ -1,10 +1,12 @@
 /* ServiceSection.css */
 
 .service-section-uk {
+    max-width: 1400px;
   padding: 60px 5%;
   font-family: 'Poppins', sans-serif;
   background: #fff;
   color: #333;
+    margin: 0 auto;
 }
 
 .service-header-uk{
