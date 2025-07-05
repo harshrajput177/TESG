@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import "../../Style/LandingMk-css/LandingMk_1.css";
+import img4 from "../../image/1.png"
+import img5 from "../../image/22.png"
+import img6 from "../../image/33.png"
+import img7 from "../../image/44.png"
+import img8 from "../../image/55.png"
 
 const HeroSection = () => {
   const [formData, setFormData] = useState({
@@ -110,6 +115,13 @@ const HeroSection = () => {
 
       {status.success && <p className="form-success">{status.success}</p>}
       {status.error && <p className="form-error">{status.error}</p>}
+
+
+
+
+      <div  className="all-img-under">
+        <img src={img4} alt="" /><img src={img5} alt="" /><img src={img6} alt="" /><img src={img7} alt="" /><img src={img8} alt="" />
+      </div>
     </div>
   );
 };

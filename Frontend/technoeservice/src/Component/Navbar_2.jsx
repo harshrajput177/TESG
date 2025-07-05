@@ -10,6 +10,7 @@ import '../Style/Navbar_2.css';
 import Select from 'react-select';
 
 
+
 const options = [
   {
     value: 'IN',
@@ -185,7 +186,7 @@ const handleChange = (option) => {
 />
 
 
-          <button className="talk-button" onClick={handleTalkClick}>Let’s Talk</button>
+          <button className="talk-button-uk" onClick={handleTalkClick}>Let’s Talk</button>
         </div>
 
         <div className="menu-icon" onClick={toggleMenu}>

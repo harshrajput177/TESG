@@ -2,6 +2,8 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  gap: 28%;
+  justify-content: center;
   align-items: center;
   padding: 11vw 100px;
   overflow: hidden;
@@ -134,6 +136,32 @@
 
 .Front-allinputs button:hover {
   background: #034076;
+}
+
+
+.all-img-under{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-self: center;
+  bottom: 0;
+  gap: 50px;
+  position: absolute;
+}
+.all-img-under img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 10px white);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.all-img-under img:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
 }
 
 
