@@ -23,7 +23,7 @@
 }
 
 .highlight-uk {
-  color: #f44336;
+  color: #003d99;
   font-weight: 600;
   margin-bottom: 10px;
   font-size: 16px;
@@ -54,7 +54,7 @@
 
 .why-icon-uk {
   font-size: 30px;
-  color: #ff5722;
+  color:#003d99;
   flex-shrink: 0;
   margin-top: 5px;
 }
