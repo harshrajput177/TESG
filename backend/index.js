@@ -32,7 +32,7 @@ app.use(cors({
 
 
 app.use('/api/contact', QueryRoutes);
-app.use('/api/Ukcontact', contactRoutes);
+app.use('/api/Ukfrom', contactRoutes);
 
 mongoose.connect(Mongo_Url)
 .then(()=>{

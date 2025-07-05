@@ -5,6 +5,7 @@ import { FaBullseye, FaLightbulb, FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
 import { GiProgression } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
+import { FaPhone } from "react-icons/fa";
 
 const ServiceSection = () => {
 
@@ -82,10 +83,10 @@ const ServiceSection = () => {
             <div className="phone-contact-uk">
               <div className="icon-uk phone-icon"><FaPhoneAlt /></div>
               <div className="call-btn-uk-name">
-                <p>Call Us Now</p>
+    
 
                 <a href="tel:+441908881080" className="call-btn-uk">
-  <strong  className="btn-color">+44 190-888-1080</strong>
+  <strong  className="btn-color">  +44 190-888-1080  &nbsp; <FaPhone /></strong>
 </a>
               </div>
             </div>

@@ -30,7 +30,7 @@ const ContactForm = () => {
 
     try {
       const res = await fetch(
-        "https://tesg-backend.onrender.com/api/uk-form/Ukcontact",
+        "https://tesg-backend.onrender.com/api/Ukfrom/Ukcontact",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

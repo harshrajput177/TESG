@@ -79,7 +79,7 @@
 }
 
 .purple-bg {
-  background-color: #8149e0;
+  background-color: #003d99;
 }
 
 .feature-box-uk h3 {
@@ -104,7 +104,7 @@
 }
 
 .learn-more-btn-uk {
-  background-color: #8149e0;
+  background-color: #003d99;
   color: white;
   padding: 12px 24px;
   border: none;
@@ -115,7 +115,7 @@
 }
 
 .learn-more-btn-uk:hover {
-  background-color: #6a39c9;
+  background-color: #02327b;
 }
 
 .call-btn-uk-name{
@@ -124,7 +124,7 @@
   gap: 2px;
 }
 .call-btn-uk{
-background: red;
+background: rgba(0, 141, 9, 0.842);
 border-radius: 32px;
 color: white !important;
 padding: 10px;
