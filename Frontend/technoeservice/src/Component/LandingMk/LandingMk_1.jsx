@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../../Style/LandingMk-css/LandingMk_1.css";
-import img1 from "../../image/hy.webp";
 
 const HeroSection = () => {
   const [formData, setFormData] = useState({
@@ -53,7 +52,7 @@ const HeroSection = () => {
 
   return (
     <div className="hero-container-uk">
-      <div className="extra-circle"></div>
+
 
       <div className="hero-content-uk">
         <h1>
@@ -67,9 +66,9 @@ const HeroSection = () => {
         </p>
       </div>
 
-      <div className="hero-illustration-uk">
+      {/* <div className="hero-illustration-uk">
         <img src={img1} alt="Digital Agency Illustration" />
-      </div>
+      </div> */}
 
       <form className="Front-allinputs" onSubmit={handleSubmit}>
         <input

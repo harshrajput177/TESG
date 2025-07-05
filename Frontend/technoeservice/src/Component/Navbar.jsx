@@ -8,7 +8,6 @@ import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import 'flag-icons/css/flag-icons.min.css';
-
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const Navbar = () => {

@@ -7,6 +7,7 @@ const Contactform = require("./routes/ContactRoutes");
 const QueryRoutes =  require('./routes/QueryRoutes')
 const port = 4000;
 const Mongo_Url = process.env.MONGO_URL;
+const contactRoutes = require('./routes/UkRoutes');
 
 app.use(cors());
 app.use(express.json())
@@ -31,6 +32,7 @@ app.use(cors({
 
 
 app.use('/api/contact', QueryRoutes);
+app.use('/api/Ukcontact', contactRoutes);
 
 mongoose.connect(Mongo_Url)
 .then(()=>{
@@ -40,7 +42,7 @@ mongoose.connect(Mongo_Url)
     console.log(error)
 })
 
-app.use("/api/", Contactform);
+app.use("/api/uk-form", Contactform);
 
 
 app.listen(port , ()=> console.log(`Server start at ${port}`));

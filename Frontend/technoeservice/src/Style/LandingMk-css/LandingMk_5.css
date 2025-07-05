@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+     background: linear-gradient(to bottom right, #f6f9fe, #ffffff);
 }
 
 .bottom-service-nd-card{

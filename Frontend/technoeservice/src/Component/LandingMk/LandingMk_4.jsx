@@ -1,112 +1,191 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import '../../Style/LandingMk-css/LandingMk_4.css';
-import { FaUser, FaEnvelope, FaFacebookF, FaGoogle, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import img_1 from '../../image/remove-filter.png';
-import axios from 'axios';
 
 const ContactForm = () => {
+  // 👉 1. state
   const [formData, setFormData] = useState({
-    username: '',
-    email: '',
-    message: '',
-    phone:''
+    name: "",
+    business: "",
+    email: "",
+    phone: "",
+    projectType: "",
+    message: "",
+    heardFrom: "",
+    consent: false,
   });
+  const [status, setStatus] = useState({ loading: false, success: null, error: null });
 
+  // 👉 2. handlers
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value, type, checked } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus({ loading: true, success: null, error: null });
+
     try {
-      const res = await axios.post('https://tesg-backend.onrender.com/api/contact/query', formData);
-      alert(res.data.message);
-      setFormData({ username: '', email: '', message: '', phone:'' });
-    } catch (error) {
-      console.error(error);
-      alert('Failed to send message. Please try again.');
+      const res = await fetch(
+        "https://tesg-backend.onrender.com/api/uk-form/Ukcontact",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.message || "Failed to submit form");
+
+      setStatus({ loading: false, success: "Thank you! We’ll be in touch.", error: null });
+      // clear
+      setFormData({
+        name: "",
+        business: "",
+        email: "",
+        phone: "",
+        projectType: "",
+        message: "",
+        heardFrom: "",
+        consent: false,
+      });
+    } catch (err) {
+      setStatus({ loading: false, success: null, error: err.message });
     }
   };
 
+  // 👉 3. JSX (inputs now controlled – note name="" attributes)
   return (
-    <div className='main-container-uk'>
-      <div className="contact-wrapper-uk">
-        <div className="contact-left-uk">
-          <div className="contact-image-uk">
-            <img src={img_1} alt="Phone Icon" />
-          </div>
+    <div className="uk-contact-container">
+      {/* left content (as‑is) */}
+      <div className="uk-contact-left">
+        <h1>Want to discuss a project?</h1>
+   <p>
+          Tell us a little about your project and one of our team will be in touch with you as soon as possible.
+        </p>
+        <div className="uk-contact-info">
+          <p><strong>General enquiries</strong><br />info@technoesgroup.com</p>
+          <p><strong>Support enquiries</strong><br />hr@technoesgroup.com</p>
         </div>
-
-        <div className="contact-right-uk">
-          <h2>Contact us</h2>
-          <form className="contact-form-uk" onSubmit={handleSubmit}>
-            <div className="input-group-uk">
-              <FaUser className="formicon-uk" />
-              <input
-                type="text"
-                name="username"
-                placeholder="Username"
-                value={formData.username}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="input-group-uk">
-              <FaEnvelope className="formicon-uk" />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-             <div className="input-group-uk">
-              <FaEnvelope className="formicon-uk" />
-              <input
-                type="number"
-                name="phone"
-                placeholder="Phone Number.. "
-                value={formData.phone}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            <div className="input-group-uk">
-              <textarea
-                name="message"
-                placeholder="Message..."
-                value={formData.message}
-                onChange={handleChange}
-                required
-              ></textarea>
-            </div>
-            <button className="submit-btn-uk" type="submit">Submit →</button>
-          </form>
-
-          <div className="or-divider-uk">Or</div>
-          <div className="social-icons-uk">
-            <a href="https://www.facebook.com/people/Technoes-Group/61563181743221/" target="_blank" rel="noopener noreferrer">
-              <FaFacebookF className="social-icon-uk fb" />
-            </a>
-            <a href="https://g.co/kgs/G96Rz1q" target="_blank" rel="noopener noreferrer">
-              <FaGoogle className="social-icon-uk gp" />
-            </a>
-            <a href="https://www.instagram.com/technoeservices/" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="social-icon-uk tw" />
-            </a>
-            <a href="https://www.linkedin.com/company/technoesgroup/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedinIn className="social-icon-uk fb" />
-            </a>
-          </div>
+        <div className="uk-social-buttons">
+          <button>LinkedIn</button>
+          <button>Instagram</button>
+          <button>Facebook</button>
         </div>
+      </div>
+
+      {/* right – form */}
+      <div className="uk-contact-right">
+        <form onSubmit={handleSubmit}>
+          <div className="uk-form-group">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name*"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+            <input
+              type="text"
+              name="business"
+              placeholder="Business Name*"
+              value={formData.business}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <div className="uk-form-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address*"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Contact Number*"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <div className="uk-form-group">
+            <select
+              name="projectType"
+              value={formData.projectType}
+              onChange={handleChange}
+              required
+            >
+              <option value="">Type of Project*</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Mobile App">Mobile App</option>
+              <option value="Marketing">Marketing</option>
+            </select>
+          </div>
+
+          <div className="uk-form-group">
+            <textarea
+              name="message"
+              placeholder="Please detail your requirements here"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
+          </div>
+
+          <div className="uk-form-group">
+            <select
+              name="heardFrom"
+              value={formData.heardFrom}
+              onChange={handleChange}
+            >
+              <option value="">How did you hear about us? (Optional)</option>
+              <option value="LinkedIn">LinkedIn</option>
+              <option value="Google">Google</option>
+              <option value="Referral">Referral</option>
+            </select>
+          </div>
+
+          <div className="uk-form-group checkbox">
+            <input
+              type="checkbox"
+              name="consent"
+              checked={formData.consent}
+              onChange={handleChange}
+              required
+            />
+            <label>
+              In order to submit your details to us, please provide consent to the terms of our <a href="#">privacy policy</a>
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            className="uk-submit-button"
+            disabled={status.loading}
+          >
+            {status.loading ? "Submitting…" : "Submit details"}
+          </button>
+        </form>
+
+        {/* success / error feedback */}
+        {status.success && <p className="form-success">{status.success}</p>}
+        {status.error && <p className="form-error">{status.error}</p>}
       </div>
     </div>
   );
 };
 
 export default ContactForm;
+
+
 

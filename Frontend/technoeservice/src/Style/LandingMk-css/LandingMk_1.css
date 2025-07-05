@@ -3,59 +3,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 100px;
+  padding: 11vw 100px;
   overflow: hidden;
-  background: linear-gradient(to bottom right, #f6f9fe, #ffffff);
-  position: relative;
-}
 
-/* ==== Wavy Background (CSS waves using clip-path) ==== */
-.hero-container-uk::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 220px;
-  width: 300px;
-  background: rgba(155, 201, 255, 0.3);
-  border-bottom-right-radius: 90% 100%;
-  z-index: 0;
-  opacity: 0.7;
+  background: 
+    /* linear-gradient(to bottom right, rgba(246,249,254,0.92), rgba(255,255,255,0.92)), */
+    url("../../../public/WhatsApp\ Image\ 2025-07-04\ at\ 19.09.28_3cc60c11.jpg") center/cover no-repeat;
 }
 
 
-
-.hero-container-uk::before {
-  animation: waveMotion 1s ease-in-out infinite alternate;
-}
-
-@keyframes waveMotion {
-  0% {
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 75% 85%, 50% 80%, 25% 85%, 0 80%);
-  }
-  100% {
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 75% 90%, 50% 85%, 25% 90%, 0 85%);
-  }
-}
-
-
-.hero-container-uk::after{
-      animation: waveMotion 1s ease-in-out infinite alternate;
-}
-
-/* ==== Light Circles Background ==== */
 .hero-container-uk::after {
   content: "";
   position: absolute;
-  bottom: -60px;
-  left: 0;
-  height: 250px;
-  width: 300px;
-  background: rgba(155, 201, 255, 0.3);
-  border-top-right-radius: 90% 100%;
-  z-index: 0;
-  opacity: 0.7;
+  inset: 0;
+  background: rgba(255, 255, 255, 0);   /* subtle white veil */
+  /* backdrop-filter: blur(1px); */
+  pointer-events: none;
+  z-index: 1;           
 }
+
 
 .hero-content-uk {
   max-width: 50%;
@@ -67,13 +33,13 @@
   letter-spacing: 1.2px;
   font-size: 2.6vw;
   font-weight: 800;
-  color: #08264d;
+  color: #ffffff;
   margin-bottom: 20px;
   line-height: 1.3;
 }
 
 .hero-content-uk p {
-  color: #666;
+  color: #f0f0f0;
   letter-spacing: 1.8px;
   line-height: 1.6;
   font-size: 16px;
@@ -124,11 +90,8 @@
 
 /* Common spacing  */
 .Front-allinputs {
-  position: absolute;
-  left: 10%;
-  bottom: 5%;
   display: flex; 
-  flex-direction: row;
+  flex-direction: column;
   gap: 34px;     
   border: 1px solid  rgba(212, 212, 212, 0.667);       /* 40px se thoda kam – tighter look */
   padding: 12px 18px;
@@ -141,7 +104,7 @@
 /* Inputs */
 .Front-allinputs input {
   flex: 1;
-  min-width: 160px;
+  min-width: 260px;
   padding: 14px 16px;
   border: 1px solid #d0d7e2;
   border-radius: 8px;

@@ -14,7 +14,8 @@ function UkPage() {
           <Comp2 />
           <Comp3 />
           <Comp5 />
-          <Comp4 />
+                <Comp4 />
+
      
 
     </div>
