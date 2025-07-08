@@ -42,7 +42,7 @@ const services = [
   },
   {
     icon: <FaFacebookF />,
-    title: 'Social Media Marketing (SMM)',
+    title: 'Social Media Marketing',
     description: 'Engage and grow your audience through impactful content on all major social platforms.',
     color: '#576CBC',
     link: '/services/social-media'

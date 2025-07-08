@@ -1,4 +1,4 @@
-
+@import url('../Font.css');
 .uk-contact-container {
       max-width: 1400px;
   display: flex;
@@ -17,6 +17,7 @@
 }
 
 .uk-contact-left h1 {
+   font-family: 'PoppinsMedium';
   padding: 30px 0;
   font-size: 2rem;
   color: #333;
@@ -24,26 +25,18 @@
 }
 
 .uk-contact-left p {
+      font-family: 'Poppins-Regular';
   margin-bottom: 16px;
   color: #555;
 }
 
 .uk-contact-info p {
+      font-family: 'Poppins-Regular';
   font-size: 0.95rem;
   margin-bottom: 12px;
   line-height: 1.6;
 }
 
-.uk-social-buttons button {
-  background-color: #0077b5;
-  color: white;
-  border: none;
-  margin-right: 10px;
-  margin-top: 10px;
-  border-radius: 32px;
-  padding: 10px 16px;
-  cursor: pointer;
-}
 
 .uk-social-buttons button:nth-child(2) {
   background-color: #e4405f;
@@ -66,9 +59,26 @@ form {
   margin-bottom: 20px;
 }
 
+.front-text{
+  display: flex !important;
+  flex-direction: row !important;
+justify-content: space-between;
+gap: 20px;
+
+}
+
+.front-text input{
+  width: 80% !important;
+}
+
+.social-icon-uk{
+  font-size: 14px !important;
+}
+
 .uk-form-group input,
 .uk-form-group textarea,
 .uk-form-group select {
+      font-family: 'Poppins-Regular';
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -92,7 +102,7 @@ form {
 }
 
 .uk-submit-button {
-  background-color: #0077b5;
+  background-color:  #003d99;
   color: white;
   padding: 14px 24px;
   border: none;
@@ -103,16 +113,122 @@ form {
 }
 
 .uk-submit-button:hover {
-  background-color: #005f91;
+  background-color:  #013482;
 }
+
+
+.uk-social-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.uk-social-buttons a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  /* background: rgba(255, 255, 255, 0.15); */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.uk-social-buttons a:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styles */
+.social-icon-uk {
+  width: 100%;
+  height: auto;
+  padding: 2px;
+  font-size: 30px !important;
+  color: white;
+  border-radius: 12px;
+}
+
+/* Individual Colors */
+.fb {
+  background-color: #3b5998; /* Facebook Blue */
+}
+
+.gp {
+  background-color: #db4437; /* Google Red */
+}
+
+.tw {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.li {
+  background-color: #0077b5; /* LinkedIn Blue */
+}
+
 
 @media (max-width: 768px) {
   .uk-contact-container {
     flex-direction: column;
+        box-sizing: border-box; /* important */
+    overflow-x: hidden;  
+  }
+
+  form{
+    max-width: 90%;
+    padding: 20px 5px;
+  }
+
+
+}
+
+
+@media (max-width: 768px) {
+  .uk-contact-container {
+    flex-direction: column;
+    padding: 20px 10px;
+        max-width: 100% !important;
   }
 
   .uk-contact-left,
   .uk-contact-right {
-    flex: 1 1 100%;
+    flex: 1 1 90% !important;
+    padding: 10px 0;
+        box-sizing: border-box;
+  }
+
+  .uk-contact-left h1 {
+    font-size: 1.5rem;
+    padding: 20px 0 10px;
+  }
+
+    .uk-social-buttons {
+      display: flex;
+        gap: 4px;
+    }
+  .uk-social-buttons button {
+    width: 30%;
+    margin-right: 0;
+
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+  }
+
+  .uk-form-group input,
+  .uk-form-group textarea,
+  .uk-form-group select {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .uk-submit-button {
+    width: 60%;
+    font-size: 1rem;
+    padding: 12px;
   }
 }

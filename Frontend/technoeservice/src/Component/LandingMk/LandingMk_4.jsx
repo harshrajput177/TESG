@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../../Style/LandingMk-css/LandingMk_4.css';
+import {  FaFacebookF, FaGoogle, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 const ContactForm = () => {
   // 👉 1. state
@@ -71,16 +72,25 @@ const ContactForm = () => {
           <p><strong>Support enquiries</strong><br />hr@technoesgroup.com</p>
         </div>
         <div className="uk-social-buttons">
-          <button>LinkedIn</button>
-          <button>Instagram</button>
-          <button>Facebook</button>
+       <a href="https://www.facebook.com/people/Technoes-Group/61563181743221/" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF className="social-icon-uk fb" />
+            </a>
+            <a href="https://g.co/kgs/G96Rz1q" target="_blank" rel="noopener noreferrer">
+              <FaGoogle className="social-icon-uk gp" />
+            </a>
+            <a href="https://www.instagram.com/technoeservices/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="social-icon-uk tw" />
+            </a>
+            <a href="https://www.linkedin.com/company/technoesgroup/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedinIn className="social-icon-uk fb" />
+            </a>
         </div>
       </div>
 
       {/* right – form */}
       <div className="uk-contact-right">
         <form onSubmit={handleSubmit}>
-          <div className="uk-form-group">
+          <div className="uk-form-group   front-text">
             <input
               type="text"
               name="name"
@@ -99,7 +109,7 @@ const ContactForm = () => {
             />
           </div>
 
-          <div className="uk-form-group">
+          <div className="uk-form-group  front-text">
             <input
               type="email"
               name="email"
@@ -128,7 +138,14 @@ const ContactForm = () => {
               <option value="">Type of Project*</option>
               <option value="Web Development">Web Development</option>
               <option value="Mobile App">Mobile App</option>
-              <option value="Marketing">Marketing</option>
+              <option value="Marketing">digital Marketing</option>
+                        <option value="Web Development">SEO</option>
+              <option value="Mobile App">PPC</option>
+              <option value="Marketing">SMM</option>
+                        <option value="Web Development">Ecommerce Plateform</option>
+              <option value="Mobile App">CRM Development</option>
+              <option value="Marketing">Web Design</option>
+                        <option value="Web Development">Recruitment Service</option>
             </select>
           </div>
 

@@ -1,3 +1,5 @@
+@import url('../Font.css');
+
 .marketing-container-uk {
       max-width: 1400px;
   display: flex;
@@ -24,6 +26,7 @@
 }
 
 .highlight-uk {
+       font-family: 'PoppinsMedium';
   color: #003d99;
   font-weight: 600;
   margin-bottom: 10px;
@@ -31,13 +34,16 @@
 }
 
 .title-bold-uk {
-  font-weight: 700;
+  font-family: 'PoppinsMedium';
+  font-weight: 600;
   color: #1a1a3d;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.2;
 }
 
 .desc-uk {
+    text-align: justify;
+        font-family: 'Poppins-Regular';
   color: #555;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -61,13 +67,16 @@
 }
 
 .service-item-uk h3 {
+       font-family: 'PoppinsMedium';
   margin: 0;
   font-size: 18px;
   color: #27276b;
 }
 
 .service-item-uk p {
+        font-family: 'Poppins-Regular';
   letter-spacing: 1.3px;
+  text-align: justify;
   margin: 5px 0 0;
   color: #555;
   font-size: 14px;

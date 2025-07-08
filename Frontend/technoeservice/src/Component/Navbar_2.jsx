@@ -84,41 +84,41 @@ const handleChange = (option) => {
     <CloseIcon />
   </div>
           <ul className='nav-Parent-ul-uk'>
-            <li><Link to="/">Home</Link></li>
+            <li><Link to="/uk">Home</Link></li>
 
             <li className={`dropdown-parent ${openDropdown === 'services' ? 'open' : ''}`}>
               <span onClick={(e) => handleDropdownToggle('services', e)} className='nav-tesg-Services'>
                 IT Services <ArrowDropDownIcon />
               </span>
     <ul className="dropdown">
-  <Link to="/services/website-development" onClick={() => setMenuOpen(false)}>
+  <Link to="/uk/services/website-development" onClick={() => setMenuOpen(false)}>
     <li>Website Development</li>
   </Link>
-  <Link to="/services/website-design" onClick={() => setMenuOpen(false)}>
+  <Link to="/uk/services/website-design" onClick={() => setMenuOpen(false)}>
     <li>Website Design</li>
   </Link>
-  <Link to="/services/android-app" onClick={() => setMenuOpen(false)}>
+  <Link to="/uk/services/android-app" onClick={() => setMenuOpen(false)}>
     <li>Android App Development</li>
   </Link>
-  <Link to="/services/hosting" onClick={() => setMenuOpen(false)}>
+  <Link to="/uk/services/hosting" onClick={() => setMenuOpen(false)}>
     <li>Website Hosting</li>
   </Link>
-  <Link to="/services/ecommerce" onClick={() => setMenuOpen(false)}>
+  <Link to="/uk/services/ecommerce" onClick={() => setMenuOpen(false)}>
     <li>Ecommerce Website</li>
   </Link>
-  <Link to="/services/crm" onClick={() => setMenuOpen(false)}>
+  <Link to="/uk/services/crm" onClick={() => setMenuOpen(false)}>
     <li>CRM Development</li>
   </Link>
-  <Link to="/services/seo" onClick={() => setMenuOpen(false)}>
+  <Link to="/uk/services/seo" onClick={() => setMenuOpen(false)}>
     <li>SEO</li>
   </Link>
-  <Link to="/services/social-media" onClick={() => setMenuOpen(false)}>
+  <Link to="/uk/services/social-media" onClick={() => setMenuOpen(false)}>
     <li>Social Media Marketing</li>
   </Link>
-  <Link to="/services/lead-gen" onClick={() => setMenuOpen(false)}>
+  <Link to="/uk/services/lead-gen" onClick={() => setMenuOpen(false)}>
     <li>Lead Generation</li>
   </Link>
-  <Link to="/services/ppc" onClick={() => setMenuOpen(false)}>
+  <Link to="/uk/services/ppc" onClick={() => setMenuOpen(false)}>
     <li>PPC</li>
   </Link>
 </ul>
@@ -132,10 +132,10 @@ const handleChange = (option) => {
                 Recruitment Services <ArrowDropDownIcon />
               </span>
               <ul className="dropdown">
-                <Link to="/services/Permanent-Staffing"  onClick={() => setMenuOpen(false)}> <li>Permanent Staffing</li></Link>
-                <Link to="/services/Temporary-Contract Staffing"   onClick={() => setMenuOpen(false)}><li>Temporary / Contract Staffing</li></Link>
-                 <Link to="/services/Specialized-Niche-Hiring"   onClick={() => setMenuOpen(false)}> <li>Specialized / Niche Hiring</li></Link>
-                 <Link to="/services/HR-Services"   onClick={() => setMenuOpen(false)}> <li>HR Services </li></Link>
+                <Link to="/uk/services/Permanent-Staffing"  onClick={() => setMenuOpen(false)}> <li>Permanent Staffing</li></Link>
+                <Link to="/uk/services/Temporary-Contract Staffing"   onClick={() => setMenuOpen(false)}><li>Temporary / Contract Staffing</li></Link>
+                 <Link to="/uk/services/Specialized-Niche-Hiring"   onClick={() => setMenuOpen(false)}> <li>Specialized / Niche Hiring</li></Link>
+                 <Link to="/uk/services/HR-Services"   onClick={() => setMenuOpen(false)}> <li>HR Services </li></Link>
               </ul>
             </li>
        
@@ -145,9 +145,9 @@ const handleChange = (option) => {
                 Know Us More <ArrowDropDownIcon />
               </span>
               <ul className="dropdown">
-               <Link to="/about/Who-are"  onClick={() => setMenuOpen(false)}> <li>Who we are</li></Link>
-               <Link to="/about/Why-choose"   onClick={() => setMenuOpen(false)}> <li>Why Choose Us</li></Link>
-             <Link to="/Careers"   onClick={() => setMenuOpen(false)}>    <li>Careers</li></Link>
+               <Link to="/uk/about/Who-are"  onClick={() => setMenuOpen(false)}> <li>Who we are</li></Link>
+               <Link to="/uk/about/Why-choose"   onClick={() => setMenuOpen(false)}> <li>Why Choose Us</li></Link>
+             <Link to="/uk/Careers"   onClick={() => setMenuOpen(false)}>    <li>Careers</li></Link>
               </ul>
             </li>
 
@@ -166,21 +166,25 @@ const handleChange = (option) => {
       ...base,
       borderRadius: '32px', // ✅ Rounded edges
       backgroundColor: '#effeff', 
-      padding: '2px 5px',
-      minHeight: '35px',
+      padding: '2px 4px',
+      minHeight: '40px',
       borderColor: '#ccc', // Optional: custom border
       boxShadow: 'none',   // Optional: remove default shadow
+          cursor:'pointer'
     }),
     menu: (base) => ({
       ...base,
       borderRadius: '12px',
       marginTop: 5,
+          cursor:'pointer'
     }),
     option: (base, state) => ({
       ...base,
       backgroundColor: state.isFocused ? '#f0f0f0' : '#fff',
       color: '#333',
-      padding: 10,
+      padding: '8px 10px',
+         borderRadius: '12px',
+             cursor:'pointer'
     }),
   }}
 />

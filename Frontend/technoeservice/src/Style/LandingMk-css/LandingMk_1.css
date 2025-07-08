@@ -1,29 +1,33 @@
+@import url('../Font.css');
+
 .hero-container-uk {
   max-width: 1400px;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Only one justify-content should be used */
   gap: 28%;
-  justify-content: center;
   align-items: center;
   padding: 11vw 100px;
   overflow: hidden;
   margin: 0 auto;
   background: 
-    /* linear-gradient(to bottom right, rgba(246,249,254,0.92), rgba(255,255,255,0.92)), */
-    url("../../../public/WhatsApp\ Image\ 2025-07-04\ at\ 19.09.28_3cc60c11.jpg") center/cover no-repeat;
+    url("../../../public/WhatsApp%20Image%202025-07-04%20at%2019.09.28_3cc60c11.jpg") center/cover no-repeat;
 }
 
-
+/* Overlay for black gradient at bottom */
 .hero-container-uk::after {
   content: "";
   position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0);   /* subtle white veil */
-  /* backdrop-filter: blur(1px); */
+  bottom: 0;
+  left: 0;
+  height: 30%; /* Adjust based on how much black you want */
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.612), transparent);
   pointer-events: none;
-  z-index: 1;           
+  z-index: 1;
 }
+
+
 
 
 .hero-content-uk {
@@ -33,6 +37,7 @@
 }
 
 .hero-content-uk h1 {
+      font-family: 'PoppinsMedium';
   letter-spacing: 1.2px;
   font-size: 2.6vw;
   font-weight: 800;
@@ -42,6 +47,7 @@
 }
 
 .hero-content-uk p {
+     font-family: 'Poppins-Regular';
   color: #f0f0f0;
   letter-spacing: 1.8px;
   line-height: 1.6;
@@ -80,28 +86,17 @@
   }
 }
 
-.extra-circle {
-  position: absolute;
-  width: 860px;
-  height: 820px;
-  background: rgba(155, 201, 255, 0.3);
-  border-radius: 50%;
-  top: -16%;
-  right: -9%;
-  z-index: 1;
-}
 
 /* Common spacing  */
 .Front-allinputs {
   display: flex; 
   flex-direction: column;
   gap: 34px;     
-  border: 1px solid  rgba(212, 212, 212, 0.667);       /* 40px se thoda kam – tighter look */
+  border: 1px solid  rgba(212, 212, 212, 0.445);       /* 40px se thoda kam – tighter look */
   padding:  18px;
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(8, 38, 77, 0.025);
-  z-index: 100;
+  z-index: 2;
 }
 
 /* Inputs */
@@ -127,7 +122,7 @@
   padding: 14px 22px;
   border: none;
   border-radius: 8px;
-  background: #08264d;          /* primary brand color */
+  background:   #003d99;          /* primary brand color */
   color: #fff;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -151,13 +146,14 @@
   position: absolute;
 }
 .all-img-under img {
-  width: 180px;
+  width: 200px;
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  filter: drop-shadow(0 0 10px white);
+  filter: drop-shadow(0 0 10px rgb(190, 190, 190));
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
+    z-index: 6;
 }
 
 
@@ -168,7 +164,7 @@
 
 @media (max-width: 768px) {
   .hero-container-uk {
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 70px 20px;
     gap: 30px;
     position: relative;
@@ -210,36 +206,6 @@
   .hero-illustration-uk img {
     width: 90%;
     margin-top: 20px;
-  }
-
- .Front-allinputs {
-    position: relative; /* static also works */
-    order: -2;
-    width: 90%;
-    top: 0;
-    left: 0;
-    margin-bottom: 20px;
-    background: #f8f8f8;
-    border-radius: 12px;
-    box-shadow: none;
-    padding: 15px;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
-  }
-
-
-  .Front-allinputs input,
-  .Front-allinputs button {
-    width: 90%;
-  }
-
-
-  .extra-circle {
-    width: 500px;
-    height: 450px;
-    top: -10%;
-    right: -25%;
   }
 
   .hero-container-uk::before,

@@ -15,7 +15,7 @@
 }
 
 .tesguk-card-container {
-    max-width: 1250px;
+    max-width: 1350px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -27,13 +27,14 @@
 
 .tesguk-card {
   border-radius: 20px;
-  width: 300px;
-  padding: 30px;
+  width: 350px;
+  padding: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   transition: all 0.4s ease;
   text-align: left;
   color: #2b2b2b;
   position: relative;
+  
 }
 
 .tesguk-card .tesguk-icon {
@@ -44,18 +45,21 @@
 }
 
 .tesguk-card h3 {
-  font-size: 22px;
+     font-family: 'PoppinsMedium';
+  font-size: 20px;
   margin-bottom: 15px;
   font-weight: 600;
 }
 
 .tesguk-card p {
-  font-size: 16px;
+      font-family: 'Poppins-Regular';
+  font-size: 14px;
   line-height: 1.5;
   margin-bottom: 25px;
 }
 
 .tesguk-card a {
+      font-family: 'Poppins-Regular';
   text-decoration: none;
   color: inherit;
   font-weight: bold;
@@ -133,15 +137,17 @@
 }
 
 .services-content-uk h1 {
+      font-family: 'PoppinsMedium';
   letter-spacing: 1.2px;
-  font-size: 40px;
-  font-weight: 800;
+  font-size: 34px;
+  font-weight: 900 !important;
   color: #08264d;
   margin-bottom: 20px;
   line-height: 1.3;
 }
 
 .services-content-uk p {
+    font-family: 'Poppins-Regular';
   color: #666;
   letter-spacing: 1.8px;
   line-height: 1.6;

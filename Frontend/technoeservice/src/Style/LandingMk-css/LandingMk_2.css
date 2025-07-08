@@ -1,21 +1,22 @@
 /* ServiceSection.css */
-
+@import url('../Font.css');
 .service-section-uk {
     max-width: 1400px;
   padding: 60px 5%;
-  font-family: 'Poppins', sans-serif;
   background: #fff;
   color: #333;
     margin: 0 auto;
 }
 
 .service-header-uk{
+     font-family: 'PoppinsMedium';
   display: flex;
   justify-content: space-between;
     margin-bottom: 20px;
 }
 
 .service-subtitle-uk {
+     font-family: 'PoppinsMedium';
   color: #f233a1;
   font-weight: 600;
   margin-bottom: 10px;
@@ -26,6 +27,7 @@
 }
 
 .service-header-uk h1 {
+     font-family: 'PoppinsMedium';
   font-size: 36px;
   color: #2e2e2e;
   margin-bottom: 15px;
@@ -33,7 +35,9 @@
 }
 
 .service-description-uk {
-  max-width: 600px;
+   text-align: justify;
+      font-family: 'Poppins-Regular';
+  max-width: 700px;
   letter-spacing: 1.2px;
   line-height: 2;
   font-size: 16px;
@@ -42,9 +46,10 @@
 }
 
 .service-content-uk {
+     font-family: 'PoppinsMedium';
   display: flex;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 55px;
   align-items: flex-start;
 }
 
@@ -91,6 +96,7 @@
 }
 
 .feature-box-uk p {
+      font-family: 'Poppins-Regular';
   letter-spacing: 1.3px;
   font-size: 14px;
   color: #555;

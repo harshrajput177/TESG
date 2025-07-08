@@ -120,7 +120,7 @@ const HeroSection = () => {
 
 
       <div  className="all-img-under">
-        <img src={img4} alt="" /><img src={img5} alt="" /><img src={img6} alt="" /><img src={img7} alt="" /><img src={img8} alt="" />
+        <img src={img6} alt="" /><img src={img4} alt="" /><img src={img5} alt="" /><img src={img8} alt="" /><img src={img7} alt="" />
       </div>
     </div>
   );
