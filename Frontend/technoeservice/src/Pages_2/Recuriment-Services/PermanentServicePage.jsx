@@ -1,5 +1,5 @@
 import React from 'react'
-import Comp1 from '../../Component/Recuriment Services/Permanent-Staffing/PermanentStafingCom1';
+import Comp1 from '../../Component/Recuriment Services/Permanent-Staffing/PermanentStaffing-uk';
 import Comp2 from '../../Component/Recuriment Services/Permanent-Staffing/PermanentStafingCom2';
 import Comp3 from '../../Component/Recuriment Services/Permanent-Staffing/PermanentStafingCom3';
 import Comp4 from '../../Component/Recuriment Services/Permanent-Staffing/PermanentStafingCom4';
@@ -9,7 +9,7 @@ import Comp5 from '../../Component/Recuriment Services/Permanent-Staffing/Perman
 
 
 
-function PRPage() {
+function PRPageuk() {
 
 //   const fadeInUp = {
 //     hidden: { opacity: 0, y: 100 },
@@ -34,4 +34,4 @@ function PRPage() {
   )
 }
 
-export default PRPage;
+export default PRPageuk;

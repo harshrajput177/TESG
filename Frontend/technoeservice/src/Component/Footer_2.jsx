@@ -16,9 +16,9 @@ function Footer() {
         <a href="/ContactUs">Contact Us</a>
         </div>
         <div className="uk-footer-social">
-          <a href="#">Linkedin</a>
-          <a href="#">Instagram</a>
-          <a href="#">Facebook</a>
+          <a href="https://www.linkedin.com/company/technoesgroup/">Linkedin</a>
+          <a href="https://www.instagram.com/technoeservices/">Instagram</a>
+          <a href="https://www.facebook.com/people/Technoes-Group/61563181743221/">Facebook</a>
         </div>
       </div>
 

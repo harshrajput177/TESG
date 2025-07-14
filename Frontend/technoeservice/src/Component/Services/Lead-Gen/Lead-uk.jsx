@@ -1,6 +1,6 @@
 // App.jsx
 import React from "react";
-import "../../../Style/Services-css/Lead-gen-CSS/Lead-genCom1.css";
+import "../../../Style/Services-css/Lead-gen-CSS/Lead-gen-uk.css";
 import contentImage from "../../../image/depositphotos_308095066-stock-illustration-generating-new-leads-concept-vector.jpg"; // Update with actual image path
 
 const LeadGenCom1 = () => {

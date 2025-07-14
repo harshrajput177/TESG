@@ -1,6 +1,6 @@
 // App.jsx
 import React from "react";
-import "../../../Style/Services-css/Ecom-CSS/Ecom1.css";
+import "../../../Style/Services-css/Ecom-CSS/Ecom-uk.css";
 import contentImage from "../../../image/617-6175517_shop-smart-e-commerce-illustration-png-transparent-png-removebg-preview.png"; // Update with actual image path
 
 const EcommerceDevCom1 = () => {

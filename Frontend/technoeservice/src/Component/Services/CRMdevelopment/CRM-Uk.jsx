@@ -1,6 +1,6 @@
 // App.jsx
 import React from "react";
-import "../../../Style/Services-css/CRMdev-CSS/CRMcom1.css";
+import "../../../Style/Services-css/CRMdev-CSS/CRMcom-uk.css";
 import contentImage from "../../../image/business-strategy-crm-solution-customer-relationship-management-concept-tiny-businessman-perform-data-analysis-modern-flat-cartoon-style-illustration-on-white-background-vector.jpg"; // Update with actual image path
 
 const CRMDevCom1 = () => {

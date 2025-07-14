@@ -71,26 +71,38 @@ const handleChange = (option) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+
+  const handleDropdownToggle = (dropdownName, e) => {
+  e?.preventDefault(); // optional: prevents accidental navigation
+
+  if (openDropdown === dropdownName) {
+    setOpenDropdown(null); // close if already open
+  } else {
+    setOpenDropdown(dropdownName); // open the clicked one
+  }
+};
+
+
   return (
     <header className={`navbar-uk ${scrolled ? 'navbar-scrolled' : ''}`}>
  <div className="navbar-main-uk">
-        <div className="tesg-logo">
-          <img src={logo} alt="Logo" className='tesg-logo-img' />
+        <div className="tesg-logo-uk">
+          <img src={logo} alt="Logo" className='tesg-logo-img-uk' />
         </div>
 
         <nav className={`nav-links-uk ${menuOpen ? 'open' : ''}`}>
 
-            <div className="nav-close-icon" onClick={toggleMenu}>
+            <div className="nav-close-icon-uk" onClick={toggleMenu}>
     <CloseIcon />
   </div>
           <ul className='nav-Parent-ul-uk'>
             <li><Link to="/uk">Home</Link></li>
 
-            <li className={`dropdown-parent ${openDropdown === 'services' ? 'open' : ''}`}>
-              <span onClick={(e) => handleDropdownToggle('services', e)} className='nav-tesg-Services'>
+            <li className={`dropdown-parent-uk ${openDropdown === 'services' ? 'open' : ''}`}>
+              <span onClick={(e) => handleDropdownToggle('services', e)} className='nav-tesg-Services-uk'>
                 IT Services <ArrowDropDownIcon />
               </span>
-    <ul className="dropdown">
+    <ul className="dropdown-uk">
   <Link to="/uk/services/website-development" onClick={() => setMenuOpen(false)}>
     <li>Website Development</li>
   </Link>
@@ -127,11 +139,11 @@ const handleChange = (option) => {
 
 
 
- <li className={`dropdown-parent ${openDropdown === 'Recruitment' ? 'open' : ''}`}>
-              <span onClick={() => handleDropdownToggle('Recruitment')}  className='nav-tesg-Services'>
+ <li className={`dropdown-parent-uk ${openDropdown === 'Recruitment' ? 'open' : ''}`}>
+              <span onClick={() => handleDropdownToggle('Recruitment')}  className='nav-tesg-Services-uk'>
                 Recruitment Services <ArrowDropDownIcon />
               </span>
-              <ul className="dropdown">
+              <ul className="dropdown-uk">
                 <Link to="/uk/services/Permanent-Staffing"  onClick={() => setMenuOpen(false)}> <li>Permanent Staffing</li></Link>
                 <Link to="/uk/services/Temporary-Contract Staffing"   onClick={() => setMenuOpen(false)}><li>Temporary / Contract Staffing</li></Link>
                  <Link to="/uk/services/Specialized-Niche-Hiring"   onClick={() => setMenuOpen(false)}> <li>Specialized / Niche Hiring</li></Link>
@@ -140,11 +152,11 @@ const handleChange = (option) => {
             </li>
        
 
-            <li className={`dropdown-parent ${openDropdown === 'know' ? 'open' : ''}`}>
-              <span onClick={() => handleDropdownToggle('know')}  className='nav-tesg-Services'>
+            <li className={`dropdown-parent-uk ${openDropdown === 'know' ? 'open' : ''}`}>
+              <span onClick={() => handleDropdownToggle('know')}  className='nav-tesg-Services-uk'>
                 Know Us More <ArrowDropDownIcon />
               </span>
-              <ul className="dropdown">
+              <ul className="dropdown-uk">
                <Link to="/uk/about/Who-are"  onClick={() => setMenuOpen(false)}> <li>Who we are</li></Link>
                <Link to="/uk/about/Why-choose"   onClick={() => setMenuOpen(false)}> <li>Why Choose Us</li></Link>
              <Link to="/uk/Careers"   onClick={() => setMenuOpen(false)}>    <li>Careers</li></Link>
@@ -153,7 +165,7 @@ const handleChange = (option) => {
 
             <li><Link to="/blogs">Blog</Link></li>
 
-          <li><Link to="/ContactUs" className='nav-tesg-Services'>Contact</Link></li>
+          <li><Link to="/ContactUs" className='nav-tesg-Services-uk'>Contact</Link></li>
 
           </ul>
         </nav>

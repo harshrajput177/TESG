@@ -43,6 +43,10 @@ import LEADPageuk from './Pages_2/ServicesPage/Lead-GenPage-uk/Lead-GenPage';
 import EcomPageuk from './Pages_2/ServicesPage/EcommerceWebPage-uk/EomWebpage';
 import APPageuk from './Pages_2/ServicesPage/AppDevPage-uk/AppDevPage';
 import WEBDPageuk from './Pages_2/ServicesPage/WebdesignPage-uk/WebdesPage';
+import HRPageuk from './Pages_2/Recuriment-Services/HRServicePage';
+import PRPageuk from './Pages_2/Recuriment-Services/PermanentServicePage';
+import TPageuk from './Pages_2/Recuriment-Services/TemporaryServiesPage';
+import NichePageuk from './Pages_2/Recuriment-Services/NicheServicePage';
 
 function App() {
   return (
@@ -64,10 +68,10 @@ function App() {
         <Route path="Careers" element={<Careeruk />} />
         <Route path="about/Why-choose" element={<Whyuk />} />
         <Route path="about/Who-are" element={<Whouk />} />
-        <Route path="services/HR-Services" element={<HRPage />} />
-        <Route path="services/Permanent-Staffing" element={<PRPage />} />
-        <Route path="services/Temporary-Contract Staffing" element={<TPage />} />
-        <Route path="services/Specialized-Niche-Hiring" element={<NichePage />} />
+        <Route path="services/HR-Services" element={<HRPageuk/>} />
+        <Route path="services/Permanent-Staffing" element={<PRPageuk />} />
+        <Route path="services/Temporary-Contract Staffing" element={<TPageuk />} />
+        <Route path="services/Specialized-Niche-Hiring" element={<NichePageuk />} />
         <Route path="blogs" element={<EditorsPicks />} />
       </Route>
 

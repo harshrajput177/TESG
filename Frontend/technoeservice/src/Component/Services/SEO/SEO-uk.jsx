@@ -1,6 +1,6 @@
 // App.jsx
 import React from "react";
-import "../../../Style/Services-css/SEO-CSS/SeoCom1.css";
+import "../../../Style/Services-css/SEO-CSS/Seo-uk.css";
 import contentImage from "../../../image/pngtree-modern-flat-design-concept-of-web-seo-analysis-with-characters-can-png-image_5332900-removebg-preview.png"; // Update with actual image path
 
 const SEOCom1 = () => {

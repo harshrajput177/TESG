@@ -1,6 +1,6 @@
 // App.jsx
 import React from "react";
-import "../../../Style/Services-css/Webdesign-CSS/Webdescom1.css";
+import "../../../Style/Services-css/Webdesign-CSS/Webdes-uk.css";
 import contentImage from "../../../image/360_F_575744213_xDU4dVUMXMJOERoAOofBUNoIIbzJXxYU.jpg"; // Update with actual image path
 
 const WebDesignCom1 = () => {

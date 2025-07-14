@@ -1,11 +1,11 @@
 import React from "react";
-import "../../../Style/Services-css/Webdevelop-css/WebdevCom1.css";
+import "../../../Style/Services-css/Webdevelop-css/Webdev-uk.css";
 import contentImage from "../../../image/hy.webp";
 
 const WebDevCom1 = () => {
   return (
     <div className="WebDevCom1-main-wrapper-uk">
-      <div className="WebDevCom1-main-container">
+      <div className="WebDevCom1-main-container-uk">
         <div className="WebDevCom1-container">
           <div className="WebDevCom1-text-section">
             <h1 className="WebDevCom1-title">Understanding Web Development</h1>

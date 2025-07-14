@@ -1,13 +1,12 @@
 import React from 'react'
-import Comp1 from '../../Component/Recuriment Services/HR-Services/HrCom1';
+import Comp1 from '../../Component/Recuriment Services/HR-Services/HrCom-uk';
 import Comp2 from '../../Component/Recuriment Services/HR-Services/HrCom2';
-// import Comp3 from '../../../Component/Services/CRMdevelopment/CRMcom3';
-// import Comp4 from '../../../Component/Services/CRMdevelopment/CRMcom4';
 
 
 
 
-function HRPage() {
+
+function HRPageuk() {
 
 //   const fadeInUp = {
 //     hidden: { opacity: 0, y: 100 },
@@ -31,4 +30,4 @@ function HRPage() {
   )
 }
 
-export default HRPage;
+export default HRPageuk;

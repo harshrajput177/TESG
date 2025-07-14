@@ -1,12 +1,12 @@
 import React from "react";
-import "../../../Style/Services-css/Webhosting-CSS/WebhostCom1.css";
+import "../../../Style/Services-css/Webhosting-CSS/Webhosting-uk.css";
 import contentImage from "../../../image/saas-concept-with-people-scene-in-flat-cartoon-design-man-computing-using-cloud-technology-programming-and-working-with-hosting-software-as-a-service-illustration-visual-stor-removebg-preview.png"; // Update with actual image path
 
 const WebHostingCom1 = () => {
   return (
     <div className="WebHostingCom1-main-wrapper-uk">
-      <div className="WebHostingCom1-main-container">
-        <div className="WebHostingCom1-container">
+      <div className="WebHostingCom1-main-container-uk">
+        <div className="WebHostingCom1-container-uk">
           <div className="WebHostingCom1-text-section">
             <h1 className="WebHostingCom1-title">Powering Your Online Presence with Reliable Web Hosting</h1>
             <h2 className="WebHostingCom1-subtitle">

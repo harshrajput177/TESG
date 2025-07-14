@@ -1,12 +1,12 @@
 // App.jsx
 import React from "react";
-import "../../../Style/Services-css/SMM-CSS/SMMcom1.css";
+import "../../../Style/Services-css/SMM-CSS/SMM-uk.css";
 import contentImage from "../../../image/ads-dv360-lytics.png" // Update with actual image path
 
 const SmmCom1 = () => {
   return (
      <div className="WebHostingCom1-main-wrapper-uk">
-    <div className="SMMcom1-main-container">
+    <div className="SMMcom1-main-container-uk">
     <div className="SMMcom1-container">
       <div className="SMMcom1-text-section">
         <h1 className="SMMcom1-title">Understanding Social Media Management</h1>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Comp1 from '../../../Component/Services/Webdesign/webdesCom1';
+import Comp1 from '../../../Component/Services/Webdesign/Webdes-uk';
 import Comp2 from '../../../Component/Services/Webdesign/webdesCom2';
 import Comp3 from '../../../Component/Services/Webdesign/webdesCom3';
 // import Comp4 from '../../../Component/Services/SMM/SMMcom4';

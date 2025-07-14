@@ -1,11 +1,11 @@
 // App.jsx
 import React from "react";
-import "../../../Style/Services-css/SMM-CSS/SMMcom1.css";
+import "../../../Style/RecurimentService-css/PermanentService-css/Permanent-uk.css";
 import contentImage from "../../../image/employment-agency-for-recruitment-or-placement-job-service-with-skilled-and-experienced-career-laborers-in-flat-cartoon-illustration-vector.jpg"; // Update with actual image path
 
 const PRCom1 = () => {
   return (
-    <div className="SMMcom1-main-container-uk">
+    <div className="Permanentcom1-main-container-uk">
       <div className="SMMcom1-container">
         <div className="SMMcom1-text-section">
           <h1 className="SMMcom1-title">Permanent Staffing Excellence</h1>

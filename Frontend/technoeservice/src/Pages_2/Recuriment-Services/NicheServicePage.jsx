@@ -1,5 +1,5 @@
 import React from 'react'
-import Comp1 from '../../Component/Recuriment Services/Niche-Hiring/Niche-HR-Com1';
+import Comp1 from '../../Component/Recuriment Services/Niche-Hiring/Niche-HR-uk';
 // import Comp2 from '../../../Component/Services/CRMdevelopment/CRMcom2';
 // import Comp3 from '../../../Component/Services/CRMdevelopment/CRMcom3';
 // import Comp4 from '../../../Component/Services/CRMdevelopment/CRMcom4';
@@ -7,7 +7,7 @@ import Comp1 from '../../Component/Recuriment Services/Niche-Hiring/Niche-HR-Com
 
 
 
-function NichePage() {
+function NichePageuk() {
 
 //   const fadeInUp = {
 //     hidden: { opacity: 0, y: 100 },
@@ -30,4 +30,4 @@ function NichePage() {
   )
 }
 
-export default NichePage;
+export default NichePageuk;

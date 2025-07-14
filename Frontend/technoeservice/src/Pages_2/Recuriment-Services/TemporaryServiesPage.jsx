@@ -1,5 +1,5 @@
 import React from 'react'
-import Comp1 from '../../Component/Recuriment Services/Temperory-Staffing/TemperoryStafingCom1';
+import Comp1 from '../../Component/Recuriment Services/Temperory-Staffing/Temporary-uk';
 import Comp2 from '../../Component/Recuriment Services/Temperory-Staffing/TemperoryStafingCom2';
 import Comp3 from '../../Component/Recuriment Services/Temperory-Staffing/TemperoryStafingCom3';
 
@@ -7,7 +7,7 @@ import Comp3 from '../../Component/Recuriment Services/Temperory-Staffing/Temper
 
 
 
-function TPage() {
+function TPageuk() {
 
 //   const fadeInUp = {
 //     hidden: { opacity: 0, y: 100 },
@@ -29,4 +29,4 @@ function TPage() {
   )
 }
 
-export default TPage;
+export default TPageuk;

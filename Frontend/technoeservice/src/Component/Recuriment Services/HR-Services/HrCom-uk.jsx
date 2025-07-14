@@ -1,11 +1,11 @@
 // App.jsx
 import React from "react";
-import "../../../Style/Services-css/SMM-CSS/SMMcom1.css";
+import "../../../Style/RecurimentService-css/HR-Services-css/HR-SR-uk.css";
 import contentImage from "../../../image/hr-department-human-resources-management-employer-hiring-candidates-recruitment-agency-employment-headhunting-business-modern-flat-cartoon-style-illustration-on-white-background-vector.jpg"; // Update with actual image path
 
 const HRCom1 = () => {
   return (
-    <div className="SMMcom1-main-container-uk">
+    <div className="HRcom1-main-container-uk">
       <div className="SMMcom1-container">
         <div className="SMMcom1-text-section">
           <h1 className="SMMcom1-title">Understanding Permanent Staffing</h1>

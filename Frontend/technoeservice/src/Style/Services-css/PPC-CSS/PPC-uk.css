@@ -1,0 +1,139 @@
+
+@import url('../../Font.css');
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #222;
+}
+
+.PPCCom1-main-container-uk {
+  padding: 120px 5vw;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.PPCCom1-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.PPCCom1-text-section {
+  flex: 1 1 50%;
+}
+
+.PPCCom1-image-section {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PPCCom1-image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.PPCCom1-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f2d3d;
+  margin-bottom: 0.5rem;
+}
+
+.PPCCom1-subtitle {
+  font-size: 1.25rem;
+  color: #4caf50;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.PPCCom1-text-section p {
+   font-family: 'Poppins-Regular';
+    text-align: justify;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+strong {
+  color: #000;
+}
+
+.under-Agency {
+  width: 100%;
+    letter-spacing: 1px;
+   font-family: 'Poppins-Regular';
+     text-align: justify;
+}
+
+/* ---------------- Responsive breakpoints ---------------- */
+
+/* Tablet screens (≤992px) */
+@media (max-width: 992px) {
+  .PPCCom1-title {
+    font-size: 2rem;
+  }
+
+  .PPCCom1-main-container {
+  padding: 30px 5vw;
+  }
+
+  .PPCCom1-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .PPCCom1-text-section p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile screens (≤768px) */
+@media (max-width: 768px) {
+  .PPCCom1-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .PPCCom1-text-section,
+  .PPCCom1-image-section {
+    flex: 1 1 100%;
+  }
+
+  .PPCCom1-title {
+    font-size: 1.8rem;
+  }
+
+  .PPCCom1-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .PPCCom1-text-section p {
+    font-size: 0.95rem;
+  }
+
+  .PPCCom1-image-section {
+    margin-top: 20px;
+  }
+}
+
+/* Small mobile screens (≤480px) */
+@media (max-width: 480px) {
+  .PPCCom1-title {
+    font-size: 1.6rem;
+  }
+
+  .PPCCom1-subtitle {
+    font-size: 1rem;
+  }
+
+  .PPCCom1-text-section p {
+    font-size: 0.9rem;
+  }
+}

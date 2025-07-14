@@ -21,7 +21,7 @@ const Footer = () => {
      <a href="https://www.facebook.com/people/Technoes-Group/61563181743221/" target="_blank" rel="noopener noreferrer">
   <FacebookIcon />
 </a>
-<a href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer">
+<a href="https://www.instagram.com/technoeservices/" target="_blank" rel="noopener noreferrer">
   <InstagramIcon />
 </a>
 <a href="https://www.linkedin.com/company/gwi-techno-e-services-llp/posts/?feedView=all" target="_blank" rel="noopener noreferrer">

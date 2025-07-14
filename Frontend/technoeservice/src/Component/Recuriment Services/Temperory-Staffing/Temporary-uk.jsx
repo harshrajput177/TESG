@@ -1,11 +1,11 @@
 // App.jsx
 import React from "react";
-import "../../../Style/Services-css/SMM-CSS/SMMcom1.css";
+import "../../../Style/RecurimentService-css/TemproryService-css/Temporary-uk.css";
 import contentImage from "../../../image/pngtree-employment-agency-for-recruitment-or-placement-job-service-with-skilled-and-experienced-career-laborers-in-flat-cartoon-illustration-picture-image_8696738.png"; // Update with actual image path
 
 const TRCom1 = () => {
   return (
-    <div className="SMMcom1-main-container-uk">
+    <div className="Temporaray-main-container-uk">
       <div className="SMMcom1-container">
         <div className="SMMcom1-text-section">
           <h1 className="SMMcom1-title">Temporary & Contract Staffing Solutions</h1>

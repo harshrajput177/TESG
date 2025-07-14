@@ -77,3 +77,50 @@
   color: #ffffff;
   text-decoration: none;
 }
+
+
+@media (max-width: 768px) {
+  .uk-footer-container {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .uk-footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .uk-footer-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    max-width: 100%;
+  }
+
+  .uk-footer-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .uk-footer-social {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .uk-footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .uk-footer-links {
+    flex-direction: column;
+    gap: 6px;
+  }
+}

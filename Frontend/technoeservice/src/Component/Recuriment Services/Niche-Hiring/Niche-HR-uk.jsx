@@ -1,11 +1,11 @@
 // App.jsx
 import React from "react";
-import "../../../Style/Services-css/SMM-CSS/SMMcom1.css";
+import "../../../Style/RecurimentService-css/Niche-Services-css/Niche-uk.css";
 import contentImage from "../../../image/concept-choice-worker-personnel-staff-recruitment-employee-hiring-flat-cartoon-colorful-vector-illustration-hiring-330115127.webp"; // Update with actual image path
 
 const NicheCom1 = () => {
   return (
-    <div className="SMMcom1-main-container-uk">
+    <div className="Nichecom1-main-container-uk">
       <div className="SMMcom1-container">
         <div className="SMMcom1-text-section">
           <h1 className="SMMcom1-title">Mastering Niche Hiring</h1>

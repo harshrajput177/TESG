@@ -196,7 +196,41 @@
     max-width: 350px;
   }
 
+  .Front-allinputs input {
+  flex: 1;
+  min-width: 220px;
+  padding: 12px 14px;
+  border: 1px solid #e6e8ec;
+  border-radius: 8px;
+  }
 
+  /* Common spacing  */
+.Front-allinputs {
+  display: flex; 
+  flex-direction: column;
+  gap: 24px;     
+  border: 1px solid  rgba(212, 212, 212, 0.445);       /* 40px se thoda kam – tighter look */
+  padding:  18px;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+.all-img-under {
+    bottom: -10px !important;
+    gap: 20px;
+}
+
+.all-img-under img
+ {
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(0 0 10px rgb(190, 190, 190));
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 6;
+}
   .hero-content-uk,
   .hero-illustration-uk {
     max-width: 100%;

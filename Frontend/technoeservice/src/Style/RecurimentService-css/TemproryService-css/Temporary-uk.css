@@ -1,0 +1,172 @@
+.Temporaray-main-container-uk {
+  z-index: 2;
+  padding: 120px 20px;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.SMMcom1-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.SMMcom1-text-section {
+  flex: 1 1 50%;
+}
+
+.SMMcom1-image-section {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SMMcom1-image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.SMMcom1-title {
+      font-family: 'PoppinsMedium'; 
+  font-size: 2.4rem;
+  letter-spacing: 1.7px;
+  font-weight: bold;
+  color: #1f2d3d;
+  margin-bottom: 0.5rem;
+}
+
+.SMMcom1-subtitle {
+  font-family: 'Poppins-Regular';
+  font-size: 1.25rem;
+  letter-spacing: 1.8px;
+  text-align: justify;
+  color: #01336d;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+
+.WebHostingCom1-main-wrapper {
+  background: linear-gradient(135deg,  #fcfcfc33 0%, rgba(248, 254, 255, 0.566) 50%,  #01004a65 100%);
+  /* Sky blue (#87ceeb), light blue (#b0e0e6), and green (#4caf50) */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optional: add subtle animated wave shape at the bottom */
+.WebHostingCom1-wave-background {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: 246px;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+}
+
+.WebHostingCom1-wave-background svg path {
+  fill: rgba(255, 255, 255, 0.324);
+}
+
+.SMMcom1-text-section p {
+  font-family: 'Poppins-Regular';
+    text-align: justify;
+  font-size: 1.05rem;
+  line-height: 1.7;
+margin-bottom: 0.5rem;
+}
+
+strong {
+  color: #000;
+}
+
+.under-Agency {
+  width: 100%;
+    letter-spacing: 1px;
+   font-family: 'Poppins-Regular';
+     text-align: justify;
+}
+
+/* Tablet screens */
+@media (max-width: 992px) {
+
+  .SMMcom1-main-container {
+  padding: 30px 20px;
+  }
+  .SMMcom1-title {
+    font-size: 2rem;
+  }
+
+  .SMMcom1-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .SMMcom1-text-section p {
+    font-size: 1rem;
+  }
+
+
+  .WebHostingCom1-wave-background {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  height: 246px;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+}
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .SMMcom1-container {
+    flex-direction: column;
+    align-items: center;
+     text-align: left;
+  }
+
+  .SMMcom1-text-section, 
+  .SMMcom1-image-section {
+    flex: 1 1 100%;
+  }
+
+  .SMMcom1-title {
+    font-size: 1.7rem;
+  }
+
+  .SMMcom1-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .SMMcom1-text-section p {
+    font-size: 0.95rem;
+  }
+
+  .SMMcom1-image-section {
+    margin-top: 20px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .SMMcom1-title {
+    font-size: 1.6rem;
+  }
+
+  .SMMcom1-subtitle {
+    font-size: 1rem;
+  }
+
+  .SMMcom1-text-section p {
+    font-size: 0.9rem;
+  }
+}

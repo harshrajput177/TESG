@@ -1,6 +1,6 @@
 // App.jsx
 import React from "react";
-import "../../../Style/Services-css/PPC-CSS/PPCcom1.css";
+import "../../../Style/Services-css/PPC-CSS/PPC-uk.css";
 import contentImage from "../../../image/pngtree-ppc-people-for-marketing-design-png-image_6377284.png"; // Update with actual image path
 
 const PPCCom1 = () => {

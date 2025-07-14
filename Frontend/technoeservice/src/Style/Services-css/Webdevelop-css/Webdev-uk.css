@@ -1,0 +1,173 @@
+.WebDevCom1-main-wrapper-uk {
+  background: linear-gradient(135deg, #fcfeff, #f3fbff, #0100579e);
+  position: relative;
+  overflow: hidden;
+}
+
+.WebDevCom1-main-container-uk {
+  position: relative;
+  z-index: 2;
+  padding: 120px 10px;
+  margin: auto;
+  max-width: 1200px;
+  backdrop-filter: blur(2px);
+}
+
+.WebDevCom1-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.WebDevCom1-text-section {
+  flex: 1 1 50%;
+  color:black;
+}
+
+.WebDevCom1-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.WebDevCom1-subtitle {
+  font-family: 'Poppins-Regular';
+  font-size: 1.25rem;
+  color:rgb(66, 66, 66);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.WebDevCom1-text-section p {
+  font-family: 'Poppins-Regular';
+  text-align: justify;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+    color:rgb(66, 66, 66);
+}
+
+strong {
+   color:rgb(66, 66, 66);
+}
+
+.WebDevCom1-image-section {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.WebDevCom1-image-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* .WebDevCom1-image-section img:hover {
+  transform: scale(1.03);
+} */
+
+.under-Agency {
+  letter-spacing: 1px;
+  font-family: 'Poppins-Regular';
+  text-align: justify;
+  color:rgb(66, 66, 66);
+  margin-top: 40px;
+}
+
+.WebDevCom1-wave-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20vw;
+  line-height: 0;
+  z-index: 1;
+}
+
+.WebDevCom1-wave-background svg path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 992px) {
+  .WebDevCom1-title {
+    font-size: 2rem;
+  }
+
+  .WebDevCom1-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 3px;
+  }
+
+  .WebDevCom1-main-container {
+    padding: 20px 5vw;
+  }
+
+  .WebDevCom1-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .WebDevCom1-main-wrapper {
+  background: linear-gradient(135deg, #fcfeff, #f3fbff, #0100577d);
+  position: relative;
+  overflow: hidden;
+}
+
+  .WebDevCom1-text-section p {
+    font-size: 1rem;
+  }
+
+  .WebDevCom1-wave-background {
+display: none;
+}
+}
+
+@media (max-width: 768px) {
+  .WebDevCom1-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .WebDevCom1-text-section,
+  .WebDevCom1-image-section {
+    flex: 1 1 100%;
+  }
+
+  .WebDevCom1-title {
+    font-size: 1.8rem;
+  }
+
+  .WebDevCom1-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .WebDevCom1-text-section p {
+    font-size: 0.95rem;
+  }
+
+  .WebDevCom1-image-section {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .WebDevCom1-title {
+    font-size: 1.6rem;
+  }
+
+  .WebDevCom1-subtitle {
+    font-size: 1rem;
+  }
+
+  .WebDevCom1-text-section p {
+    font-size: 0.9rem;
+  }
+}
