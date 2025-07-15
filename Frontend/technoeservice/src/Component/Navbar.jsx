@@ -7,7 +7,6 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import 'flag-icons/css/flag-icons.min.css';
 import img1 from "../image/indian-flag-icon-india-circular-flag-depiction-c5gQHdHn_t.jpg";
 import img2 from "../image/hd-round-uk-united-kingdom-flag-icon-png-7339616949734898mnvnjwhnx.png"
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
