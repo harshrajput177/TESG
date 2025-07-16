@@ -95,8 +95,9 @@ const ProposalForm = () => {
             <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email Address*" required />
             <div className="phone-input">
               <select name="phoneCode" value={formData.phoneCode} onChange={handleChange} className="country-code">
-                <option value="+91">🇮🇳 +91</option>
-                <option value="+44">🇬🇧 +44</option>
+                <option value="+91">IN +91</option>
+                <option value="+44">UK +44</option>
+                <option value="+44">US +1</option>
               </select>
               <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="Enter phone number" required />
             </div>
@@ -181,7 +182,9 @@ const ProposalForm = () => {
         <div className="contact-details">
           <h4>Headquarters:</h4>
            Suite 5 Margaret Powell House, 401-447, Milton Keynes, Buckinghamshire U.K. MK9 3BN
-           <h4>Phone Number :</h4> <p>190-888-1080 </p>
+           <h4>Phone Number :</h4> 
+             <p>UK :+44 190-888-1080 </p>
+           <p>USA :+1 469-608-2203</p>
             <h4>Branch Office:</h4>
             H-96, SF-3, Sector-63, Noida, 201301, India
           <h4>Main Phone:</h4>
