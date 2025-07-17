@@ -1,24 +1,24 @@
-.Blog-editors-picks {
+.Blog-editors-picks-tesg {
   padding: 40px 20px;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fff;
 }
 
-.Blog-editors-picks h2 {
+.Blog-editors-picks-tesg h2 {
   font-size: 2rem;
   margin-bottom: 30px;
   color: #2d2d2d;
 }
 
-.Blog-cards {
+.Blog-cards-tesg {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-.Blog-card {
+.Blog-card-tesg {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -27,30 +27,30 @@
   transition: transform 0.3s ease;
 }
 
-.Blog-card:hover {
+.Blog-card-tesg:hover {
   transform: translateY(-5px);
 }
 
-.Blog-card-img {
+.Blog-card-img-tesg {
   background-color: #5a7139;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 180px;
+  height: 250px;
 }
 
-.Blog-card-img img {
+.Blog-card-img-tesg img {
   width: 80%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
 
-.card-content {
+.card-content-tesg {
   padding: 15px;
   text-align: left;
 }
 
-.Blog-card-meta {
+.Blog-card-meta-tesg {
   display: flex;
   justify-content: space-between;
   font-size: 0.85rem;
@@ -58,18 +58,18 @@
   margin-bottom: 10px;
 }
 
-.Blog-card-content h3 {
+.Blog-card-content-tesg h3 {
   font-size: 1.1rem;
   color: #2d2d2d;
   margin-bottom: 15px;
 }
 
-.Blog-tags {
+.Blog-tags-tesg {
   display: flex;
   gap: 8px;
 }
 
-.Blog-tag {
+.Blog-tag-tesg {
   background-color: #f1f1f1;
   color: #333;
   padding: 5px 10px;

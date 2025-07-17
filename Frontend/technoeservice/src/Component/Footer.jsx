@@ -27,9 +27,7 @@ const Footer = () => {
 <a href="https://www.linkedin.com/company/gwi-techno-e-services-llp/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
   <LinkedInIcon />
 </a>
-<a href="https://x.com/yourhandle" target="_blank" rel="noopener noreferrer">
-  <XIcon />
-</a>
+
 
         </div>
       </div>

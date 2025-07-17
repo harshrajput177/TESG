@@ -27,23 +27,23 @@ const cards = [
 
 const EditorsPicks = () => {
   return (
-    <div className="Blog-editors-picks">
+    <div className="Blog-editors-picks-tesg">
       <h2>Editor’s Picks</h2>
-      <div className="Blog-cards">
+      <div className="Blog-cards-tesg">
         {cards.map((card, index) => (
-          <div className="Blog-card" key={index}>
-            <div className="Blog-card-img">
+          <div className="Blog-card-tesg" key={index}>
+            <div className="Blog-card-img-tesg">
               <img src={card.img} alt="card" />
             </div>
-            <div className="Blog-card-content">
-              <div className="Blog-card-meta">
+            <div className="Blog-card-content-tesg">
+              <div className="Blog-card-meta-tesg">
                 <span>{card.date}</span>
                 <span>{card.author}</span>
               </div>
               <h3>{card.title}</h3>
-              <div className="Blog-tags">
-                <span className="Blog-tag">{card.category}</span>
-                <span className="Blog-tag">...</span>
+              <div className="Blog-tags-tesg">
+                <span className="Blog-tag-tesg">{card.category}</span>
+                <span className="Blog-tag-tesg">...</span>
               </div>
             </div>
           </div>
