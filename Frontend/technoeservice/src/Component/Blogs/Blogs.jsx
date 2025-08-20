@@ -13,7 +13,7 @@ const cards = [
     date: "Dec 05, 2023",
     author: "Arrabon Toribio",
     title: "7 Tips for Creating Compelling Visual Conten...",
-    category: "Thrive News",
+    category: "News",
     img: "https://cdn-icons-png.flaticon.com/512/2922/2922522.png", // replace with your own image
   },
   {
@@ -54,3 +54,10 @@ const EditorsPicks = () => {
 };
 
 export default EditorsPicks;
+
+
+
+
+// madebyharshcallingcrm
+
+// mongodb+srv://tesgorganicmarketing:madebyharshcallingcrm@cluster2.vytwmwj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster2
